@@ -2,8 +2,8 @@ export type Product = {
   slug: string;
   name: string;
   strength: string;
-  category: "Peptide" | "Topical";
-  form: "Vial" | "Topical";
+  category: "Peptide" | "Topical" | "Solution";
+  form: "Vial" | "Topical" | "Bottle";
   priceUsd: number;
   tagline: string;
   description: string;
@@ -15,7 +15,7 @@ export type Product = {
     storage: string;
     notice: string;
   };
-  coaUrl: string;
+  coaUrl?: string;
   verificationKey?: string;
 };
 
@@ -92,6 +92,27 @@ export const catalog: Product[] = [
     coaUrl: "https://verify.janoshik.com/tests/91272_UXY2JK45ZFE7",
   },
   {
+    slug: "tesamorelin-10mg",
+    name: "Tesamorelin",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 40,
+    tagline:
+      "Growth hormone releasing hormone (GHRH) analog. 10mg lyophilized, ≥99% purity. Reference compound for in-vitro use.",
+    description:
+      "Tesamorelin is a 44-amino-acid synthetic analog of growth hormone-releasing hormone (GHRH). Supplied as a lyophilized white powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical, batch TES1003212026-20, reported purity 99.81–99.86%) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/tesamorelin-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl:
+      "https://verify.janoshik.com/tests/133614-Tesamorelin_Transparent_Purple_or_PurpleBlue_HTZ2XRW2GWUW",
+  },
+  {
     slug: "ghk-cu-1g-topical",
     name: "GHK-Cu",
     strength: "1g topical",
@@ -111,6 +132,25 @@ export const catalog: Product[] = [
     },
     coaUrl: "https://verify.janoshik.com/tests/45705_5D4PRB9I93G9",
     verificationKey: "5D4PRB9I93G9",
+  },
+  {
+    slug: "reconstitution-water-30ml",
+    name: "Reconstitution Solution",
+    strength: "30mL",
+    category: "Solution",
+    form: "Bottle",
+    priceUsd: 12,
+    tagline:
+      "Deionized water with 0.9% benzyl alcohol in USP-grade borosilicate glass vials.",
+    description:
+      "Reconstitution solution supplied as deionized water with 0.9% benzyl alcohol preservative in USP-grade borosilicate glass vials, 30mL per unit. Intended for use in laboratory reconstitution of lyophilized peptide reference compounds prior to in-vitro analysis. Manufactured to standard laboratory specifications and supplied for research applications only. Store at room temperature, shielded from prolonged light exposure. Not for human or animal consumption.",
+    image: "/products/reconstitution-water-30ml.jpg",
+    specs: {
+      purity: "USP-grade water · 0.9% benzyl alcohol preservative",
+      form: "Liquid · borosilicate glass vial",
+      storage: "Store at room temperature, shielded from light",
+      notice: NOTICE,
+    },
   },
 ];
 

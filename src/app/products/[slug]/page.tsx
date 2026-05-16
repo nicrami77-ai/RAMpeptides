@@ -151,43 +151,45 @@ export default async function ProductDetailPage({
             </a>
 
             {/* COA */}
-            <div className="mt-12 border border-[var(--border)] rounded-xl p-6 md:p-8">
-              <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
-                Certificate of Analysis
-              </p>
-              <h3 className="font-display text-2xl tracking-tight mb-4">
-                Verify lab report
-              </h3>
-              <p className="text-sm text-[var(--muted)] leading-relaxed mb-6">
-                Lot-level COA covers identity, purity by HPLC, and mass
-                confirmation. Scan the code or open the verified report
-                directly from Janoshik Analytical.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 sm:items-center">
-                <CoaQrCode value={product.coaUrl} />
-                <div className="space-y-3">
-                  <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)]">
-                    Verified by Janoshik Analytical
-                  </p>
-                  {product.verificationKey && (
-                    <p className="text-xs text-[var(--muted)]">
-                      Verification key:{" "}
-                      <span className="font-mono text-[var(--foreground)]">
-                        {product.verificationKey}
-                      </span>
+            {product.coaUrl && (
+              <div className="mt-12 border border-[var(--border)] rounded-xl p-6 md:p-8">
+                <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
+                  Certificate of Analysis
+                </p>
+                <h3 className="font-display text-2xl tracking-tight mb-4">
+                  Verify lab report
+                </h3>
+                <p className="text-sm text-[var(--muted)] leading-relaxed mb-6">
+                  Lot-level COA covers identity, purity by HPLC, and mass
+                  confirmation. Scan the code or open the verified report
+                  directly from Janoshik Analytical.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-6 sm:items-center">
+                  <CoaQrCode value={product.coaUrl} />
+                  <div className="space-y-3">
+                    <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)]">
+                      Verified by Janoshik Analytical
                     </p>
-                  )}
-                  <a
-                    href={product.coaUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-[10px] font-semibold px-5 py-3 rounded-full hover:opacity-90 transition-opacity"
-                  >
-                    Verify lab report →
-                  </a>
+                    {product.verificationKey && (
+                      <p className="text-xs text-[var(--muted)]">
+                        Verification key:{" "}
+                        <span className="font-mono text-[var(--foreground)]">
+                          {product.verificationKey}
+                        </span>
+                      </p>
+                    )}
+                    <a
+                      href={product.coaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-[10px] font-semibold px-5 py-3 rounded-full hover:opacity-90 transition-opacity"
+                    >
+                      Verify lab report →
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="mt-10 text-xs text-[var(--muted)] leading-relaxed space-y-1">
               <p>

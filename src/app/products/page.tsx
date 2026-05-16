@@ -5,7 +5,7 @@ import ProductCard from "@/components/ProductCard";
 export const metadata: Metadata = {
   title: "Products · RAMpeptides",
   description:
-    "Four reference-grade peptide products. Lot-traceable, third-party verified.",
+    "Reference-grade peptide products and laboratory reconstitution solution. Lot-traceable, third-party verified.",
 };
 
 export default function ProductsPage() {
@@ -19,8 +19,8 @@ export default function ProductsPage() {
           Products.
         </h1>
         <p className="max-w-2xl text-base md:text-lg text-[var(--muted)] leading-relaxed mb-16">
-          Four products. Each selected for relevance to current research
-          literature. All for laboratory use only.
+          A small, deliberate catalog. Each item selected for relevance to
+          current research literature. All for laboratory use only.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
