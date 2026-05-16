@@ -8,7 +8,7 @@ import CoaQrCode from "@/components/CoaQrCode";
 type Params = { slug: string };
 
 export async function generateStaticParams() {
-  return catalog.map((p) => ({ slug: p.slug }));
+  return catalog.filter((p) => !p.comingSoon).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -32,7 +32,7 @@ export default async function ProductDetailPage({
 }) {
   const { slug } = await params;
   const product = getProduct(slug);
-  if (!product) notFound();
+  if (!product || product.comingSoon) notFound();
 
   const mailto = `mailto:info@rampeptides.com?subject=${encodeURIComponent(
     `Inquiry: ${product.name} ${product.strength}`,
