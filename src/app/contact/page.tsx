@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Contact · RAMpeptides",
@@ -21,7 +22,7 @@ export default function ContactPage() {
           most messages within one business day.
         </p>
 
-        <div className="border border-[var(--border)] rounded-xl p-8 md:p-10">
+        <div className="border border-[var(--border)] rounded-xl p-8 md:p-10 mb-16">
           <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-4">
             Email
           </p>
@@ -32,6 +33,21 @@ export default function ContactPage() {
             info@rampeptides.com
           </a>
         </div>
+
+        <figure className="border border-[var(--border)] rounded-xl overflow-hidden">
+          <div className="relative aspect-[3/4] md:aspect-[4/3] w-full bg-black">
+            <Image
+              src="/ram-mascot.jpg"
+              alt="RAMpeptides mascot — lab coat bulldog at the mic"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+          <figcaption className="px-6 py-4 text-xs uppercase tracking-[0.22em] text-[var(--muted)] text-center">
+            On air with the lab dog.
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
