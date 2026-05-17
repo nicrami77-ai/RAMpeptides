@@ -140,7 +140,7 @@ export const catalog: Product[] = [
     strength: "10mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 0,
+    priceUsd: 25,
     tagline:
       "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound. Coming soon.",
     description:
@@ -160,7 +160,7 @@ export const catalog: Product[] = [
     strength: "30mL",
     category: "Solution",
     form: "Bottle",
-    priceUsd: 12,
+    priceUsd: 14,
     tagline:
       "Deionized water with 0.9% benzyl alcohol in USP-grade borosilicate glass vials.",
     description:
