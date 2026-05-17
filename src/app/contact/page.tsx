@@ -48,6 +48,10 @@ export default function ContactPage() {
             On air with the lab dog.
           </figcaption>
         </figure>
+
+        <p className="mt-10 font-display text-3xl md:text-4xl tracking-tight text-center">
+          How can we help 🐾
+        </p>
       </div>
     </section>
   );
