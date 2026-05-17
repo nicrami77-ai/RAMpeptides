@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[var(--border)] mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           <div className="md:col-span-2 space-y-4">
             <Image
               src="/logo.png"
@@ -79,6 +79,34 @@ export default function Footer() {
                 <Link href="/contact" className="hover:text-[var(--muted)]">
                   Contact
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-4">
+              Follow
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://x.com/rampeptides"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--muted)]"
+                >
+                  X / Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@rampeptides"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--muted)]"
+                >
+                  TikTok
+                </a>
               </li>
             </ul>
           </div>
