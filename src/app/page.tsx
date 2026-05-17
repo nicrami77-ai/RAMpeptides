@@ -128,6 +128,21 @@ export default function HomePage() {
           >
             Contact us
           </Link>
+
+          <div className="mt-16 max-w-md mx-auto">
+            <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-[var(--border)] bg-black">
+              <Image
+                src="/ram-mascot-lab.jpg"
+                alt="RAMpeptides mascot — lab coat bulldog in the lab"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 448px"
+              />
+            </div>
+            <p className="mt-6 font-display text-3xl md:text-4xl tracking-tight">
+              Happy to help!
+            </p>
+          </div>
         </div>
       </section>
     </>
