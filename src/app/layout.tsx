@@ -5,6 +5,7 @@ import ResearchBanner from "@/components/ResearchBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LegalGate from "@/components/LegalGate";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <LegalGate />
+        <Analytics />
       </body>
     </html>
   );
