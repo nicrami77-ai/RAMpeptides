@@ -140,11 +140,11 @@ export const catalog: Product[] = [
     strength: "10mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 25,
+    priceUsd: 30,
     tagline:
-      "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound. Coming soon.",
+      "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound, ≥99% purity.",
     description:
-      "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide analog of α-MSH, a melanocortin receptor agonist. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis will be available via the verification link on this page at launch. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide analog of α-MSH, a melanocortin receptor agonist. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical). Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/pt-141-10mg.jpg",
     specs: {
       purity: "≥99%",
@@ -152,7 +152,6 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
-    comingSoon: true,
   },
   {
     slug: "reconstitution-water-30ml",
