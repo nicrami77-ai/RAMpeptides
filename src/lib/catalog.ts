@@ -2,8 +2,8 @@ export type Product = {
   slug: string;
   name: string;
   strength: string;
-  category: "Peptide" | "Topical" | "Solution";
-  form: "Vial" | "Topical" | "Bottle";
+  category: "Peptide" | "Topical" | "Solution" | "Accessory";
+  form: "Vial" | "Topical" | "Bottle" | "Case";
   priceUsd: number;
   tagline: string;
   description: string;
@@ -151,6 +151,26 @@ export const catalog: Product[] = [
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
+    },
+  },
+  {
+    slug: "vault-case",
+    name: "RAMpeptides Vault Case",
+    strength: "4-vial",
+    category: "Accessory",
+    form: "Case",
+    priceUsd: 2,
+    tagline:
+      "Clear pharmaceutical-grade 4-vial storage case. Hinged lid. Free gift with any order of 4+ vials.",
+    description:
+      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a hinged snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Free gift included automatically with any order containing 4 or more vials. Not a research compound; storage accessory only.",
+    image: "/products/vault-case.jpg",
+    specs: {
+      purity: "Pharmaceutical-grade clear plastic",
+      form: "Hinged 4-cavity case",
+      storage: "Room temperature",
+      notice:
+        "Storage accessory only. Free gift included automatically with any order of 4+ vials.",
     },
   },
   {
