@@ -95,6 +95,34 @@ export const catalog: Product[] = [
     coaUrl: "https://verify.janoshik.com/tests/91272_UXY2JK45ZFE7",
   },
   {
+    slug: "glow-70mg",
+    name: "GLOW",
+    comingSoon: true,
+    strength: "70mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 60,
+    tagline:
+      "70mg lyophilized 3-peptide regenerative blend. ≥100% verified content, third-party analyzed.",
+    description:
+      "GLOW is a 3-peptide lyophilized reference preparation totaling 70mg per vial: GHK-Cu (glycyl-L-histidyl-L-lysine, copper-bound tripeptide) 50mg, BPC-157 (15-residue partial sequence of body-protection compound) 10mg, and TB-500 / TB4 (Thymosin Beta-4, 43-residue peptide) 10mg. Supplied in a sealed glass vial under inert conditions. Manufactured at high purity and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference preparation supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "GHK-Cu", amount: "50mg" },
+      { name: "BPC-157", amount: "10mg" },
+      { name: "TB-500 (Thymosin Beta-4)", amount: "10mg" },
+    ],
+    image: "/products/glow-70mg.jpg",
+    specs: {
+      purity: "≥100% verified content by HPLC",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl:
+      "https://verify.janoshik.com/tests/167755-GLOW_Blend_50mg10mg10mg_Transparent_Black_X4LBB8M4KU3E",
+    verificationKey: "GLOW05122026-09",
+  },
+  {
     slug: "tesamorelin-10mg",
     name: "Tesamorelin",
     strength: "10mg",
