@@ -101,7 +101,7 @@ export const catalog: Product[] = [
     strength: "70mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 60,
+    priceUsd: 50,
     tagline:
       "70mg lyophilized 3-peptide regenerative blend. ≥100% verified content, third-party analyzed.",
     description:
