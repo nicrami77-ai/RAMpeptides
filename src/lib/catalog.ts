@@ -119,6 +119,7 @@ export const catalog: Product[] = [
   {
     slug: "glow-70mg",
     name: "GLOW",
+    comingSoon: true,
     strength: "70mg",
     category: "Peptide",
     form: "Vial",
