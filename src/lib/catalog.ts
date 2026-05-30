@@ -47,6 +47,28 @@ export const catalog: Product[] = [
       "https://verify.janoshik.com/tests/136294-MOTSC_10mg_Transparent_Blue_or_BlueGreen_B56V1GF2MWAL",
   },
   {
+    slug: "nad-plus-500mg",
+    name: "NAD+",
+    comingSoon: true,
+    strength: "500mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 40,
+    tagline:
+      "Nicotinamide Adenine Dinucleotide, 500mg lyophilized. 99% purity, third-party verified.",
+    description:
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at 99% purity and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/nad-plus-500mg.jpg",
+    specs: {
+      purity: "99% by HPLC",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl: "https://www.janoshik.com/tests/86060_YHB7PR8E5LK9",
+    verificationKey: "NAD50010272025-11",
+  },
+  {
     slug: "ram-3p-20mg",
     name: "RAM-3P",
     strength: "20mg",
