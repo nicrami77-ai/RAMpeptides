@@ -18,6 +18,7 @@ export type Product = {
   coaUrl?: string;
   verificationKey?: string;
   comingSoon?: boolean;
+  outOfStock?: boolean;
 };
 
 const NOTICE =
@@ -69,6 +70,7 @@ export const catalog: Product[] = [
   {
     slug: "klow-80mg",
     name: "KLOW",
+    outOfStock: true,
     strength: "80mg",
     category: "Peptide",
     form: "Vial",

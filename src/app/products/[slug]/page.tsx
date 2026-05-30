@@ -38,6 +38,12 @@ export default async function ProductDetailPage({
     `Inquiry: ${product.name} ${product.strength}`,
   )}`;
 
+  const notifyMailto = `mailto:info@rampeptides.com?subject=${encodeURIComponent(
+    `Notify when back in stock: ${product.name} ${product.strength}`,
+  )}&body=${encodeURIComponent(
+    `Please notify me when ${product.name} ${product.strength} is back in stock.`,
+  )}`;
+
   const isTopical = product.category === "Topical";
 
   return (
@@ -143,12 +149,29 @@ export default async function ProductDetailPage({
               </dl>
             </div>
 
-            <a
-              href={mailto}
-              className="inline-block mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
-            >
-              Inquire to order
-            </a>
+            {product.outOfStock ? (
+              <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
+                <span
+                  aria-disabled="true"
+                  className="inline-block bg-[var(--muted)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full cursor-not-allowed opacity-80"
+                >
+                  Out of stock
+                </span>
+                <a
+                  href={notifyMailto}
+                  className="inline-block border border-[var(--foreground)] text-[var(--foreground)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-colors"
+                >
+                  Notify me when back
+                </a>
+              </div>
+            ) : (
+              <a
+                href={mailto}
+                className="inline-block mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
+              >
+                Inquire to order
+              </a>
+            )}
 
             {/* COA */}
             {product.coaUrl && (
