@@ -120,7 +120,7 @@ export const catalog: Product[] = [
     },
     coaUrl:
       "https://verify.janoshik.com/tests/167755-GLOW_Blend_50mg10mg10mg_Transparent_Black_X4LBB8M4KU3E",
-    verificationKey: "GLOW05122026-09",
+    verificationKey: "GLOW09062025-04",
   },
   {
     slug: "tesamorelin-10mg",
