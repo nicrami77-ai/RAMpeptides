@@ -49,7 +49,6 @@ export const catalog: Product[] = [
   {
     slug: "nad-plus-500mg",
     name: "NAD+",
-    comingSoon: true,
     strength: "500mg",
     category: "Peptide",
     form: "Vial",
@@ -164,27 +163,6 @@ export const catalog: Product[] = [
     },
     coaUrl:
       "https://verify.janoshik.com/tests/133614-Tesamorelin_Transparent_Purple_or_PurpleBlue_HTZ2XRW2GWUW",
-  },
-  {
-    slug: "ghk-cu-1g-topical",
-    name: "GHK-Cu",
-    strength: "1g topical",
-    category: "Topical",
-    form: "Topical",
-    priceUsd: 30,
-    tagline:
-      "Copper-binding tripeptide in topical / cosmetic-formulation grade. 1g, ≥99% purity.",
-    description:
-      "GHK-Cu is a copper-bound tripeptide — glycyl-L-histidyl-L-lysine complexed with Cu(II). Approximate molecular weight 340.8 Da (peptide) / 401.9 Da (copper complex). This is the cosmetic / topical formulation, supplied as a 1g topical solution in a plastic dropper bottle for laboratory formulation and ex-vivo / topical research applications. Manufactured at ≥99% purity (third-party verified by Janoshik Analytical, report 99.853% purity — lot-specific certificate of analysis available via the verification link on this page). Store cool and shielded from prolonged light exposure. For research and topical formulation use only — not for ingestion or injection.",
-    image: "/products/ghk-cu-1g-topical.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Topical solution",
-      storage: "Store in a cool, dark environment",
-      notice: NOTICE,
-    },
-    coaUrl: "https://verify.janoshik.com/tests/45705_5D4PRB9I93G9",
-    verificationKey: "5D4PRB9I93G9",
   },
   {
     slug: "pt-141-10mg",
