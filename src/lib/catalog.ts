@@ -89,7 +89,6 @@ export const catalog: Product[] = [
       "https://verify.janoshik.com/tests/122886-3P_20mg_OrangeGreen_C53DYXJAJAX3",
   },
 
-
   {
     slug: "tesamorelin-10mg",
     name: "Tesamorelin",
@@ -133,45 +132,6 @@ export const catalog: Product[] = [
     coaUrl:
       "https://verify.janoshik.com/tests/166067-PT141_10mg_Blue_Black_TU65SPIX1XC5",
     verificationKey: "PT1005172026-08",
-  },
-  {
-    slug: "vault-case",
-    name: "RAMpeptides Vault Case",
-    strength: "4-vial",
-    category: "Accessory",
-    form: "Case",
-    priceUsd: 2,
-    tagline:
-      "Clear pharmaceutical-grade 4-vial storage case. Hinged snap lid. Free gift with any order of 2 or more peptide vials.",
-    description:
-      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a hinged snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Automatically included free with the purchase of 2 or more peptide vials. Storage accessory only; not a research compound.",
-    image: "/products/vault-case.jpg",
-    specs: {
-      purity: "Pharmaceutical-grade clear plastic",
-      form: "Hinged snap-top 4-cavity case",
-      storage: "Room temperature",
-      notice:
-        "Storage accessory only. Automatically included free with the purchase of 2 or more peptide vials.",
-    },
-  },
-  {
-    slug: "reconstitution-water-30ml",
-    name: "Reconstitution Solution",
-    strength: "30mL",
-    category: "Solution",
-    form: "Bottle",
-    priceUsd: 15,
-    tagline:
-      "Deionized water with 0.9% benzyl alcohol in USP-grade borosilicate glass vials.",
-    description:
-      "Reconstitution solution supplied as deionized water with 0.9% benzyl alcohol preservative in USP-grade borosilicate glass vials, 30mL per unit. Intended for use in laboratory reconstitution of lyophilized peptide reference compounds prior to in-vitro analysis. Manufactured to standard laboratory specifications and supplied for research applications only. Store at room temperature, shielded from prolonged light exposure. Not for human or animal consumption.",
-    image: "/products/reconstitution-water-30ml.jpg",
-    specs: {
-      purity: "USP-grade water · 0.9% benzyl alcohol preservative",
-      form: "Liquid · borosilicate glass vial",
-      storage: "Store at room temperature, shielded from light",
-      notice: NOTICE,
-    },
   },
   {
     slug: "semax-5mg",
@@ -282,42 +242,6 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "reconstitution-vial-10ml",
-    name: "Reconstitution Vial",
-    strength: "10mL",
-    category: "Solution",
-    form: "Bottle",
-    priceUsd: 1,
-    tagline: "Empty 10mL vial for custom peptide blends.",
-    description:
-      "Empty 10mL reconstitution vial. Standalone product for customers building custom blends. Not a research compound.",
-    image: "/products/bac-10ml.jpg",
-    specs: {
-      purity: "Borosilicate glass vial",
-      form: "Empty vial",
-      storage: "Room temperature",
-      notice: "Empty vial only. For research use.",
-    },
-  },
-  {
-    slug: "rubber-caps",
-    name: "Rubber Vial Caps",
-    strength: "5-pack",
-    category: "Accessory",
-    form: "Accessory",
-    priceUsd: 1,
-    tagline: "Colorful rubber vial caps. 5-pack.",
-    description:
-      "Assorted colorful rubber caps for peptide vials. Sold in packs of 5. Accessory only.",
-    image: "/products/rubber-caps.jpg",
-    specs: {
-      purity: "Food-grade rubber",
-      form: "Rubber caps",
-      storage: "Room temperature",
-      notice: "Accessory only.",
-    },
-  },
-  {
     slug: "melanotan-1-10mg",
     name: "Melanotan-1",
     strength: "10mg",
@@ -395,6 +319,82 @@ export const catalog: Product[] = [
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
+    },
+  },
+
+  {
+    slug: "rubber-caps",
+    name: "Rubber Vial Caps",
+    strength: "5-pack",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 1,
+    tagline: "Colorful rubber vial caps. 5-pack.",
+    description:
+      "Assorted colorful rubber caps for peptide vials. Sold in packs of 5. Accessory only.",
+    image: "/products/rubber-caps.jpg",
+    specs: {
+      purity: "Food-grade rubber",
+      form: "Rubber caps",
+      storage: "Room temperature",
+      notice: "Accessory only.",
+    },
+  },
+  {
+    slug: "reconstitution-vial-10ml",
+    name: "Reconstitution Vial",
+    strength: "10mL",
+    category: "Solution",
+    form: "Bottle",
+    priceUsd: 1,
+    tagline: "Empty 10mL vial for custom peptide blends.",
+    description:
+      "Empty 10mL reconstitution vial. Standalone product for customers building custom blends. Not a research compound.",
+    image: "/products/bac-10ml.jpg",
+    specs: {
+      purity: "Borosilicate glass vial",
+      form: "Empty vial",
+      storage: "Room temperature",
+      notice: "Empty vial only. For research use.",
+    },
+  },
+  {
+    slug: "reconstitution-water-30ml",
+    name: "Reconstitution Solution",
+    strength: "30mL",
+    category: "Solution",
+    form: "Bottle",
+    priceUsd: 15,
+    tagline:
+      "Deionized water with 0.9% benzyl alcohol in USP-grade borosilicate glass vials.",
+    description:
+      "Reconstitution solution supplied as deionized water with 0.9% benzyl alcohol preservative in USP-grade borosilicate glass vials, 30mL per unit. Intended for use in laboratory reconstitution of lyophilized peptide reference compounds prior to in-vitro analysis. Manufactured to standard laboratory specifications and supplied for research applications only. Store at room temperature, shielded from prolonged light exposure. Not for human or animal consumption.",
+    image: "/products/reconstitution-water-30ml.jpg",
+    specs: {
+      purity: "USP-grade water · 0.9% benzyl alcohol preservative",
+      form: "Liquid · borosilicate glass vial",
+      storage: "Store at room temperature, shielded from light",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "vault-case",
+    name: "RAMpeptides Vault Case",
+    strength: "4-vial",
+    category: "Accessory",
+    form: "Case",
+    priceUsd: 2,
+    tagline:
+      "Clear pharmaceutical-grade 4-vial storage case. Hinged snap lid. Free gift with any order of 2 or more peptide vials.",
+    description:
+      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a hinged snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Automatically included free with the purchase of 2 or more peptide vials. Storage accessory only; not a research compound.",
+    image: "/products/vault-case.jpg",
+    specs: {
+      purity: "Pharmaceutical-grade clear plastic",
+      form: "Hinged snap-top 4-cavity case",
+      storage: "Room temperature",
+      notice:
+        "Storage accessory only. Automatically included free with the purchase of 2 or more peptide vials.",
     },
   },
 ];
