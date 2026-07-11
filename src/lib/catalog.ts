@@ -367,6 +367,23 @@ export const catalog: Product[] = [
       notice: NOTICE,
     },
   },
+  {
+    slug: "cagrilintide-20mg",
+    name: "Cagrilintide",
+    strength: "20mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 35,
+    tagline: "Amylin analog. Lyophilized reference compound, ≥99% purity.",
+    description: "Cagrilintide is a long-acting synthetic amylin analog. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/cagrilintide-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
