@@ -3,7 +3,7 @@ export type Product = {
   name: string;
   strength: string;
   category: "Peptide" | "Topical" | "Solution" | "Accessory";
-  form: "Vial" | "Topical" | "Bottle" | "Case";
+  form: "Vial" | "Topical" | "Bottle" | "Case" | "Accessory";
   priceUsd: number;
   tagline: string;
   description: string;

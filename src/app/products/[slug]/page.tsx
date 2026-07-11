@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { catalog, getProduct } from "@/lib/catalog";
 import CoaQrCode from "@/components/CoaQrCode";
+import AddToCartButton from "@/components/AddToCartButton";
 
 type Params = { slug: string };
 
@@ -165,12 +166,7 @@ export default async function ProductDetailPage({
                 </a>
               </div>
             ) : (
-              <a
-                href={mailto}
-                className="inline-block mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
-              >
-                Inquire to order
-              </a>
+              <AddToCartButton product={{ slug: product.slug, name: product.name, price: product.priceUsd, strength: product.strength }} />
             )}
 
             {/* COA */}

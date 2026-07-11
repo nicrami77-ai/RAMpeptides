@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useCart } from "@/components/CartContext";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -14,6 +15,7 @@ const NAV = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const { itemCount } = useCart();
 
   return (
     <header className="sticky top-0 z-40 bg-[var(--background)]/85 backdrop-blur-sm border-b border-[var(--border)]">
@@ -44,6 +46,12 @@ export default function Header() {
           ))}
         </nav>
 
+        <div className="hidden md:flex items-center ml-6">
+          <Link href="/cart" className="flex items-center gap-2 hover:text-[var(--muted)]">
+            <span className="text-sm tracking-wide">Cart ({itemCount})</span>
+          </Link>
+        </div>
+
         <button
           aria-label="Toggle menu"
           aria-expanded={open}
@@ -55,6 +63,9 @@ export default function Header() {
         </button>
       </div>
 
+      <div className="md:hidden flex items-center mr-4">
+          <Link href="/cart" className="text-sm tracking-wide">Cart ({itemCount})</Link>
+        </div>
       {open && (
         <div className="md:hidden border-t border-[var(--border)] bg-[var(--background)]">
           <nav className="px-6 py-4 flex flex-col gap-3 text-sm tracking-wide">
