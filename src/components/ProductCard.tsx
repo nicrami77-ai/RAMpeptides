@@ -16,15 +16,15 @@ export default function ProductCard({ product }: { product: Product }) {
           }`}
         />
         {product.comingSoon && (
-          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-black/85 backdrop-blur-sm py-5 text-center">
-            <div className="text-white text-2xl md:text-3xl font-display tracking-[6px] font-semibold">
+          <div className="absolute inset-x-0 top-8 bg-black/85 backdrop-blur-sm py-3 text-center">
+            <div className="text-white text-xl md:text-2xl font-display tracking-[6px] font-semibold">
               COMING SOON
             </div>
           </div>
         )}
         {product.outOfStock && !product.comingSoon && (
-          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-black/85 backdrop-blur-sm py-5 text-center">
-            <div className="text-white text-2xl md:text-3xl font-display tracking-[6px] font-semibold">
+          <div className="absolute inset-x-0 top-8 bg-black/85 backdrop-blur-sm py-3 text-center">
+            <div className="text-white text-xl md:text-2xl font-display tracking-[6px] font-semibold">
               OUT OF STOCK
             </div>
           </div>

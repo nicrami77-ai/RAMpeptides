@@ -118,6 +118,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
+    comingSoon: true,
     tagline:
       "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound, ≥99% purity.",
     description:
@@ -340,6 +341,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
+    comingSoon: true,
     tagline: "Alpha-MSH analog. Lyophilized reference compound, ≥99% purity.",
     description: "Melanotan-2 (MT-2) is a synthetic cyclic heptapeptide analog of alpha-melanocyte-stimulating hormone (α-MSH). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/melanotan-10mg.jpg",
