@@ -50,18 +50,16 @@ export default function HomePage() {
       </section>
 
       {/* Video Loop */}
-      <section className="px-6 lg:px-10 pb-20 md:pb-28">
-        <div className="max-w-5xl mx-auto">
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-[var(--border)] bg-black">
-            <video
-              src="/home-vials.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            />
-          </div>
+      <section className="w-full pb-20 md:pb-28">
+        <div className="relative w-full bg-black border-y border-[var(--border)]">
+          <video
+            src="/home-vials.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-[50vh] md:h-[75vh] object-cover"
+          />
         </div>
       </section>
 
