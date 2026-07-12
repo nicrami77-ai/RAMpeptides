@@ -146,7 +146,7 @@ export default function HomePage() {
           <div className="mt-16 max-w-md mx-auto">
             <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-[var(--border)] bg-black">
               <Image
-                src="/ram-mascot-lab.jpg"
+                src="/ram-mascot-holographic.jpg"
                 alt="RAMpeptides mascot — lab coat bulldog in the lab"
                 fill
                 className="object-cover"
