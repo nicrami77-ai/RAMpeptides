@@ -105,23 +105,7 @@ export default function Footer() {
                   <path d="M18.244 2H21.5l-7.5 8.57L22.5 22h-6.812l-5.34-6.98L4.25 22H1l8.02-9.165L1.5 2h6.98l4.83 6.39L18.244 2Zm-1.194 18h1.86L7.06 4H5.1l11.95 16Z" />
                 </svg>
               </a>
-              <a
-                href="https://www.tiktok.com/@rampeptides"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="RAMpeptides on TikTok"
-                className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                >
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.07A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.84a8.16 8.16 0 0 0 4.77 1.52V6.92a4.85 4.85 0 0 1-1.84-.23Z" />
-                </svg>
-              </a>
+
             </div>
           </div>
         </div>
