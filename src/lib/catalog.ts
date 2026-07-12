@@ -49,18 +49,18 @@ export const catalog: Product[] = [
   {
     slug: "nad-plus-500mg",
     name: "NAD+",
-    strength: "500mg",
+    strength: "500mg (10mL)",
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
     tagline:
-      "Nicotinamide Adenine Dinucleotide, 500mg lyophilized. 99% purity, third-party verified.",
+      "Nicotinamide Adenine Dinucleotide, 500mg lyophilized in a 10mL vial. 99% purity, third-party verified.",
     description:
-      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at 99% purity and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed 10mL glass vial under inert conditions. Manufactured at 99% purity and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/nad-plus-500mg.jpg",
     specs: {
       purity: "99% by HPLC",
-      form: "Lyophilized powder",
+      form: "Lyophilized powder (10mL vial)",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
