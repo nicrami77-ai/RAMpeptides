@@ -328,7 +328,7 @@ export const catalog: Product[] = [
     strength: "5-pack",
     category: "Accessory",
     form: "Accessory",
-    priceUsd: 1,
+    priceUsd: 3,
     tagline: "Colorful rubber vial caps. 5-pack.",
     description:
       "Assorted colorful rubber caps for peptide vials. Sold in packs of 5. Accessory only.",
