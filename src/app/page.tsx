@@ -24,12 +24,12 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto py-24 md:py-32 flex flex-col items-center text-center">
           <Image
-            src="/logo.png"
-            alt="RAMpeptides"
+            src="/hero-front-transparent.png"
+            alt="RAMpeptides Graphic"
             width={400}
-            height={160}
+            height={440}
             priority
-            className="w-[260px] md:w-[360px] lg:w-[400px] h-auto mb-10 invert brightness-0"
+            className="w-[260px] md:w-[360px] lg:w-[400px] h-auto mb-10"
           />
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-[-0.03em] leading-[0.95] drop-shadow-md">
             Power through
