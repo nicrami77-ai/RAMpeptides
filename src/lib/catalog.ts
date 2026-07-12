@@ -171,14 +171,14 @@ export const catalog: Product[] = [
   },
   {
     slug: "cjc-ipa-10mg",
-    name: "CJC-1295/Ipamorelin",
+    name: "CJC-1295 (No DAC)/Ipamorelin",
     strength: "10mg",
     category: "Peptide",
     form: "Vial",
     priceUsd: 35,
-    tagline: "CJC-1295 + Ipamorelin blend 10mg lyophilized. ≥99% purity.",
+    tagline: "CJC-1295 (No DAC) + Ipamorelin blend 10mg lyophilized. ≥99% purity.",
     description:
-      "CJC-1295/Ipamorelin blend supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "CJC-1295 (No DAC)/Ipamorelin blend supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/cjc-ipa-10mg.jpg",
     specs: {
       purity: "≥99%",
