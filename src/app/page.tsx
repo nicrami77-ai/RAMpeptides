@@ -49,6 +49,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Video Loop */}
+      <section className="px-6 lg:px-10 pb-20 md:pb-28">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-[var(--border)] bg-black">
+            <video
+              src="/home-vials.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Value props */}
       <section className="border-t border-[var(--border)] px-6 lg:px-10">
         <div className="max-w-7xl mx-auto py-20 md:py-28 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
