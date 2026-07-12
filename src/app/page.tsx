@@ -11,37 +11,47 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 lg:px-10">
-        <div className="max-w-7xl mx-auto py-24 md:py-32 flex flex-col items-center text-center">
+      <section className="relative px-6 lg:px-10 overflow-hidden text-white">
+        <div className="absolute inset-0 z-0 bg-black">
+          <Image
+            src="/american-flag-bg.jpg"
+            alt="American Flag Background"
+            fill
+            priority
+            className="object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-black/30" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto py-24 md:py-32 flex flex-col items-center text-center">
           <Image
             src="/logo.png"
             alt="RAMpeptides"
             width={400}
             height={160}
             priority
-            className="w-[260px] md:w-[360px] lg:w-[400px] h-auto mb-10"
+            className="w-[260px] md:w-[360px] lg:w-[400px] h-auto mb-10 invert brightness-0"
           />
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-[-0.03em] leading-[0.95]">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-[-0.03em] leading-[0.95] drop-shadow-md">
             Power through
             <br />
             knowledge.
           </h1>
-          <p className="mt-8 max-w-xl text-base md:text-lg text-[var(--muted)] leading-relaxed">
+          <p className="mt-8 max-w-xl text-base md:text-lg text-white/90 leading-relaxed drop-shadow">
             Reference-grade peptides for laboratory and pre-clinical research.
           </p>
-          <p className="mt-6 uppercase tracking-[0.28em] text-[10px] md:text-[11px] text-[var(--muted)]">
+          <p className="mt-6 uppercase tracking-[0.28em] text-[10px] md:text-[11px] text-white/80 drop-shadow">
             🫡 Veteran-owned · Family-operated
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center gap-5">
             <Link
               href="/products"
-              className="bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
+              className="bg-white text-black uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:bg-white/90 transition-colors"
             >
               View Catalog
             </Link>
             <Link
               href="/about"
-              className="uppercase tracking-[0.18em] text-xs font-semibold underline underline-offset-8"
+              className="uppercase tracking-[0.18em] text-xs font-semibold underline underline-offset-8 hover:text-white/80 transition-colors"
             >
               Our Approach
             </Link>
