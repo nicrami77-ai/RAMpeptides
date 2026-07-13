@@ -59,23 +59,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Video Loop */}
-      <section className="w-full pb-20 md:pb-28">
-        <div className="relative w-full bg-black border-y border-[var(--border)]">
-          <video
-            src="/home-vials.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-[50vh] md:h-[75vh] object-cover"
-          />
-        </div>
-      </section>
-
       {/* Value props */}
       <section className="border-t border-[var(--border)] px-6 lg:px-10">
-        <div className="max-w-7xl mx-auto py-20 md:py-28 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
+        <div className="max-w-7xl mx-auto py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-10">
           {[
             {
               n: "01",
@@ -92,6 +78,11 @@ export default function HomePage() {
               h: "Transparent pricing",
               p: "List prices openly shown. No quote forms, no member tiers, no hidden cost structures.",
             },
+            {
+              n: "04",
+              h: "Flat $10 shipping",
+              p: "Our unbeatable product pricing doesn't end at checkout. We charge a flat $10 rate for all standard shipping.",
+            },
           ].map((v) => (
             <div key={v.n}>
               <p className="uppercase tracking-[0.28em] text-[10px] text-[var(--muted)] mb-4">
@@ -105,6 +96,20 @@ export default function HomePage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Video Loop */}
+      <section className="w-full pb-20 md:pb-28">
+        <div className="relative w-full bg-black border-y border-[var(--border)]">
+          <video
+            src="/home-vials.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-[50vh] md:h-[75vh] object-cover"
+          />
         </div>
       </section>
 
