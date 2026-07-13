@@ -1,13 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { catalog } from "@/lib/catalog";
-import ProductCard from "@/components/ProductCard";
 
 export default function HomePage() {
-  const featured = catalog.filter((p) =>
-    ["mots-c-10mg", "ram-3p-20mg", "klow-80mg"].includes(p.slug),
-  );
-
   return (
     <>
       {/* Hero */}
@@ -103,7 +97,7 @@ export default function HomePage() {
       <section className="w-full pb-20 md:pb-28">
         <div className="relative w-full bg-black border-y border-[var(--border)]">
           <video
-            src="/home-vials.mp4"
+            src="/truck-loop.mp4"
             autoPlay
             loop
             muted
@@ -115,29 +109,19 @@ export default function HomePage() {
 
       {/* Featured catalog */}
       <section className="border-t border-[var(--border)] px-6 lg:px-10">
-        <div className="max-w-7xl mx-auto py-20 md:py-28">
-          <div className="flex items-end justify-between mb-12 md:mb-16">
-            <div>
-              <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
-                Featured
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl tracking-[-0.03em]">
-                The catalog.
-              </h2>
-            </div>
-            <Link
-              href="/products"
-              className="text-sm tracking-wide underline underline-offset-4 hover:text-[var(--muted)]"
-            >
-              See all →
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {featured.map((p) => (
-              <ProductCard key={p.slug} product={p} />
-            ))}
-          </div>
+        <div className="max-w-7xl mx-auto py-20 md:py-28 text-center flex flex-col items-center">
+          <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
+            Featured
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl tracking-[-0.03em] mb-10">
+            The catalog.
+          </h2>
+          <Link
+            href="/products"
+            className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
+          >
+            View Full Catalog
+          </Link>
         </div>
       </section>
 
