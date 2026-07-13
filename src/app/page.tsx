@@ -144,12 +144,13 @@ export default function HomePage() {
 
           <div className="mt-16 max-w-md mx-auto">
             <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-[var(--border)] bg-black">
-              <Image
-                src="/ram-mascot-holographic.jpg"
-                alt="RAMpeptides mascot — lab coat bulldog in the lab"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 448px"
+              <video
+                src="/zuri-lab-loop.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 font-display text-3xl md:text-4xl tracking-tight">
