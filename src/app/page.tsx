@@ -75,7 +75,7 @@ export default function HomePage() {
             {
               n: "04",
               h: "Flat $10 shipping",
-              p: "Our unbeatable product pricing doesn't end at checkout. We charge a flat $10 rate for all standard shipping.",
+              p: "Our unbeatable product pricing doesn't end at checkout. We charge a flat $10 rate for all standard shipping, regardless of order size, big or small.",
             },
           ].map((v) => (
             <div key={v.n}>
