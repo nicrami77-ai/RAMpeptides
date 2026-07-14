@@ -9,7 +9,21 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="px-6 lg:px-10">
+    <>
+      <section className="w-full">
+        <div className="relative w-full bg-black border-b border-[var(--border)]">
+          <video
+            src="/rampeptides-holographic.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-[40vh] md:h-[50vh] object-cover"
+          />
+        </div>
+      </section>
+
+      <section className="px-6 lg:px-10">
       <div className="max-w-3xl mx-auto py-20 md:py-28">
         <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-4">
           About
@@ -117,5 +131,6 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }
