@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Disclaimer · RAMpeptides",
@@ -16,6 +17,16 @@ export default function DisclaimerPage() {
         <h1 className="font-display text-5xl md:text-7xl tracking-[-0.03em] mb-12">
           Disclaimer.
         </h1>
+
+        <div className="mb-12 aspect-square max-w-lg relative rounded-xl overflow-hidden bg-[var(--muted)]/10">
+          <Image
+            src="/zuri-disclaimer.jpg"
+            alt="Zuri with Disclaimer Stamp"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
 
         <div className="space-y-6 text-base text-[var(--muted)] leading-relaxed">
           <p>
