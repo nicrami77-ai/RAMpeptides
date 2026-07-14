@@ -12,9 +12,9 @@ export default function ProductsPage() {
   return (
     <>
       <section className="w-full">
-        <div className="relative w-full bg-black border-b border-[var(--border)]">
+        <div className="relative w-full bg-white border-b border-[var(--border)]">
           <video
-            src="/zuri-lab-loop.mp4"
+            src="/vial-3d-stylized.mp4"
             autoPlay
             loop
             muted
