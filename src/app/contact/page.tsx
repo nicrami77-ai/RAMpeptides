@@ -37,15 +37,15 @@ export default function ContactPage() {
         <figure className="border border-[var(--border)] rounded-xl overflow-hidden">
           <div className="relative aspect-[3/4] md:aspect-[4/3] w-full bg-black">
             <Image
-              src="/ram-mascot.jpg"
-              alt="RAMpeptides mascot — lab coat bulldog at the mic"
+              src="/ram-mascot-support.jpg"
+              alt="RAMpeptides mascot — lab coat bulldog providing customer support"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"
             />
           </div>
           <figcaption className="px-6 py-4 text-xs uppercase tracking-[0.22em] text-[var(--muted)] text-center">
-            On air with the lab dog.
+            Standing by to help.
           </figcaption>
         </figure>
 
