@@ -135,15 +135,8 @@ export default function HomePage() {
             Reach us directly. We answer technical questions about handling,
             sourcing, and lot documentation.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
-          >
-            Contact us
-          </Link>
-
           <div className="mt-16 max-w-md mx-auto">
-            <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-[var(--border)] bg-black">
+            <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-[var(--border)] bg-black mb-8">
               <video
                 src="/zuri-lab-loop.mp4"
                 autoPlay
@@ -153,9 +146,12 @@ export default function HomePage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="mt-6 font-display text-3xl md:text-4xl tracking-tight">
-              Happy to help!
-            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
+            >
+              Contact us
+            </Link>
           </div>
         </div>
       </section>
