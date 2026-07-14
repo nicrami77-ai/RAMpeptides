@@ -48,10 +48,24 @@ export default async function ProductDetailPage({
   const isTopical = product.category === "Topical";
 
   return (
-    <section className="px-6 lg:px-10">
-      <div className="max-w-7xl mx-auto py-12 md:py-16">
-        <Link
-          href="/products"
+    <>
+      <section className="w-full">
+        <div className="relative w-full bg-white border-b border-[var(--border)]">
+          <video
+            src="/vial-fill-loop.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-[30vh] md:h-[40vh] object-cover"
+          />
+        </div>
+      </section>
+
+      <section className="px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto py-12 md:py-16">
+          <Link
+            href="/products"
           className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] tracking-wide"
         >
           ← Back to catalog
@@ -221,5 +235,6 @@ export default async function ProductDetailPage({
         </div>
       </div>
     </section>
+    </>
   );
 }
