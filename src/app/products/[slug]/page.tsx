@@ -52,7 +52,7 @@ export default async function ProductDetailPage({
       <section className="w-full">
         <div className="relative w-full bg-white border-b border-[var(--border)]">
           <video
-            src="/vial-fill-loop.mp4"
+            src="/vial-3d-stylized.mp4"
             autoPlay
             loop
             muted
