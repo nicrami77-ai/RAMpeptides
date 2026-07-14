@@ -18,7 +18,7 @@ export default function AboutPage() {
             loop
             muted
             playsInline
-            className="w-full h-[40vh] md:h-[50vh] object-cover"
+            className="w-full h-auto object-cover"
           />
         </div>
       </section>
