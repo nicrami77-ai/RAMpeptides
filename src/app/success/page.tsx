@@ -22,7 +22,7 @@ function SuccessContent() {
           rel="noopener noreferrer"
           className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-10 py-5 rounded-full hover:opacity-90"
         >
-          Pay Now
+          Pay Order Total
         </a>
       </div>
       <p className="text-sm text-[var(--muted)]">If payment is not received within 24 hours, your order will be cancelled.</p>
