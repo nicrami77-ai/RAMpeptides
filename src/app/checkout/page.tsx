@@ -35,20 +35,24 @@ export default function CheckoutPage() {
     setLoading(true);
 
     const orderDetails = {
+      access_key: "bd570075-3607-4e8f-9f41-a1576e32b064",
+      subject: `New Order from ${formData.name} ($${total.toFixed(2)})`,
+      from_name: "RAMpeptides Checkout",
       ...formData,
-      items: JSON.stringify(cart),
+      items: JSON.stringify(cart, null, 2),
       subtotal: subtotal.toFixed(2),
       shipping: shipping.toFixed(2),
       tax: tax.toFixed(2),
       total: total.toFixed(2),
-      _captcha: "false",
-      _template: "box"
     };
 
     try {
-      await fetch("https://formsubmit.co/ajax/info@rampeptides.com", {
+      await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
         body: JSON.stringify(orderDetails)
       });
       clearCart();
