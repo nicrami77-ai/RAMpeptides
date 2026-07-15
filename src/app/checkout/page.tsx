@@ -38,6 +38,24 @@ export default function CheckoutPage() {
       access_key: "bd570075-3607-4e8f-9f41-a1576e32b064",
       subject: `New Order from ${formData.name} ($${total.toFixed(2)})`,
       from_name: "RAMpeptides Checkout",
+      replyto: "info@rampeptides.com",
+      autoresponse: `Thank you for your order from RAMpeptides!
+
+Your order total is $${total.toFixed(2)}.
+
+To finalize your order, please complete your payment using this secure link: 
+https://pay.bluevine.com/p/45184023cbd34fb5ad777c33bd7d55b7
+
+Order Summary:
+Subtotal: $${subtotal.toFixed(2)}
+Shipping: $${shipping.toFixed(2)}
+Tax: $${tax.toFixed(2)}
+Total: $${total.toFixed(2)}
+
+Items:
+${cart.map(item => `${item.quantity}x ${item.name} ($${item.price})`).join('\n')}
+
+If you have any questions or need to make changes to your order, just reply to this email.`,
       ...formData,
       items: JSON.stringify(cart, null, 2),
       subtotal: subtotal.toFixed(2),
