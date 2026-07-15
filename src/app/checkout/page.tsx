@@ -2,6 +2,10 @@
 import { useCart } from "@/components/CartContext";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements, PaymentElement, useStripe, useElements } from "@stripe/react-stripe-js";
+
+const stripePromise = loadStripe("pk_live_51TcStTRvNi3NexqU7vAUlAtP7LLDwIvLgTng30AKrNAvZ5trtfyW6FYPepKeZKGbu3GZjEDszMqqgHwI4uR6zM5w00OyJ7YdN5");
 
 const STATE_TAX_RATES: Record<string, number> = {
   AL: 4.0, AK: 0.0, AZ: 5.6, AR: 6.5, CA: 7.25, CO: 2.9, CT: 6.35, DE: 0.0, FL: 6.0, GA: 4.0,
@@ -11,14 +15,70 @@ const STATE_TAX_RATES: Record<string, number> = {
   SD: 4.5, TN: 7.0, TX: 6.25, UT: 6.1, VT: 6.0, VA: 5.3, WA: 6.5, WV: 6.0, WI: 5.0, WY: 4.0
 };
 
+function CheckoutForm({ total, formData }: { total: number, formData: any }) {
+  const stripe = useStripe();
+  const elements = useElements();
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const { cart } = useCart();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!stripe || !elements) return;
+    setLoading(true);
+    setErrorMessage("");
+
+    // Send backup notification of the order to the business email
+    const orderDetails = {
+      access_key: "bd570075-3607-4e8f-9f41-a1576e32b064",
+      subject: `New Checkout Started: ${formData.name} ($${total.toFixed(2)})`,
+      from_name: "RAMpeptides Stripe Checkout",
+      ...formData,
+      items: JSON.stringify(cart, null, 2),
+      total: total.toFixed(2),
+    };
+    
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(orderDetails)
+    }).catch(() => {});
+    
+    const { error } = await stripe.confirmPayment({
+      elements,
+      confirmParams: {
+        return_url: `${window.location.origin}/success?total=${total.toFixed(2)}&paid=true`,
+        receipt_email: formData.email,
+      },
+    });
+
+    if (error) {
+      setErrorMessage(error.message || "An error occurred during payment.");
+      setLoading(false);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-6 mt-8 p-6 md:p-8 bg-zinc-50 dark:bg-zinc-900 border border-[var(--border)] rounded-xl">
+      <h2 className="text-xl font-bold mb-6">Payment Details</h2>
+      <PaymentElement />
+      {errorMessage && <div className="text-red-600 text-sm mt-4 font-semibold">{errorMessage}</div>}
+      <button disabled={!stripe || loading} type="submit" className="w-full mt-8 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50 transition-opacity">
+        {loading ? "Processing..." : `Pay $${total.toFixed(2)}`}
+      </button>
+    </form>
+  );
+}
+
 export default function CheckoutPage() {
-  const { cart, subtotal, clearCart } = useCart();
+  const { cart, subtotal } = useCart();
   const router = useRouter();
   
   const [formData, setFormData] = useState({
     name: "", email: "", street: "", city: "", state: "CA", zip: ""
   });
-  const [loading, setLoading] = useState(false);
+  const [clientSecret, setClientSecret] = useState("");
+  const [loadingClientSecret, setLoadingClientSecret] = useState(false);
 
   // Math
   const shipping = 10.00;
@@ -30,55 +90,29 @@ export default function CheckoutPage() {
     if (cart.length === 0) router.push('/cart');
   }, [cart, router]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleContinueToPayment = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-
-    const orderDetails = {
-      access_key: "bd570075-3607-4e8f-9f41-a1576e32b064",
-      subject: `New Order from ${formData.name} ($${total.toFixed(2)})`,
-      from_name: "RAMpeptides Checkout",
-      replyto: "info@rampeptides.com",
-      autoresponse: `Thank you for your order from RAMpeptides!
-
-Your order total is $${total.toFixed(2)}.
-
-To finalize your order, please complete your payment using this secure link: 
-https://pay.bluevine.com/p/45184023cbd34fb5ad777c33bd7d55b7
-
-Order Summary:
-Subtotal: $${subtotal.toFixed(2)}
-Shipping: $${shipping.toFixed(2)}
-Tax: $${tax.toFixed(2)}
-Total: $${total.toFixed(2)}
-
-Items:
-${cart.map(item => `${item.quantity}x ${item.name} ($${item.price})`).join('\n')}
-
-If you have any questions or need to make changes to your order, just reply to this email.`,
-      ...formData,
-      items: JSON.stringify(cart, null, 2),
-      subtotal: subtotal.toFixed(2),
-      shipping: shipping.toFixed(2),
-      tax: tax.toFixed(2),
-      total: total.toFixed(2),
-    };
-
+    setLoadingClientSecret(true);
+    
     try {
-      await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/create-payment-intent", {
         method: "POST",
-        headers: { 
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(orderDetails)
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items: cart,
+          shippingAddress: formData
+        })
       });
-      clearCart();
-      router.push(`/success?total=${total.toFixed(2)}`);
+      const data = await res.json();
+      if (data.clientSecret) {
+        setClientSecret(data.clientSecret);
+      } else {
+        alert(data.error || "Failed to initialize payment gateway.");
+      }
     } catch (err) {
-      alert("Error submitting order. Please try again.");
-      setLoading(false);
+      alert("Network error starting payment process.");
     }
+    setLoadingClientSecret(false);
   };
 
   if (cart.length === 0) return null;
@@ -99,40 +133,53 @@ If you have any questions or need to make changes to your order, just reply to t
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <label className="block text-xs uppercase tracking-widest mb-2">Name</label>
-          <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.name} onChange={e=>setFormData({...formData, name: e.target.value})} />
-        </div>
-        <div>
-          <label className="block text-xs uppercase tracking-widest mb-2">Email</label>
-          <input required type="email" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.email} onChange={e=>setFormData({...formData, email: e.target.value})} />
-        </div>
-        <div>
-          <label className="block text-xs uppercase tracking-widest mb-2">Street</label>
-          <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.street} onChange={e=>setFormData({...formData, street: e.target.value})} />
-        </div>
-        <div className="grid grid-cols-2 gap-4">
+      {!clientSecret ? (
+        <form onSubmit={handleContinueToPayment} className="space-y-6">
           <div>
-            <label className="block text-xs uppercase tracking-widest mb-2">City</label>
-            <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.city} onChange={e=>setFormData({...formData, city: e.target.value})} />
+            <label className="block text-xs uppercase tracking-widest mb-2">Name</label>
+            <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.name} onChange={e=>setFormData({...formData, name: e.target.value})} />
           </div>
           <div>
-            <label className="block text-xs uppercase tracking-widest mb-2">State</label>
-            <select className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none appearance-none" value={formData.state} onChange={e=>setFormData({...formData, state: e.target.value})}>
-              {Object.keys(STATE_TAX_RATES).map(st => <option key={st} value={st} className="text-black">{st}</option>)}
-            </select>
+            <label className="block text-xs uppercase tracking-widest mb-2">Email</label>
+            <input required type="email" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.email} onChange={e=>setFormData({...formData, email: e.target.value})} />
           </div>
+          <div>
+            <label className="block text-xs uppercase tracking-widest mb-2">Street</label>
+            <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.street} onChange={e=>setFormData({...formData, street: e.target.value})} />
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className="block text-xs uppercase tracking-widest mb-2">City</label>
+              <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.city} onChange={e=>setFormData({...formData, city: e.target.value})} />
+            </div>
+            <div>
+              <label className="block text-xs uppercase tracking-widest mb-2">State</label>
+              <select className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none appearance-none text-black" value={formData.state} onChange={e=>setFormData({...formData, state: e.target.value})}>
+                {Object.keys(STATE_TAX_RATES).map(st => <option key={st} value={st}>{st}</option>)}
+              </select>
+            </div>
+          </div>
+          <div>
+            <label className="block text-xs uppercase tracking-widest mb-2">ZIP Code</label>
+            <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.zip} onChange={e=>setFormData({...formData, zip: e.target.value})} />
+          </div>
+          
+          <button disabled={loadingClientSecret} type="submit" className="w-full mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50 transition-opacity">
+            {loadingClientSecret ? "Securely initializing payment..." : "Continue to Payment"}
+          </button>
+        </form>
+      ) : (
+        <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="opacity-70 text-sm p-5 bg-gray-50 dark:bg-zinc-900 border border-[var(--border)] rounded-lg">
+            <h3 className="font-bold mb-1 uppercase tracking-wider text-xs">Shipping to</h3>
+            <p className="mt-2">{formData.name} <br/> {formData.street} <br/> {formData.city}, {formData.state} {formData.zip}</p>
+            <p className="mt-4 text-xs font-medium">Receipt will be sent securely to: {formData.email}</p>
+          </div>
+          <Elements stripe={stripePromise} options={{ clientSecret, appearance: { theme: 'stripe' } }}>
+            <CheckoutForm total={total} formData={formData} />
+          </Elements>
         </div>
-        <div>
-          <label className="block text-xs uppercase tracking-widest mb-2">ZIP Code</label>
-          <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.zip} onChange={e=>setFormData({...formData, zip: e.target.value})} />
-        </div>
-        
-        <button disabled={loading} type="submit" className="w-full mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50">
-          {loading ? "Processing..." : "Place Order"}
-        </button>
-      </form>
+      )}
     </div>
   );
 }

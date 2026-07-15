@@ -1,34 +1,37 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
+import { useCart } from "@/components/CartContext";
+import Link from "next/link";
 
 function SuccessContent() {
   const searchParams = useSearchParams();
+  const { clearCart } = useCart();
   const total = searchParams.get('total') || "0.00";
+  const paid = searchParams.get('paid');
+
+  useEffect(() => {
+    if (paid) {
+      clearCart();
+    }
+  }, [paid, clearCart]);
 
   return (
     <div className="max-w-2xl mx-auto px-6 py-24 text-center">
-      <h1 className="font-display text-5xl mb-6">Thank You!</h1>
-      <p className="text-lg mb-4">Your order has been submitted successfully.</p>
-      <p className="text-base text-[var(--muted)] mb-8">
-        We have also sent an email with your receipt and a secure payment link. Please check your inbox (and spam/junk folder) to complete your order.
-      </p>
+      <h1 className="font-display text-5xl mb-6">Payment Successful!</h1>
+      <p className="text-lg mb-8">Thank you for your order.</p>
       
-      <div className="bg-gray-100 dark:bg-zinc-900 p-8 my-10 rounded-xl border border-[var(--border)]">
-        <h2 className="text-xl font-bold mb-4">Action Required to Complete Order</h2>
-        <p className="mb-6">Please pay your exact total to finalize processing:</p>
-        <div className="text-4xl font-bold mb-8">${total}</div>
-        
-        <a 
-          href="https://pay.bluevine.com/p/45184023cbd34fb5ad777c33bd7d55b7" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-block bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-10 py-5 rounded-full hover:opacity-90"
-        >
-          Pay Order Total
-        </a>
+      <div className="bg-gray-100 dark:bg-zinc-900 p-8 rounded-xl border border-[var(--border)]">
+        <h2 className="text-xl font-bold mb-4">Order Confirmed</h2>
+        <p className="mb-6">Your payment of <strong className="text-xl">${total}</strong> has been processed securely.</p>
+        <p className="text-sm text-[var(--muted)]">You will receive an email receipt from Stripe shortly. We will begin preparing your order for shipment.</p>
       </div>
-      <p className="text-sm text-[var(--muted)]">If payment is not received within 24 hours, your order will be cancelled.</p>
+      
+      <div className="mt-12">
+        <Link href="/" className="text-sm underline underline-offset-4 hover:text-[var(--muted)] transition-colors">
+          Return to Homepage
+        </Link>
+      </div>
     </div>
   );
 }
