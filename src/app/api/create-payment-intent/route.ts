@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import { catalog } from "@/lib/catalog";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: undefined as any,
+  apiVersion: "2024-04-10" as const,
 });
 
 const STATE_TAX_RATES: Record<string, number> = {
@@ -58,13 +58,13 @@ export async function POST(req: Request) {
       },
       receipt_email: shippingAddress.email,
       metadata: {
-        items: JSON.stringify(items.map((i: any) => ({ slug: i.slug, q: i.quantity }))),
+        items: JSON.stringify(items.map((i: {slug: string, quantity: number}) => ({ slug: i.slug, q: i.quantity }))),
       },
     });
 
     return NextResponse.json({ clientSecret: paymentIntent.client_secret });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Payment Intent Error:", err);
-    return NextResponse.json({ error: err.message || "Server error" }, { status: 500 });
+    return NextResponse.json({ error: (err as Error).message || "Server error" }, { status: 500 });
   }
 }

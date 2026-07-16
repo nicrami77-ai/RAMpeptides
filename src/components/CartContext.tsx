@@ -28,8 +28,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
     const saved = localStorage.getItem("ramcart");
     if (saved) {
       try {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setCart(JSON.parse(saved));
-      } catch (e) {}
+      } catch {
+        // ignore JSON parse errors
+      }
     }
     setMounted(true);
   }, []);

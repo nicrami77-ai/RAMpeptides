@@ -15,7 +15,7 @@ const STATE_TAX_RATES: Record<string, number> = {
   SD: 4.5, TN: 7.0, TX: 6.25, UT: 6.1, VT: 6.0, VA: 5.3, WA: 6.5, WV: 6.0, WI: 5.0, WY: 4.0
 };
 
-function CheckoutForm({ total, formData }: { total: number, formData: any }) {
+function CheckoutForm({ total, formData }: { total: number, formData: Record<string, string> }) {
   const stripe = useStripe();
   const elements = useElements();
   const [loading, setLoading] = useState(false);
@@ -110,6 +110,7 @@ export default function CheckoutPage() {
         alert(data.error || "Failed to initialize payment gateway.");
       }
     } catch (err) {
+      console.error(err);
       alert("Network error starting payment process.");
     }
     setLoadingClientSecret(false);
