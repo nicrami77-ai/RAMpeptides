@@ -2,9 +2,11 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { catalog } from "@/lib/catalog";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2026-06-24.dahlia" as const,
-});
+const stripe = process.env.STRIPE_SECRET_KEY
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: "2026-06-24.dahlia" as const,
+    })
+  : null;
 
 const STATE_TAX_RATES: Record<string, number> = {
   AL: 4.0, AK: 0.0, AZ: 5.6, AR: 6.5, CA: 7.25, CO: 2.9, CT: 6.35, DE: 0.0, FL: 6.0, GA: 4.0,
@@ -16,7 +18,7 @@ const STATE_TAX_RATES: Record<string, number> = {
 
 export async function POST(req: Request) {
   try {
-    if (!process.env.STRIPE_SECRET_KEY) {
+    if (!stripe || !process.env.STRIPE_SECRET_KEY) {
       throw new Error("Stripe secret key is not configured on the server.");
     }
 

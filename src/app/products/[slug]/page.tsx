@@ -35,10 +35,6 @@ export default async function ProductDetailPage({
   const product = getProduct(slug);
   if (!product || product.comingSoon) notFound();
 
-  const mailto = `mailto:info@rampeptides.com?subject=${encodeURIComponent(
-    `Inquiry: ${product.name} ${product.strength}`,
-  )}`;
-
   const notifyMailto = `mailto:info@rampeptides.com?subject=${encodeURIComponent(
     `Notify when back in stock: ${product.name} ${product.strength}`,
   )}&body=${encodeURIComponent(
