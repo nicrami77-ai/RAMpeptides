@@ -31,6 +31,17 @@ export default function LabResultsPage() {
           confirmation. Open any report directly from the verification provider.
         </p>
 
+        <div className="mb-16 rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl bg-black">
+          <video
+            src="/videos/lab-tested-zuri.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-auto"
+          />
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {catalog
             .filter((p) => p.coaUrl)
