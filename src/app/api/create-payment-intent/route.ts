@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import { catalog } from "@/lib/catalog";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-04-10" as const,
+  apiVersion: "2026-06-24.dahlia" as const,
 });
 
 const STATE_TAX_RATES: Record<string, number> = {
