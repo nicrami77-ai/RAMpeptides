@@ -134,16 +134,17 @@ export const catalog: Product[] = [
     verificationKey: "PT1005172026-08",
   },
   {
-    slug: "semax-5mg",
+    slug: "semax-10mg",
     name: "SEMAX",
-    strength: "5mg",
+    strength: "10mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 25,
-    tagline: "Semax 5mg lyophilized. ≥99% purity, third-party verified.",
+    priceUsd: 30,
+    comingSoon: true,
+    tagline: "Semax 10mg lyophilized. ≥99% purity, third-party verified.",
     description:
       "SEMAX is a synthetic peptide supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/semax-5mg.jpg",
+    image: "/products/semax-10mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Lyophilized powder",
