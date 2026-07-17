@@ -2,12 +2,6 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { catalog } from "@/lib/catalog";
 
-const stripe = process.env.STRIPE_SECRET_KEY
-  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
-      apiVersion: "2026-06-24.dahlia" as const,
-    })
-  : null;
-
 const STATE_TAX_RATES: Record<string, number> = {
   AL: 4.0, AK: 0.0, AZ: 5.6, AR: 6.5, CA: 7.25, CO: 2.9, CT: 6.35, DE: 0.0, FL: 6.0, GA: 4.0,
   HI: 4.0, ID: 6.0, IL: 6.25, IN: 7.0, IA: 6.0, KS: 6.5, KY: 6.0, LA: 4.45, ME: 5.5, MD: 6.0,
@@ -18,9 +12,15 @@ const STATE_TAX_RATES: Record<string, number> = {
 
 export async function POST(req: Request) {
   try {
-    if (!stripe || !process.env.STRIPE_SECRET_KEY) {
+    const secretKey = process.env.STRIPE_SECRET_KEY;
+    if (!secretKey) {
+      console.error("Missing STRIPE_SECRET_KEY. Available env keys:", Object.keys(process.env).join(", "));
       throw new Error("Stripe secret key is not configured on the server.");
     }
+
+    const stripe = new Stripe(secretKey, {
+      apiVersion: "2026-06-24.dahlia" as const,
+    });
 
     const { items, shippingAddress } = await req.json();
 
