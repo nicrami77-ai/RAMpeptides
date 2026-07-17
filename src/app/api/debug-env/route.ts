@@ -4,11 +4,8 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   const allKeys = Object.keys(process.env);
+  const possibleKeys = allKeys.filter(k => k.toLowerCase().includes('strip') || k.toLowerCase().includes('sk_'));
   return NextResponse.json({
-    totalKeys: allKeys.length,
-    sampleKeys: allKeys.slice(0, 10),
-    hasVercel: allKeys.includes("VERCEL"),
-    vercelEnv: process.env.VERCEL_ENV,
-    hasStripeKeyLiteral: !!process.env.STRIPE_SECRET_KEY,
+    possibleKeys,
   });
 }
