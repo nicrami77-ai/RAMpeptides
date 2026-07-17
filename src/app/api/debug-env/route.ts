@@ -3,9 +3,9 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
+  const envKeys = Object.keys(process.env).filter(k => k.toLowerCase().includes('stripe'));
   return NextResponse.json({
+    stripeKeysFound: envKeys,
     hasStripeKey: !!process.env.STRIPE_SECRET_KEY,
-    keyLength: process.env.STRIPE_SECRET_KEY ? process.env.STRIPE_SECRET_KEY.length : 0,
-    prefix: process.env.STRIPE_SECRET_KEY ? process.env.STRIPE_SECRET_KEY.substring(0, 7) : null,
   });
 }
