@@ -3,10 +3,12 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
+  const allKeys = Object.keys(process.env);
   return NextResponse.json({
-    nodeEnv: process.env.NODE_ENV,
-    isProcessEnvObject: typeof process.env === 'object',
+    totalKeys: allKeys.length,
+    sampleKeys: allKeys.slice(0, 10),
+    hasVercel: allKeys.includes("VERCEL"),
+    vercelEnv: process.env.VERCEL_ENV,
     hasStripeKeyLiteral: !!process.env.STRIPE_SECRET_KEY,
-    stripeKeyLength: process.env.STRIPE_SECRET_KEY ? process.env.STRIPE_SECRET_KEY.length : 0,
   });
 }
