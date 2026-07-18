@@ -10,16 +10,18 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="w-full">
-        <div className="relative w-full bg-black border-b border-[var(--border)]">
-          <video
-            src="/rampeptides-holographic.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-auto object-cover"
-          />
+      <section className="px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto pt-16 md:pt-24">
+          <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
+            <video
+              src="/rampeptides-holographic.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
