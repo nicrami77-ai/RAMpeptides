@@ -53,6 +53,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/extras" className="hover:text-[var(--muted)]">
+                  Extras
+                </Link>
+              </li>
+              <li>
                 <Link href="/lab-results" className="hover:text-[var(--muted)]">
                   Lab Results
                 </Link>
