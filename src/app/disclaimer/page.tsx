@@ -17,17 +17,6 @@ export default function DisclaimerPage() {
           Disclaimer.
         </h1>
 
-        <div className="mb-12 aspect-square max-w-lg relative rounded-xl overflow-hidden bg-black">
-          <video
-            src="/zuri-disclaimer.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          />
-        </div>
-
         <div className="space-y-6 text-base text-[var(--muted)] leading-relaxed">
           <p>
             All products sold by RAMpeptides are intended{" "}
@@ -73,6 +62,17 @@ export default function DisclaimerPage() {
             By accessing this site you acknowledge that you have read,
             understood, and agreed to this disclaimer in its entirety.
           </p>
+        </div>
+
+        <div className="mt-16 aspect-square max-w-lg mx-auto relative rounded-xl overflow-hidden bg-black">
+          <video
+            src="/zuri-disclaimer.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
