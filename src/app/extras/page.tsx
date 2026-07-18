@@ -19,19 +19,23 @@ export default function ExtrasPage() {
   return (
     <>
       {/* Top Video Section */}
-      <section className="w-full bg-black">
-        <video
-          src="/extras-concert.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-auto max-h-[80vh] object-contain"
-        />
+      <section className="px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto pt-16 md:pt-24">
+          <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
+            <video
+              src="/extras-concert.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Text Section */}
-      <section className="w-full bg-[var(--background)] px-6 lg:px-10 py-16 md:py-24 border-b border-[var(--border)]">
+      <section className="w-full bg-[var(--background)] px-6 lg:px-10 py-16 border-b border-[var(--border)]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-[var(--foreground)] tracking-[-0.03em] leading-tight">
             Here at RAMpeptides we drop knowledge, beats and extras.<br/>Are you Extra?
@@ -58,16 +62,18 @@ export default function ExtrasPage() {
       </section>
 
       {/* Bottom Video Section (Original DJ Video) */}
-      <section className="w-full">
-        <div className="relative w-full bg-black border-t border-[var(--border)]">
-          <video
-            src="/extras-bg.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-[50vh] md:h-[75vh] object-cover"
-          />
+      <section className="px-6 lg:px-10 pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
+            <video
+              src="/extras-bg.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
     </>
