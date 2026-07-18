@@ -7,12 +7,13 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative px-6 lg:px-10 overflow-hidden text-white">
         <div className="absolute inset-0 z-0 bg-black">
-          <Image
-            src="/american-flag-bg.jpg"
-            alt="American Flag Background"
-            fill
-            priority
-            className="object-cover opacity-60"
+          <video
+            src="/american-flag-bg.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
