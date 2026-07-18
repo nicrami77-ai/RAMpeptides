@@ -166,7 +166,7 @@ export default async function ProductDetailPage({
                   aria-disabled="true"
                   className="inline-block bg-[var(--muted)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full cursor-not-allowed opacity-80"
                 >
-                  Out of stock
+                  {product.stockStatus || "Out of stock"}
                 </span>
                 <a
                   href={notifyMailto}

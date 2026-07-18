@@ -19,6 +19,7 @@ export type Product = {
   verificationKey?: string;
   comingSoon?: boolean;
   outOfStock?: boolean;
+  stockStatus?: string;
 };
 
 const NOTICE =
@@ -74,6 +75,8 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 60,
+    outOfStock: true,
+    stockStatus: "SOLD OUT - ORDERED",
     tagline:
       "20mg lyophilized peptide preparation. ≥99% purity, third-party verified.",
     description:
@@ -96,6 +99,8 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
+    outOfStock: true,
+    stockStatus: "SOLD OUT - ORDERED",
     tagline:
       "Growth hormone releasing hormone (GHRH) analog. 10mg lyophilized, ≥99% purity. Reference compound for in-vitro use.",
     description:

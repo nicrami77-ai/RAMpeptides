@@ -24,8 +24,8 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
         {product.outOfStock && !product.comingSoon && (
           <div className="absolute inset-x-0 top-8 bg-black/85 backdrop-blur-sm py-3 text-center">
-            <div className="text-white text-xl md:text-2xl font-display tracking-[6px] font-semibold">
-              OUT OF STOCK
+            <div className="text-white text-xl md:text-2xl font-display tracking-[6px] font-semibold uppercase">
+              {product.stockStatus || "OUT OF STOCK"}
             </div>
           </div>
         )}
@@ -47,7 +47,7 @@ export default function ProductCard({ product }: { product: Product }) {
             </span>
           ) : product.outOfStock ? (
             <span className="uppercase tracking-[0.18em] text-[10px] text-[var(--muted)]">
-              Out of stock
+              {product.stockStatus || "Out of stock"}
             </span>
           ) : (
             <>${product.priceUsd}</>
