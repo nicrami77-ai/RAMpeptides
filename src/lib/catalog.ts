@@ -143,7 +143,7 @@ export const catalog: Product[] = [
     comingSoon: true,
     tagline: "Semax 10mg lyophilized. ≥99% purity, third-party verified.",
     description:
-      "SEMAX is a synthetic peptide supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "SEMAX is a synthetic peptide supplied as a 10mg lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/semax-10mg.jpg",
     specs: {
       purity: "≥99%",
