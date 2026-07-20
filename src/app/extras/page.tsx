@@ -18,6 +18,15 @@ export default function ExtrasPage() {
 
   return (
     <>
+      {/* EXTRAS label */}
+      <section className="px-6 lg:px-10 pt-10">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
+            EXTRAS…
+          </p>
+        </div>
+      </section>
+
       {/* Top Video Section */}
       <section className="px-6 lg:px-10">
         <div className="max-w-7xl mx-auto pt-16 md:pt-24">
