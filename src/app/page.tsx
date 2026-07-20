@@ -96,6 +96,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Extras */}
+      <section className="px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto text-center pb-4">
+          <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)]">
+            EXTRAS…
+          </p>
+        </div>
+      </section>
+
       {/* Video Loop */}
       <section className="px-6 lg:px-10 pb-20 md:pb-28">
         <div className="max-w-7xl mx-auto">

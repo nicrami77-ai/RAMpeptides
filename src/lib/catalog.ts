@@ -216,6 +216,8 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
+    outOfStock: true,
+    stockStatus: "SOLD OUT - ORDERED",
     tagline: "KPV 10mg lyophilized. ≥99% purity, third-party verified.",
     description:
       "KPV (Lysine-Proline-Valine) supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
