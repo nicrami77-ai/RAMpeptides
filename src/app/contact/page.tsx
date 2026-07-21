@@ -49,8 +49,8 @@ export default function ContactPage() {
           </figcaption>
         </figure>
 
-        <p className="mt-10 font-display text-3xl md:text-4xl tracking-tight text-center">
-          How can we help 🐾
+        <p className="mt-10 font-display text-3xl md:text-5xl lg:text-6xl tracking-tight text-center">
+          How can we help 🫒
         </p>
       </div>
     </section>
