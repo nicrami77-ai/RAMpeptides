@@ -120,7 +120,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    comingSoon: true,
     tagline:
       "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound, ≥99% purity.",
     description:
