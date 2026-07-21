@@ -21,7 +21,7 @@ export default function ExtrasPage() {
       {/* EXTRAS label */}
       <section className="px-6 lg:px-10 pt-10">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
+          <p className="uppercase tracking-[0.22em] text-xl md:text-2xl font-bold text-[var(--foreground)] mb-3">
             EXTRAS…
           </p>
         </div>
