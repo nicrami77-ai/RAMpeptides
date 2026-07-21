@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto pt-16 md:pt-24">
           <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
             <video
-              src="/rampeptides-holographic.mp4"
+              src="/rampeptides-gold-3d.mp4"
               autoPlay
               loop
               muted
