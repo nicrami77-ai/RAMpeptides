@@ -26,6 +26,17 @@ export default function ProductsPage() {
         </div>
       </section>
 
+      {/* Large centered gold logo test */}
+      <section className="px-6 lg:px-10 pb-8">
+        <div className="max-w-7xl mx-auto flex justify-center">
+          <img
+            src="/rampeptides-gold-logo.png"
+            alt="RAMpeptides"
+            className="w-full max-w-[420px] h-auto"
+          />
+        </div>
+      </section>
+
       <section className="px-6 lg:px-10">
         <div className="max-w-7xl mx-auto py-16 md:py-24">
           <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-4">

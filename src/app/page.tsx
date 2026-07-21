@@ -112,6 +112,17 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Large centered gold logo test (homepage) */}
+      <section className="px-6 lg:px-10 pb-12">
+        <div className="max-w-7xl mx-auto flex justify-center">
+          <img
+            src="/rampeptides-gold-logo.png"
+            alt="RAMpeptides"
+            className="w-full max-w-[480px] h-auto"
+          />
+        </div>
+      </section>
+
       {/* Featured catalog */}
       <section className="border-t border-[var(--border)] px-6 lg:px-10">
         <div className="max-w-7xl mx-auto py-20 md:py-28 text-center flex flex-col items-center">
