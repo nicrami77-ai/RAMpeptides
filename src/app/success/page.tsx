@@ -24,7 +24,15 @@ function SuccessContent() {
       <div className="bg-gray-100 dark:bg-zinc-900 p-8 rounded-xl border border-[var(--border)]">
         <h2 className="text-xl font-bold mb-4">Order Confirmed</h2>
         <p className="mb-6">Your payment of <strong className="text-xl">${total}</strong> has been processed securely.</p>
-        <p className="text-sm text-[var(--muted)]">You will receive an email receipt from Stripe shortly. We will begin preparing your order for shipment.</p>
+        <p className="text-sm text-[var(--muted)] mb-8">You will receive an email receipt from Stripe shortly. We will begin preparing your order for shipment.</p>
+        
+        <div className="flex justify-center mt-6">
+          <img 
+            src="/zuri-zen.jpg" 
+            alt="Thank you from Zuri" 
+            className="w-full max-w-[320px] rounded-lg border border-[var(--border)] shadow-md"
+          />
+        </div>
       </div>
       
       <div className="mt-12">
