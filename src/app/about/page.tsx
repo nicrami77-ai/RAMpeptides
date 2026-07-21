@@ -130,6 +130,16 @@ export default function AboutPage() {
               Read the full disclaimer →
             </Link>
           </div>
+
+          <div className="pt-16 mt-16 border-t border-[var(--border)] flex justify-center">
+            <div className="w-full max-w-xl">
+              <img 
+                src="/irta-symbol.jpg" 
+                alt="IRTA - In memory of my first dog" 
+                className="w-full h-auto rounded-xl border border-[var(--border)] shadow-md"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
