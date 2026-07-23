@@ -249,7 +249,7 @@ export const catalog: Product[] = [
   {
     slug: "ghk-cu-blue-copper-serum",
     name: "GHK-Cu Blue Copper Serum",
-    strength: "0.34 oz",
+    strength: "0.34 oz roller",
     category: "Topical",
     form: "Topical",
     priceUsd: 15,
@@ -261,6 +261,25 @@ export const catalog: Product[] = [
     specs: {
       purity: "Copper peptide serum",
       form: "Liquid serum · roller bottle",
+      storage: "Store upright at room temperature, shielded from light",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "ghk-cu-blue-copper-serum-30ml",
+    name: "GHK-Cu Blue Copper Serum",
+    strength: "1 oz / 30mL dropper",
+    category: "Topical",
+    form: "Topical",
+    priceUsd: 30,
+    tagline:
+      "SYLAX GHK-Cu blue copper peptide serum in an amber glass dropper bottle. 1 oz / 30mL.",
+    description:
+      "SYLAX GHK-Cu (Blue Copper Peptide) serum supplied in a 1 oz (30mL) amber glass dropper bottle with black bulb pipette. Formulated as a topical copper-peptide research preparation. Store upright at room temperature, away from prolonged light and heat. Reference material supplied for laboratory and research applications only — not for human or animal consumption.",
+    image: "/products/ghk-cu-blue-copper-serum-30ml.jpg",
+    specs: {
+      purity: "Copper peptide serum",
+      form: "Liquid serum · amber glass dropper bottle",
       storage: "Store upright at room temperature, shielded from light",
       notice: NOTICE,
     },
