@@ -486,15 +486,15 @@ export const catalog: Product[] = [
     strength: "4-vial",
     category: "Accessory",
     form: "Case",
-    priceUsd: 2,
+    priceUsd: 1,
     tagline:
-      "Clear pharmaceutical-grade 4-vial storage case. Hinged snap lid. Free gift with any order of 2 or more peptide vials.",
+      "Clear pharmaceutical-grade 4-vial storage case. Snap lid. Free gift with any order of 2 or more peptide vials.",
     description:
-      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a hinged snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Automatically included free with the purchase of 2 or more peptide vials. Storage accessory only; not a research compound.",
+      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Automatically included free with the purchase of 2 or more peptide vials. Storage accessory only; not a research compound.",
     image: "/products/vault-case.jpg",
     specs: {
       purity: "Pharmaceutical-grade clear plastic",
-      form: "Hinged snap-top 4-cavity case",
+      form: "Snap-top 4-cavity case",
       storage: "Room temperature",
       notice:
         "Storage accessory only. Automatically included free with the purchase of 2 or more peptide vials.",
