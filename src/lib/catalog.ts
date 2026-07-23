@@ -326,6 +326,63 @@ export const catalog: Product[] = [
       notice: NOTICE,
     },
   },
+  {
+    slug: "ss-31-10mg",
+    name: "SS-31",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    tagline:
+      "Mitochondria-targeting tetrapeptide (Elamipretide). Lyophilized, ≥99% purity.",
+    description:
+      "SS-31 (Elamipretide) is a mitochondria-targeting aromatic-cationic tetrapeptide studied for its interaction with cardiolipin on the inner mitochondrial membrane. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ss-31-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "dsip-5mg",
+    name: "DSIP",
+    strength: "5mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    tagline:
+      "Delta Sleep-Inducing Peptide. 5mg lyophilized, ≥99% purity.",
+    description:
+      "DSIP (Delta Sleep-Inducing Peptide) is a nonapeptide originally isolated from cerebral venous blood and studied in sleep-regulation and neuroendocrine research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/dsip-5mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "ara-290-10mg",
+    name: "ARA-290",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    tagline:
+      "EPO-derived helix-B surface peptide (Cibinetide). Lyophilized, ≥99% purity.",
+    description:
+      "ARA-290 (Cibinetide) is an 11-amino-acid peptide derived from the helix-B surface of erythropoietin, studied for tissue-protective and innate-repair receptor (IRR) research applications without classical hematopoietic EPO activity. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ara-290-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
 
   {
     slug: "rubber-caps",
