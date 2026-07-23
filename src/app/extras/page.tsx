@@ -8,6 +8,8 @@ export const metadata: Metadata = {
 };
 
 const EXTRAS_SLUGS = [
+  "ghk-cu-blue-copper-serum",
+  "ghk-cu-blue-copper-serum-30ml",
   "rubber-caps",
   "reconstitution-vial-10ml",
   "vault-case",
