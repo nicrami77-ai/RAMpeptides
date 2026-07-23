@@ -252,7 +252,7 @@ export const catalog: Product[] = [
     strength: "0.34 oz",
     category: "Topical",
     form: "Topical",
-    priceUsd: 10,
+    priceUsd: 15,
     tagline:
       "SYLAX GHK-Cu blue copper peptide serum in a stainless steel roller bottle. 0.34 oz.",
     description:
