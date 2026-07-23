@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { catalog } from "@/lib/catalog";
 
 export type CartItem = {
   slug: string;
@@ -20,6 +21,18 @@ type CartContextType = {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
+const priceBySlug = Object.fromEntries(
+  catalog.map((product) => [product.slug, product.priceUsd]),
+);
+
+function withLivePrices(items: CartItem[]): CartItem[] {
+  return items.map((item) => {
+    const livePrice = priceBySlug[item.slug];
+    if (typeof livePrice !== "number" || livePrice === item.price) return item;
+    return { ...item, price: livePrice };
+  });
+}
+
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [mounted, setMounted] = useState(false);
@@ -28,8 +41,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
     const saved = localStorage.getItem("ramcart");
     if (saved) {
       try {
+        const parsed = JSON.parse(saved) as CartItem[];
         // eslint-disable-next-line react-hooks/set-state-in-effect
-        setCart(JSON.parse(saved));
+        setCart(withLivePrices(Array.isArray(parsed) ? parsed : []));
       } catch {
         // ignore JSON parse errors
       }
