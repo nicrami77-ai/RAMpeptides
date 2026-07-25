@@ -179,6 +179,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 35,
+    outOfStock: true,
     tagline: "CJC-1295 (No DAC) + Ipamorelin blend 10mg lyophilized. ≥99% purity.",
     description:
       "CJC-1295 (No DAC)/Ipamorelin blend supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
