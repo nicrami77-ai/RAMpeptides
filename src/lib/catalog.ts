@@ -97,8 +97,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    outOfStock: true,
-    stockStatus: "SOLD OUT - ORDERED",
     tagline:
       "Growth hormone releasing hormone (GHRH) analog. 10mg lyophilized, ≥99% purity. Reference compound for in-vitro use.",
     description:
