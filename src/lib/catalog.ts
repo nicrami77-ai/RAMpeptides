@@ -213,8 +213,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    outOfStock: true,
-    stockStatus: "SOLD OUT - ORDERED",
     tagline: "KPV 10mg lyophilized. ≥99% purity, third-party verified.",
     description:
       "KPV (Lysine-Proline-Valine) supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
@@ -306,7 +304,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    comingSoon: true,
     tagline: "Alpha-MSH analog. Lyophilized reference compound, ≥99% purity.",
     description: "Melanotan-2 (MT-2) is a synthetic cyclic heptapeptide analog of alpha-melanocyte-stimulating hormone (α-MSH). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/melanotan-10mg.jpg",
