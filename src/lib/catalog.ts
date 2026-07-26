@@ -495,6 +495,25 @@ export const catalog: Product[] = [
       notice: "Merch accessory only.",
     },
   },
+  {
+    slug: "workout-tshirt-2xl",
+    name: "RAMpeptides Workout T-Shirt",
+    strength: "2XL",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 15,
+    tagline:
+      "Black RAMpeptides workout tee with American flag logo. Size 2XL.",
+    description:
+      "RAMpeptides workout t-shirt in black with the RAMpeptides American flag logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Merch accessory only; not a research compound.",
+    image: "/products/workout-tshirt-2xl.jpg",
+    specs: {
+      purity: "Cotton blend athletic tee",
+      form: "T-shirt · size 2XL",
+      storage: "Machine wash cold, tumble dry low",
+      notice: "Merch accessory only.",
+    },
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
