@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 const EXTRAS_SLUGS = [
-  "ghk-cu-blue-copper-serum",
   "ghk-cu-blue-copper-serum-30ml",
   "rubber-caps",
   "reconstitution-vial-10ml",
@@ -75,6 +74,31 @@ export default function ExtrasPage() {
       {/* Bottom Video Section (Original DJ Video) */}
       <section className="px-6 lg:px-10 pb-16 md:pb-24">
         <div className="max-w-7xl mx-auto">
+          <div className="border-t border-[var(--border)] max-w-4xl mx-auto mb-10 md:mb-14" />
+
+          <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+            <p className="uppercase tracking-[0.18em] text-sm md:text-base font-semibold text-[var(--foreground)] mb-5">
+              STILL WANT MORE EXTRA? Follow us at X.com
+            </p>
+            <a
+              href="https://x.com/rampeptides"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--foreground)] px-6 py-3 text-sm font-semibold text-[var(--background)] transition-opacity hover:opacity-90"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-4 w-4"
+                aria-hidden="true"
+              >
+                <path d="M18.244 2H21.5l-7.5 8.57L22.5 22h-6.812l-5.34-6.98L4.25 22H1l8.02-9.165L1.5 2h6.98l4.83 6.39L18.244 2Zm-1.194 18h1.86L7.06 4H5.1l11.95 16Z" />
+              </svg>
+              Follow @rampeptides
+            </a>
+          </div>
+
           <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
             <video
               src="/extras-bg.mp4"
