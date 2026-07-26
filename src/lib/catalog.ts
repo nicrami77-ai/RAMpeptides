@@ -14,6 +14,8 @@ export type Product = {
     form: string;
     storage: string;
     notice: string;
+    /** Optional override for the blurb under the Specifications heading. */
+    intro?: string;
   };
   coaUrl?: string;
   verificationKey?: string;
@@ -511,7 +513,8 @@ export const catalog: Product[] = [
       purity: "Cotton blend athletic tee",
       form: "T-shirt · size 2XL · white",
       storage: "Machine wash cold, tumble dry low",
-      notice:
+      notice: "Merch accessory only. Limited stock: 2 available.",
+      intro:
         "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
     },
   },
@@ -531,7 +534,8 @@ export const catalog: Product[] = [
       purity: "Foam front · mesh back",
       form: "Snapback trucker hat",
       storage: "Spot clean only",
-      notice:
+      notice: "Merch accessory only. Limited stock: 1 available.",
+      intro:
         "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
     },
   },

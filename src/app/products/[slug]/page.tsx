@@ -136,9 +136,8 @@ export default async function ProductDetailPage({
                 Specifications
               </h2>
               <p className="text-sm text-[var(--muted)] leading-relaxed mb-6">
-                Manufactured at a verified purity of 99% or higher, it is
-                intended solely for {isTopical ? "" : "professional "}laboratory
-                testing and research environments.
+                {product.specs.intro ??
+                  `Manufactured at a verified purity of 99% or higher, it is intended solely for ${isTopical ? "" : "professional "}laboratory testing and research environments.`}
               </p>
               <dl className="divide-y divide-[var(--border)] border-y border-[var(--border)]">
                 {[
