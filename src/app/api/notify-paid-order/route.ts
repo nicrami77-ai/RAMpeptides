@@ -88,60 +88,30 @@ export async function POST(req: Request) {
     const email = pi.receipt_email || "(none)";
     const customerName = ship?.name || pi.metadata?.customer_name || "Customer";
 
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY || "bd570075-3607-4e8f-9f41-a1576e32b064";
-
-    const notifyRes = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: accessKey,
-        subject: `PAID ORDER: ${customerName} (${total})`,
-        from_name: "RAMpeptides Paid Orders",
-        name: customerName,
-        email,
-        payment_intent: pi.id,
-        total,
-        currency: (pi.currency || "usd").toUpperCase(),
-        items: itemLines,
-        shipping: shippingBlock || "(none)",
-        description: pi.description || "",
-        message: [
-          "PAID website order (Stripe confirmed).",
-          `PaymentIntent: ${pi.id}`,
-          `Total: ${total}`,
-          `Email: ${email}`,
-          "",
-          "Items:",
-          itemLines,
-          "",
-          "Ship to:",
-          shippingBlock || "(none)",
-        ].join("\n"),
-      }),
-    });
-
-    if (!notifyRes.ok) {
-      const text = await notifyRes.text();
-      throw new Error(`Web3Forms failed ${notifyRes.status}: ${text.slice(0, 200)}`);
-    }
-
+    // NOTE: Web3Forms is Cloudflare-blocked from Vercel server IPs (403 challenge).
+    // Paid-order email is sent by the local stripe-purchase-watcher via msmail.
+    // This endpoint only verifies payment + marks metadata so the success page
+    // can confirm server-side without depending on Web3Forms.
     await stripe.paymentIntents.update(pi.id, {
       metadata: {
         ...pi.metadata,
         order_notified: "true",
         order_notified_at: new Date().toISOString(),
+        order_notify_channel: "stripe-watcher-msmail",
       },
     });
 
     return NextResponse.json({
       ok: true,
       notified: true,
+      channel: "stripe-watcher-msmail",
       status: pi.status,
       paymentIntentId: pi.id,
       total,
+      customerName,
+      email,
+      items: itemLines,
+      shipping: shippingBlock || "(none)",
     });
   } catch (err: unknown) {
     console.error("notify-paid-order error:", err);
