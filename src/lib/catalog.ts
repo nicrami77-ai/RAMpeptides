@@ -524,13 +524,14 @@ export const catalog: Product[] = [
     tagline:
       "Black snapback trucker hat with RAMpeptides American flag logo. Limited stock — only 1 available.",
     description:
-      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides American flag logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
+      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides Zuri logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
     image: "/products/trucker-hat.jpg",
     specs: {
       purity: "Foam front · mesh back",
       form: "Snapback trucker hat",
       storage: "Spot clean only",
-      notice: "Merch accessory only. Limited stock: 1 available.",
+      notice:
+        "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
     },
   },
 ];
