@@ -488,13 +488,15 @@ export const catalog: Product[] = [
     tagline:
       "Double-walled stainless steel slim can cooler with RAMpeptides logo. Limited stock — only 1 available.",
     description:
-      "RAMpeptides slim can cooler / insulator in double-walled stainless steel. Fits standard slim cans and works as a 2-in-1 insulated can cooler cup. Features the RAMpeptides logo with American flag detail. Limited stock: only 1 available. Merch accessory only; not a research compound.",
+      "RAMpeptides slim can cooler / insulator in double-walled stainless steel. Fits standard slim cans and works as a 2-in-1 insulated can cooler cup. Features the RAMpeptides. Limited stock: only 1 available. Merch accessory only; not a research compound.",
     image: "/products/slim-can-cooler.jpg",
     specs: {
       purity: "Double-walled stainless steel",
       form: "Slim can cooler · 2-in-1 cup",
       storage: "Room temperature",
       notice: "Merch accessory only. Limited stock: 1 available.",
+      intro:
+        "Manufactured solely for professional laboratory testing and research environments to keep your drinks colder longer. Don’t over think this Karen.",
     },
   },
   {
