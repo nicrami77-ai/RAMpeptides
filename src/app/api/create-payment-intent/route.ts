@@ -53,9 +53,12 @@ export async function POST(req: Request) {
     const tax = subtotal * (taxRate / 100);
     const total = subtotal + shipping + tax;
 
+    // Card + Link only. Amazon Pay / Klarna redirects were causing incomplete
+    // "checkout started" noise and abandoned requires_action intents.
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Math.round(total * 100),
       currency: "usd",
+      payment_method_types: ["card", "link"],
       description: description.slice(0, -2),
       shipping: {
         name: shippingAddress.name,
@@ -69,7 +72,13 @@ export async function POST(req: Request) {
       },
       receipt_email: shippingAddress.email,
       metadata: {
-        items: JSON.stringify(items.map((i: {slug: string, quantity: number}) => ({ slug: i.slug, q: i.quantity }))),
+        items: JSON.stringify(
+          items.map((i: { slug: string; quantity: number }) => ({
+            slug: i.slug,
+            q: i.quantity,
+          })),
+        ),
+        customer_name: shippingAddress.name || "",
       },
     });
 

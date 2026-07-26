@@ -28,26 +28,12 @@ function CheckoutForm({ total, formData }: { total: number, formData: Record<str
     setLoading(true);
     setErrorMessage("");
 
-    // Send backup notification of the order to the business email
-    const orderDetails = {
-      access_key: "bd570075-3607-4e8f-9f41-a1576e32b064",
-      subject: `New Checkout Started: ${formData.name} ($${total.toFixed(2)})`,
-      from_name: "RAMpeptides Stripe Checkout",
-      ...formData,
-      items: JSON.stringify(cart, null, 2),
-      total: total.toFixed(2),
-    };
-    
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify(orderDetails)
-    }).catch(() => {});
-    
+    // Paid-order email is sent only after Stripe confirms success
+    // (see /success + /api/notify-paid-order). Do not email on Pay click.
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${window.location.origin}/success?total=${total.toFixed(2)}&paid=true`,
+        return_url: `${window.location.origin}/success?total=${total.toFixed(2)}`,
         receipt_email: formData.email,
       },
     });
@@ -61,7 +47,7 @@ function CheckoutForm({ total, formData }: { total: number, formData: Record<str
   return (
     <form onSubmit={handleSubmit} className="space-y-6 mt-8 p-6 md:p-8 bg-zinc-50 dark:bg-zinc-900 border border-[var(--border)] rounded-xl">
       <h2 className="text-xl font-bold mb-6">Payment Details</h2>
-      <PaymentElement />
+      <PaymentElement options={{ layout: "tabs" }} />
       {errorMessage && <div className="text-red-600 text-sm mt-4 font-semibold">{errorMessage}</div>}
       <button disabled={!stripe || loading} type="submit" className="w-full mt-8 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50 transition-opacity">
         {loading ? "Processing..." : `Pay $${total.toFixed(2)}`}
