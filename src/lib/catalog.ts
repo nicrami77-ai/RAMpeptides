@@ -484,15 +484,15 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 20,
     tagline:
-      "Double-walled stainless steel slim can cooler with RAMpeptides logo. 2-in-1 insulated can cooler cup.",
+      "Double-walled stainless steel slim can cooler with RAMpeptides logo. Limited stock — only 1 available.",
     description:
-      "RAMpeptides slim can cooler / insulator in double-walled stainless steel. Fits standard slim cans and works as a 2-in-1 insulated can cooler cup. Features the RAMpeptides logo with American flag detail. Merch accessory only; not a research compound.",
+      "RAMpeptides slim can cooler / insulator in double-walled stainless steel. Fits standard slim cans and works as a 2-in-1 insulated can cooler cup. Features the RAMpeptides logo with American flag detail. Limited stock: only 1 available. Merch accessory only; not a research compound.",
     image: "/products/slim-can-cooler.jpg",
     specs: {
       purity: "Double-walled stainless steel",
       form: "Slim can cooler · 2-in-1 cup",
       storage: "Room temperature",
-      notice: "Merch accessory only.",
+      notice: "Merch accessory only. Limited stock: 1 available.",
     },
   },
   {
@@ -503,15 +503,15 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 10,
     tagline:
-      "Black RAMpeptides workout tee with American flag logo. Size 2XL.",
+      "White RAMpeptides workout tee with American flag logo. Size 2XL. Limited stock — 2 available.",
     description:
-      "RAMpeptides workout t-shirt in black with the RAMpeptides American flag logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Merch accessory only; not a research compound.",
+      "RAMpeptides workout t-shirt in white with the RAMpeptides American flag logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: 2 available. Merch accessory only; not a research compound.",
     image: "/products/workout-tshirt-2xl.jpg",
     specs: {
       purity: "Cotton blend athletic tee",
-      form: "T-shirt · size 2XL",
+      form: "T-shirt · size 2XL · white",
       storage: "Machine wash cold, tumble dry low",
-      notice: "Merch accessory only.",
+      notice: "Merch accessory only. Limited stock: 2 available.",
     },
   },
   {
@@ -522,15 +522,15 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 8,
     tagline:
-      "Black snapback trucker hat with RAMpeptides American flag logo.",
+      "Black snapback trucker hat with RAMpeptides American flag logo. Limited stock — only 1 available.",
     description:
-      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides American flag logo on the front panel. One-size adjustable fit. Merch accessory only; not a research compound.",
+      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides American flag logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
     image: "/products/trucker-hat.jpg",
     specs: {
       purity: "Foam front · mesh back",
       form: "Snapback trucker hat",
       storage: "Spot clean only",
-      notice: "Merch accessory only.",
+      notice: "Merch accessory only. Limited stock: 1 available.",
     },
   },
 ];
