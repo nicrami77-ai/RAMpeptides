@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { catalog, getProduct } from "@/lib/catalog";
+import { catalog, getProduct, isExtrasProduct } from "@/lib/catalog";
 import CoaQrCode from "@/components/CoaQrCode";
 import AddToCartButton from "@/components/AddToCartButton";
 
@@ -42,6 +42,7 @@ export default async function ProductDetailPage({
   )}`;
 
   const isTopical = product.category === "Topical";
+  const isExtra = isExtrasProduct(product.slug);
 
   return (
     <>
@@ -61,11 +62,11 @@ export default async function ProductDetailPage({
       <section className="px-6 lg:px-10">
         <div className="max-w-7xl mx-auto py-12 md:py-16">
           <Link
-            href="/products"
-          className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] tracking-wide"
-        >
-          ← Back to catalog
-        </Link>
+            href={isExtra ? "/extras" : "/products"}
+            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] tracking-wide"
+          >
+            {isExtra ? "← Back to extras" : "← Back to catalog"}
+          </Link>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
           {/* Image */}

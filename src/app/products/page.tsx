@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { catalog } from "@/lib/catalog";
+import { catalog, isExtrasProduct } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function ProductsPage() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {catalog.filter(p => !["rubber-caps", "reconstitution-vial-10ml", "vault-case", "slim-can-cooler", "workout-tshirt-2xl", "trucker-hat", "ghk-cu-blue-copper-serum", "ghk-cu-blue-copper-serum-30ml"].includes(p.slug)).map((p) => (
+            {catalog.filter((p) => !isExtrasProduct(p.slug)).map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}
           </div>

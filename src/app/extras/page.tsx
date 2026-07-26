@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { catalog } from "@/lib/catalog";
+import { catalog, isExtrasProduct } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
@@ -7,18 +7,8 @@ export const metadata: Metadata = {
   description: "Accessories, merch, and extras.",
 };
 
-const EXTRAS_SLUGS = [
-  "ghk-cu-blue-copper-serum-30ml",
-  "rubber-caps",
-  "reconstitution-vial-10ml",
-  "vault-case",
-  "slim-can-cooler",
-  "workout-tshirt-2xl",
-  "trucker-hat",
-];
-
 export default function ExtrasPage() {
-  const extras = catalog.filter((p) => EXTRAS_SLUGS.includes(p.slug));
+  const extras = catalog.filter((p) => isExtrasProduct(p.slug));
 
   return (
     <>

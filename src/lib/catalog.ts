@@ -543,6 +543,21 @@ export const catalog: Product[] = [
   },
 ];
 
+/** Merch / accessories shown on /extras (not main peptide catalog). */
+export const EXTRAS_SLUGS = [
+  "ghk-cu-blue-copper-serum-30ml",
+  "rubber-caps",
+  "reconstitution-vial-10ml",
+  "vault-case",
+  "slim-can-cooler",
+  "workout-tshirt-2xl",
+  "trucker-hat",
+] as const;
+
+export function isExtrasProduct(slug: string): boolean {
+  return (EXTRAS_SLUGS as readonly string[]).includes(slug);
+}
+
 export function getProduct(slug: string): Product | undefined {
   return catalog.find((p) => p.slug === slug);
 }
