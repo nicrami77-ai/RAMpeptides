@@ -511,7 +511,8 @@ export const catalog: Product[] = [
       purity: "Cotton blend athletic tee",
       form: "T-shirt · size 2XL · white",
       storage: "Machine wash cold, tumble dry low",
-      notice: "Merch accessory only. Limited stock: 2 available.",
+      notice:
+        "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
     },
   },
   {
