@@ -522,7 +522,7 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 8,
     tagline:
-      "Black snapback trucker hat with RAMpeptides American flag logo. Limited stock — only 1 available.",
+      "Black snapback trucker hat with RAMpeptides with Zuri logo. Limited stock — only 1 available.",
     description:
       "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides Zuri logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
     image: "/products/trucker-hat.jpg",
