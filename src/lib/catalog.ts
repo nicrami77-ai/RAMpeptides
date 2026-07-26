@@ -501,7 +501,7 @@ export const catalog: Product[] = [
     strength: "2XL",
     category: "Accessory",
     form: "Accessory",
-    priceUsd: 15,
+    priceUsd: 10,
     tagline:
       "Black RAMpeptides workout tee with American flag logo. Size 2XL.",
     description:
