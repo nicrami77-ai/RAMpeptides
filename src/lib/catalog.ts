@@ -514,6 +514,25 @@ export const catalog: Product[] = [
       notice: "Merch accessory only.",
     },
   },
+  {
+    slug: "trucker-hat",
+    name: "RAMpeptides Trucker Hat",
+    strength: "Snapback",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 8,
+    tagline:
+      "Black snapback trucker hat with RAMpeptides American flag logo.",
+    description:
+      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides American flag logo on the front panel. One-size adjustable fit. Merch accessory only; not a research compound.",
+    image: "/products/trucker-hat.jpg",
+    specs: {
+      purity: "Foam front · mesh back",
+      form: "Snapback trucker hat",
+      storage: "Spot clean only",
+      notice: "Merch accessory only.",
+    },
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {

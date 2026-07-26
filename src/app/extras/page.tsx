@@ -14,6 +14,7 @@ const EXTRAS_SLUGS = [
   "vault-case",
   "slim-can-cooler",
   "workout-tshirt-2xl",
+  "trucker-hat",
 ];
 
 export default function ExtrasPage() {
