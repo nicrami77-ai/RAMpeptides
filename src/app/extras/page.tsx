@@ -12,6 +12,7 @@ const EXTRAS_SLUGS = [
   "rubber-caps",
   "reconstitution-vial-10ml",
   "vault-case",
+  "slim-can-cooler",
 ];
 
 export default function ExtrasPage() {

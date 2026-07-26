@@ -476,6 +476,25 @@ export const catalog: Product[] = [
         "Storage accessory only. Automatically included free with the purchase of 2 or more peptide vials.",
     },
   },
+  {
+    slug: "slim-can-cooler",
+    name: "Slim Can Cooler",
+    strength: "2-in-1",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 20,
+    tagline:
+      "Double-walled stainless steel slim can cooler with RAMpeptides logo. 2-in-1 insulated can cooler cup.",
+    description:
+      "RAMpeptides slim can cooler / insulator in double-walled stainless steel. Fits standard slim cans and works as a 2-in-1 insulated can cooler cup. Features the RAMpeptides logo with American flag detail. Merch accessory only; not a research compound.",
+    image: "/products/slim-can-cooler.jpg",
+    specs: {
+      purity: "Double-walled stainless steel",
+      form: "Slim can cooler · 2-in-1 cup",
+      storage: "Room temperature",
+      notice: "Merch accessory only.",
+    },
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
