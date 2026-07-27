@@ -26,7 +26,7 @@ export default function ExtrasPage() {
         <div className="max-w-7xl mx-auto pt-16 md:pt-24">
           <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
             <video
-              src="/extras-concert.mp4"
+              src="/extras-merch-table.mp4"
               autoPlay
               loop
               muted
@@ -94,7 +94,7 @@ export default function ExtrasPage() {
 
           <div className="rounded-xl overflow-hidden border border-[var(--border)] max-w-4xl mx-auto bg-black">
             <video
-              src="/extras-bg.mp4"
+              src="/extras-concert.mp4"
               autoPlay
               loop
               muted
