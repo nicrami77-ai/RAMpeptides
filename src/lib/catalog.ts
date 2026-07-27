@@ -502,7 +502,7 @@ export const catalog: Product[] = [
   {
     slug: "workout-tshirt-2xl",
     name: "RAMpeptides Workout T-Shirt",
-    strength: "2XL",
+    strength: "2XL · White",
     category: "Accessory",
     form: "Accessory",
     priceUsd: 10,
@@ -516,6 +516,27 @@ export const catalog: Product[] = [
       form: "T-shirt · size 2XL · white",
       storage: "Machine wash cold, tumble dry low",
       notice: "Merch accessory only. Limited stock: 2 available.",
+      intro:
+        "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
+    },
+  },
+  {
+    slug: "workout-tshirt-black-2xl",
+    name: "RAMpeptides Workout T-Shirt",
+    strength: "2XL · Black",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 10,
+    tagline:
+      "Black RAMpeptides workout tee with American flag logo. Size 2XL. Limited stock — only 1 available.",
+    description:
+      "RAMpeptides workout t-shirt in black with the RAMpeptides American flag logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: only 1 available. Merch accessory only; not a research compound.",
+    image: "/products/workout-tshirt-black-2xl.jpg",
+    specs: {
+      purity: "Cotton blend athletic tee",
+      form: "T-shirt · size 2XL · black",
+      storage: "Machine wash cold, tumble dry low",
+      notice: "Merch accessory only. Limited stock: 1 available.",
       intro:
         "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
     },
@@ -551,6 +572,7 @@ export const EXTRAS_SLUGS = [
   "vault-case",
   "slim-can-cooler",
   "workout-tshirt-2xl",
+  "workout-tshirt-black-2xl",
   "trucker-hat",
 ] as const;
 
