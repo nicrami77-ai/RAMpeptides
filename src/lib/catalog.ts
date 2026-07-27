@@ -521,20 +521,20 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "workout-tshirt-black-2xl",
+    slug: "workout-tshirt-red-2xl",
     name: "RAMpeptides Workout T-Shirt",
-    strength: "2XL · Black",
+    strength: "2XL · Red",
     category: "Accessory",
     form: "Accessory",
     priceUsd: 10,
     tagline:
-      "Black RAMpeptides workout tee with American flag logo. Size 2XL. Limited stock — only 1 available.",
+      "RED RAMpeptides workout tee with Frenchie logo. Size 2XL. Limited stock — only 1 available.",
     description:
-      "RAMpeptides workout t-shirt in black with the RAMpeptides American flag logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: only 1 available. Merch accessory only; not a research compound.",
-    image: "/products/workout-tshirt-black-2xl.jpg",
+      "RAMpeptides workout t-shirt in RED with the RAMpeptides Frenchie logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: only 1 available. Merch accessory only; not a research compound.",
+    image: "/products/workout-tshirt-red-2xl.jpg",
     specs: {
       purity: "Cotton blend athletic tee",
-      form: "T-shirt · size 2XL · black",
+      form: "T-shirt · size 2XL · RED",
       storage: "Machine wash cold, tumble dry low",
       notice: "Merch accessory only. Limited stock: 1 available.",
       intro:
@@ -572,7 +572,7 @@ export const EXTRAS_SLUGS = [
   "vault-case",
   "slim-can-cooler",
   "workout-tshirt-2xl",
-  "workout-tshirt-black-2xl",
+  "workout-tshirt-red-2xl",
   "trucker-hat",
 ] as const;
 
