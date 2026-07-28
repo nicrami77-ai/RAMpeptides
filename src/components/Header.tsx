@@ -8,7 +8,7 @@ import { useCart } from "@/components/CartContext";
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
-  { href: "/extras", label: "Extras" },
+  { href: "/extras", label: "Merch-Extras" },
   { href: "/lab-results", label: "Lab Results" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

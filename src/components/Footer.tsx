@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/extras" className="hover:text-[var(--muted)]">
-                  Extras
+                  Merch-Extras
                 </Link>
               </li>
               <li>

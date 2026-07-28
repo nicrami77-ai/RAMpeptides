@@ -65,7 +65,7 @@ export default async function ProductDetailPage({
             href={isExtra ? "/extras" : "/products"}
             className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] tracking-wide"
           >
-            {isExtra ? "← Back to extras" : "← Back to catalog"}
+            {isExtra ? "← Back to Merch-Extras" : "← Back to catalog"}
           </Link>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">

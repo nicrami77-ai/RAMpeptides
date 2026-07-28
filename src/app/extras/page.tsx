@@ -3,8 +3,8 @@ import { catalog, isExtrasProduct } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
-  title: "Extras · RAMpeptides",
-  description: "Accessories, merch, and extras.",
+  title: "Merch-Extras · RAMpeptides",
+  description: "Accessories, merch, and Merch-Extras.",
 };
 
 export default function ExtrasPage() {
@@ -12,11 +12,11 @@ export default function ExtrasPage() {
 
   return (
     <>
-      {/* EXTRAS label */}
+      {/* MERCH-EXTRAS label */}
       <section className="px-6 lg:px-10 pt-10">
         <div className="max-w-7xl mx-auto text-center">
           <p className="uppercase tracking-[0.22em] text-xl md:text-2xl font-bold text-[var(--foreground)] mb-3">
-            EXTRAS…
+            MERCH-EXTRAS…
           </p>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function ExtrasPage() {
       <section className="w-full bg-[var(--background)] px-6 lg:px-10 py-16 border-b border-[var(--border)]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-[var(--foreground)] tracking-[-0.03em] leading-tight">
-            Here at RAMpeptides we drop knowledge, Merch and plenty of Extras.<br/>Are you Extra?
+            Here at RAMpeptides we drop knowledge, Merch and plenty of Merch-Extras.<br/>Are you Extra?
           </h1>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function ExtrasPage() {
             Accessories & Merch
           </p>
           <h2 className="font-display text-4xl md:text-5xl tracking-[-0.03em] mb-16">
-            Extras.
+            Merch-Extras.
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
