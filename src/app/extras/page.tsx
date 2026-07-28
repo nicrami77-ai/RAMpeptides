@@ -41,7 +41,7 @@ export default function ExtrasPage() {
       <section className="w-full bg-[var(--background)] px-6 lg:px-10 py-16 border-b border-[var(--border)]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-[var(--foreground)] tracking-[-0.03em] leading-tight">
-            Here at RAMpeptides we drop knowledge, Merch and plenty of Merch-Extras.<br/>Are you Extra?
+            Here at RAMpeptides we drop knowledge and plenty of Merch-Extras.<br/>Are you Extra?
           </h1>
         </div>
       </section>
