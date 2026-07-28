@@ -227,6 +227,17 @@ export default async function ProductDetailPage({
               </p>
               <p>Must be 21 or older to purchase.</p>
             </div>
+
+            {!isExtra && (
+              <div className="mt-10 pt-8 border-t border-[var(--border)]">
+                <Link
+                  href="/extras"
+                  className="inline-block border border-[var(--foreground)] text-[var(--foreground)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-colors"
+                >
+                  Merch-Extras →
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
