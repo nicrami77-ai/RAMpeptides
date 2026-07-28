@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { catalog, isExtrasProduct } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
@@ -43,6 +44,23 @@ export default function ProductsPage() {
             {catalog.filter((p) => !isExtrasProduct(p.slug)).map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}
+          </div>
+
+          <div className="mt-16 md:mt-20 pt-10 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+            <div>
+              <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-2">
+                Still want more?
+              </p>
+              <p className="font-display text-2xl md:text-3xl tracking-tight">
+                Check out Merch-Extras.
+              </p>
+            </div>
+            <Link
+              href="/extras"
+              className="inline-block self-start sm:self-auto bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
+            >
+              Merch-Extras →
+            </Link>
           </div>
         </div>
       </section>
