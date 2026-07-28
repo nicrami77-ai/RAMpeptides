@@ -233,16 +233,18 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 25,
-    tagline: "GHK-Cu 50mg topical / injectable. ≥99% purity.",
+    tagline:
+      "Copper tripeptide-1 (GHK-Cu). 50mg lyophilized, 99% purity. Reference compound for in-vitro use.",
     description:
-      "GHK-Cu (Copper Tripeptide-1) supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "GHK-Cu (Copper Tripeptide-1) is a copper-binding glycyl-L-histidyl-L-lysine complex studied in extracellular matrix, skin biology, and regenerative research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at 99% purity (batch GHK5005072026-14). Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/ghk-cu-50mg.jpg",
     specs: {
-      purity: "≥99%",
+      purity: "99%",
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
+    verificationKey: "GHK5005072026-14",
   },
   {
     slug: "ghk-cu-blue-copper-serum-30ml",
