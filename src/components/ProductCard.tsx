@@ -31,16 +31,18 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       <div className="mt-5 flex items-start justify-between gap-4">
-        <div className="min-w-0">
+        <div className="min-w-0 pr-2">
           <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-1.5">
             {product.category}
           </p>
-          <p className="font-display text-lg tracking-tight">
-            {product.name}{" "}
-            <span className="text-[var(--muted)]">· {product.strength}</span>
+          <p className="font-display text-lg tracking-tight leading-snug">
+            {product.name}
+          </p>
+          <p className="text-sm text-[var(--muted)] mt-0.5">
+            {product.strength}
           </p>
         </div>
-        <p className="text-sm tabular-nums whitespace-nowrap">
+        <p className="text-sm tabular-nums whitespace-nowrap shrink-0 pt-5">
           {product.comingSoon ? (
             <span className="uppercase tracking-[0.18em] text-[10px] text-[var(--muted)]">
               Coming soon

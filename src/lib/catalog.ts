@@ -444,7 +444,7 @@ export const catalog: Product[] = [
   {
     slug: "ghk-cu-blue-copper-serum-30ml",
     name: "GHK-Cu Blue Copper Serum",
-    strength: "1 oz / 30mL dropper",
+    strength: "30mL",
     category: "Topical",
     form: "Topical",
     priceUsd: 30,
