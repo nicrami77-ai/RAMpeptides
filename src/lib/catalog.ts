@@ -247,25 +247,6 @@ export const catalog: Product[] = [
     verificationKey: "GHK5005072026-14",
   },
   {
-    slug: "ghk-cu-blue-copper-serum-30ml",
-    name: "GHK-Cu Blue Copper Serum",
-    strength: "1 oz / 30mL dropper",
-    category: "Topical",
-    form: "Topical",
-    priceUsd: 30,
-    tagline:
-      "SYLAX GHK-Cu blue copper peptide serum in an amber glass dropper bottle. 1 oz / 30mL.",
-    description:
-      "SYLAX GHK-Cu (Blue Copper Peptide) serum supplied in a 1 oz (30mL) amber glass dropper bottle with black bulb pipette. Formulated as a topical copper-peptide research preparation. Store upright at room temperature, away from prolonged light and heat. Reference material supplied for laboratory and research applications only — not for human or animal consumption.",
-    image: "/products/ghk-cu-blue-copper-serum-30ml.jpg",
-    specs: {
-      purity: "Copper peptide serum",
-      form: "Liquid serum · amber glass dropper bottle",
-      storage: "Store upright at room temperature, shielded from light",
-      notice: NOTICE,
-    },
-  },
-  {
     slug: "melanotan-1-10mg",
     name: "Melanotan-1",
     strength: "10mg",
@@ -461,6 +442,25 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "ghk-cu-blue-copper-serum-30ml",
+    name: "GHK-Cu Blue Copper Serum",
+    strength: "1 oz / 30mL dropper",
+    category: "Topical",
+    form: "Topical",
+    priceUsd: 30,
+    tagline:
+      "SYLAX GHK-Cu blue copper peptide serum in an amber glass dropper bottle. 1 oz / 30mL.",
+    description:
+      "SYLAX GHK-Cu (Blue Copper Peptide) serum supplied in a 1 oz (30mL) amber glass dropper bottle with black bulb pipette. Formulated as a topical copper-peptide research preparation. Store upright at room temperature, away from prolonged light and heat. Reference material supplied for laboratory and research applications only — not for human or animal consumption.",
+    image: "/products/ghk-cu-blue-copper-serum-30ml.jpg",
+    specs: {
+      purity: "Copper peptide serum",
+      form: "Liquid serum · amber glass dropper bottle",
+      storage: "Store upright at room temperature, shielded from light",
+      notice: NOTICE,
+    },
+  },
+  {
     slug: "vault-case",
     name: "RAMpeptides Vault Case",
     strength: "4-vial",
@@ -568,7 +568,6 @@ export const catalog: Product[] = [
 
 /** Merch / accessories shown on /extras (not main peptide catalog). */
 export const EXTRAS_SLUGS = [
-  "ghk-cu-blue-copper-serum-30ml",
   "rubber-caps",
   "reconstitution-vial-10ml",
   "vault-case",
