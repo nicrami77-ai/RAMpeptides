@@ -191,6 +191,30 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "tri-morelin-20mg",
+    name: "TRI-MORELIN",
+    strength: "20mg (10/5/5)",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 76,
+    tagline:
+      "Tesamorelin 10mg + CJC-1295 (No DAC) 5mg + Ipamorelin 5mg blend. 20mg lyophilized in a 10mL vial. ≥99% purity.",
+    description:
+      "TRI-MORELIN is a multi-component lyophilized peptide blend combining Tesamorelin (10mg), CJC-1295 without DAC (5mg), and Ipamorelin (5mg) in a single sealed 10mL glass vial (20mg total). Manufactured at ≥99% purity by HPLC. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "Tesamorelin", amount: "10mg" },
+      { name: "CJC-1295 (No DAC)", amount: "5mg" },
+      { name: "Ipamorelin", amount: "5mg" },
+    ],
+    image: "/products/tri-morelin-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder (10mL vial)",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
     slug: "bpc-tb-10mg",
     name: "BPC-157 & TB-500",
     strength: "10mg (5mg/5mg)",
