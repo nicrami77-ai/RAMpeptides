@@ -63,7 +63,7 @@ export const catalog: Product[] = [
     strength: "15mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 40,
+    priceUsd: 35,
     tagline:
       "15mg lyophilized peptide preparation. ≥99% purity, research reference compound.",
     description:
