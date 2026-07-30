@@ -287,7 +287,6 @@ export const catalog: Product[] = [
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
     image: "/products/glow-70mg.jpg",
-    imageFit: "contain",
     specs: {
       purity: "≥99%",
       form: "Kit — 1 GHK-Cu vial + 1 BPC/TB vial + 1 empty 10mL recon vial",
