@@ -37,6 +37,27 @@ const NOTICE =
 
 export const catalog: Product[] = [
   {
+    slug: "ram-3p-20mg",
+    name: "RAM-3P",
+    strength: "20mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 60,
+    tagline:
+      "20mg lyophilized peptide preparation. ≥99% purity, third-party verified.",
+    description:
+      "RAM-3P is a 20mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ram-3p-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl:
+      "https://verify.janoshik.com/tests/122886-3P_20mg_OrangeGreen_C53DYXJAJAX3",
+  },
+  {
     slug: "cagrilintide-5mg",
     name: "Cagrilintide",
     strength: "5mg",
@@ -386,27 +407,6 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
-  },
-  {
-    slug: "ram-3p-20mg",
-    name: "RAM-3P",
-    strength: "20mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 60,
-    tagline:
-      "20mg lyophilized peptide preparation. ≥99% purity, third-party verified.",
-    description:
-      "RAM-3P is a 20mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/ram-3p-20mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-    coaUrl:
-      "https://verify.janoshik.com/tests/122886-3P_20mg_OrangeGreen_C53DYXJAJAX3",
   },
   {
     slug: "semax-10mg",
@@ -773,8 +773,8 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
   {
     id: "metabolic",
     title: "Metabolic Research",
-    blurb: "Appetite and metabolic pathway reference compounds. Related singles stay together as the line expands.",
-    slugs: ["cagrilintide-5mg"],
+    blurb: "Metabolic pathway reference compounds. Related singles stay together as the line expands.",
+    slugs: ["ram-3p-20mg", "cagrilintide-5mg"],
   },
   {
     id: "gh-axis",
@@ -804,7 +804,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "mito",
     title: "Mitochondrial & Cellular",
     blurb: "Mitochondrial and cellular-energy research compounds.",
-    slugs: ["mots-c-10mg", "nad-plus-500mg", "ss-31-10mg", "ram-3p-20mg"],
+    slugs: ["mots-c-10mg", "nad-plus-500mg", "ss-31-10mg"],
   },
   {
     id: "neuro",
