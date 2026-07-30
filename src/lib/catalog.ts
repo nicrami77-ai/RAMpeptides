@@ -8,6 +8,12 @@ export type Product = {
   tagline: string;
   description: string;
   blend?: { name: string; amount: string }[];
+  /** Optional laboratory handling notes for multi-vial kits. Research use only. */
+  labProtocol?: {
+    title: string;
+    steps: string[];
+    notice?: string;
+  };
   image: string;
   specs: {
     purity: string;
@@ -206,6 +212,19 @@ export const catalog: Product[] = [
       { name: "CJC/IPA vial", amount: "1 × 10mg (5mg/5mg)" },
       { name: "Empty reconstitution vial", amount: "1 × 10mL" },
     ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
     image: "/products/tri-morelin-20mg.jpg",
     specs: {
       purity: "≥99%",

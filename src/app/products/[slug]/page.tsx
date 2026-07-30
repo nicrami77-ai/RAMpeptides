@@ -131,6 +131,24 @@ export default async function ProductDetailPage({
               </div>
             )}
 
+            {product.labProtocol && (
+              <div className="mt-8 border border-[var(--border)] rounded-xl p-6">
+                <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-4">
+                  {product.labProtocol.title}
+                </p>
+                <ol className="space-y-3 list-decimal pl-5 text-sm leading-relaxed">
+                  {product.labProtocol.steps.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
+                </ol>
+                {product.labProtocol.notice && (
+                  <p className="mt-5 text-xs text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-4">
+                    {product.labProtocol.notice}
+                  </p>
+                )}
+              </div>
+            )}
+
             {/* Specifications */}
             <div className="mt-10 border-t border-[var(--border)] pt-8">
               <h2 className="font-display text-2xl tracking-tight mb-2">
