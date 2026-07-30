@@ -239,6 +239,45 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "duo-morelin-20mg",
+    name: "DUO-MORELIN",
+    strength: "20mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 70,
+    tagline:
+      "The Dynamic Duo — kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL reconstitution vial.",
+    description:
+      "DUO-MORELIN (The Dynamic Duo) ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / Ipa 10). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "Tesamorelin vial", amount: "1 × 10mg" },
+      { name: "Ipamorelin vial", amount: "1 × 10mg" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/duo-morelin-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. The Dynamic Duo — Tesamorelin + Ipamorelin.",
+    },
+  },
+  {
     slug: "bpc-tb-10mg",
     name: "BPC-157 & TB-500",
     strength: "10mg (5mg/5mg)",
