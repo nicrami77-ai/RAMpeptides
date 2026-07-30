@@ -198,20 +198,22 @@ export const catalog: Product[] = [
     form: "Vial",
     priceUsd: 76,
     tagline:
-      "Tesamorelin 10mg + CJC-1295 (No DAC) 5mg + Ipamorelin 5mg blend. 20mg lyophilized in a 10mL vial. ≥99% purity.",
+      "Kit: Tesamorelin 10mg + CJC-1295 (No DAC)/Ipamorelin 10mg + empty 10mL reconstitution vial. ≥99% purity.",
     description:
-      "TRI-MORELIN is a multi-component lyophilized peptide blend combining Tesamorelin (10mg), CJC-1295 without DAC (5mg), and Ipamorelin (5mg) in a single sealed 10mL glass vial (20mg total). Manufactured at ≥99% purity by HPLC. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "TRI-MORELIN is a GH-axis research kit totaling 20mg peptide content: Tesamorelin 10mg, CJC-1295 without DAC 5mg, and Ipamorelin 5mg (supplied as the CJC-1295/Ipamorelin 10mg vial), plus one empty 10mL reconstitution vial for laboratory prep. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     blend: [
-      { name: "Tesamorelin", amount: "10mg" },
-      { name: "CJC-1295 (No DAC)", amount: "5mg" },
-      { name: "Ipamorelin", amount: "5mg" },
+      { name: "Tesamorelin", amount: "10mg vial" },
+      { name: "CJC-1295 (No DAC) / Ipamorelin", amount: "10mg vial (5mg/5mg)" },
+      { name: "Reconstitution vial (empty)", amount: "10mL" },
     ],
     image: "/products/tri-morelin-20mg.jpg",
     specs: {
       purity: "≥99%",
-      form: "Lyophilized powder (10mL vial)",
+      form: "Kit — 2 lyophilized peptide vials + 1 empty 10mL recon vial",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
+      intro:
+        "Ships as a three-piece kit pulled from current inventory: Tesamorelin 10mg, CJC-1295 (No DAC)/Ipamorelin 10mg, and one empty 10mL reconstitution vial.",
     },
   },
   {
