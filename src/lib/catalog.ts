@@ -261,7 +261,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 70,
-    comingSoon: true,
     tagline:
       "Kit includes: 1× GHK-Cu 50mg, 2× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
     description:
