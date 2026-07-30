@@ -203,6 +203,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 76,
+    outOfStock: true,
     tagline:
       "Kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL reconstitution vial.",
     description:
