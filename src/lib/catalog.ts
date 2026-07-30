@@ -37,69 +37,22 @@ const NOTICE =
 
 export const catalog: Product[] = [
   {
-    slug: "mots-c-10mg",
-    name: "MOTS-c",
-    strength: "10mg",
+    slug: "cagrilintide-5mg",
+    name: "Cagrilintide",
+    strength: "5mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 30,
-    tagline:
-      "16-amino-acid peptide. Lyophilized, ≥99% purity. Reference compound for in-vitro use.",
-    description:
-      "MOTS-c is a 16-amino-acid peptide (sequence MRWQEMGYIFYPRKLR) encoded by the mitochondrial 12S rRNA region. Approximate molecular weight 2,174 Da. Supplied as a lyophilized white powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/mots-c-10mg.jpg",
+    priceUsd: 35,
+    tagline: "Amylin analog. Lyophilized reference compound, ≥99% purity.",
+    description: "Cagrilintide is a long-acting synthetic amylin analog. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/cagrilintide-5mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
-    coaUrl:
-      "https://verify.janoshik.com/tests/136294-MOTSC_10mg_Transparent_Blue_or_BlueGreen_B56V1GF2MWAL",
   },
-  {
-    slug: "nad-plus-500mg",
-    name: "NAD+",
-    strength: "500mg (10mL)",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 40,
-    tagline:
-      "Nicotinamide Adenine Dinucleotide, 500mg lyophilized in a 10mL vial. 99% purity, third-party verified.",
-    description:
-      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed 10mL glass vial under inert conditions. Manufactured at 99% purity and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/nad-plus-500mg.jpg",
-    specs: {
-      purity: "99% by HPLC",
-      form: "Lyophilized powder (10mL vial)",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-    coaUrl: "https://www.janoshik.com/tests/86060_YHB7PR8E5LK9",
-    verificationKey: "NAD50010272025-11",
-  },
-  {
-    slug: "ram-3p-20mg",
-    name: "RAM-3P",
-    strength: "20mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 60,
-    tagline:
-      "20mg lyophilized peptide preparation. ≥99% purity, third-party verified.",
-    description:
-      "RAM-3P is a 20mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/ram-3p-20mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-    coaUrl:
-      "https://verify.janoshik.com/tests/122886-3P_20mg_OrangeGreen_C53DYXJAJAX3",
-  },
-
   {
     slug: "tesamorelin-10mg",
     name: "Tesamorelin",
@@ -120,46 +73,6 @@ export const catalog: Product[] = [
     },
     coaUrl:
       "https://verify.janoshik.com/tests/133614-Tesamorelin_Transparent_Purple_or_PurpleBlue_HTZ2XRW2GWUW",
-  },
-  {
-    slug: "pt-141-10mg",
-    name: "PT-141",
-    strength: "10mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 30,
-    tagline:
-      "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound, ≥99% purity.",
-    description:
-      "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide analog of α-MSH, a melanocortin receptor agonist. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical, batch PT1005172026-08, reported purity 99.912–99.929%) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/pt-141-10mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-    coaUrl:
-      "https://verify.janoshik.com/tests/166067-PT141_10mg_Blue_Black_TU65SPIX1XC5",
-    verificationKey: "PT1005172026-08",
-  },
-  {
-    slug: "semax-10mg",
-    name: "SEMAX",
-    strength: "10mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 30,
-    tagline: "Semax 10mg lyophilized. ≥99% purity, third-party verified.",
-    description:
-      "SEMAX is a synthetic peptide supplied as a 10mg lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/semax-10mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
   },
   {
     slug: "ipamorelin-10mg",
@@ -196,6 +109,45 @@ export const catalog: Product[] = [
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
+    },
+  },
+  {
+    slug: "duo-morelin-20mg",
+    name: "DUO-MORELIN",
+    strength: "20mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 70,
+    tagline:
+      "The Dynamic Duo — kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL reconstitution vial.",
+    description:
+      "DUO-MORELIN (The Dynamic Duo) ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / Ipa 10). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "Tesamorelin vial", amount: "1 × 10mg" },
+      { name: "Ipamorelin vial", amount: "1 × 10mg" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/duo-morelin-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. The Dynamic Duo — Tesamorelin + Ipamorelin.",
     },
   },
   {
@@ -239,45 +191,6 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "duo-morelin-20mg",
-    name: "DUO-MORELIN",
-    strength: "20mg kit",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 70,
-    tagline:
-      "The Dynamic Duo — kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL reconstitution vial.",
-    description:
-      "DUO-MORELIN (The Dynamic Duo) ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / Ipa 10). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    blend: [
-      { name: "Tesamorelin vial", amount: "1 × 10mg" },
-      { name: "Ipamorelin vial", amount: "1 × 10mg" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
-    ],
-    labProtocol: {
-      title: "Laboratory combination protocol (research use only)",
-      steps: [
-        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
-        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
-        "Gently swirl to combine — do not shake.",
-        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
-        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
-      ],
-      notice:
-        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
-    },
-    image: "/products/duo-morelin-20mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL recon vial",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-      intro:
-        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. The Dynamic Duo — Tesamorelin + Ipamorelin.",
-    },
-  },
-  {
     slug: "bpc-tb-10mg",
     name: "BPC-157 & TB-500",
     strength: "10mg (5mg/5mg)",
@@ -288,6 +201,44 @@ export const catalog: Product[] = [
     description:
       "BPC-157 and TB-500 blend supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/bpc-tb-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "ghk-cu-50mg",
+    name: "GHK-Cu",
+    strength: "50mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 25,
+    tagline:
+      "Copper tripeptide-1 (GHK-Cu). 50mg lyophilized, 99% purity. Reference compound for in-vitro use.",
+    description:
+      "GHK-Cu (Copper Tripeptide-1) is a copper-binding glycyl-L-histidyl-L-lysine complex studied in extracellular matrix, skin biology, and regenerative research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at 99% purity (batch GHK5005072026-14). Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ghk-cu-50mg.jpg",
+    specs: {
+      purity: "99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    verificationKey: "GHK5005072026-14",
+  },
+  {
+    slug: "kpv-10mg",
+    name: "KPV",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    tagline: "KPV 10mg lyophilized. ≥99% purity, third-party verified.",
+    description:
+      "KPV (Lysine-Proline-Valine) supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/kpv-10mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Lyophilized powder",
@@ -375,16 +326,60 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "kpv-10mg",
-    name: "KPV",
+    slug: "mots-c-10mg",
+    name: "MOTS-c",
     strength: "10mg",
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    tagline: "KPV 10mg lyophilized. ≥99% purity, third-party verified.",
+    tagline:
+      "16-amino-acid peptide. Lyophilized, ≥99% purity. Reference compound for in-vitro use.",
     description:
-      "KPV (Lysine-Proline-Valine) supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/kpv-10mg.jpg",
+      "MOTS-c is a 16-amino-acid peptide (sequence MRWQEMGYIFYPRKLR) encoded by the mitochondrial 12S rRNA region. Approximate molecular weight 2,174 Da. Supplied as a lyophilized white powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/mots-c-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl:
+      "https://verify.janoshik.com/tests/136294-MOTSC_10mg_Transparent_Blue_or_BlueGreen_B56V1GF2MWAL",
+  },
+  {
+    slug: "nad-plus-500mg",
+    name: "NAD+",
+    strength: "500mg (10mL)",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 40,
+    tagline:
+      "Nicotinamide Adenine Dinucleotide, 500mg lyophilized in a 10mL vial. 99% purity, third-party verified.",
+    description:
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed 10mL glass vial under inert conditions. Manufactured at 99% purity and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/nad-plus-500mg.jpg",
+    specs: {
+      purity: "99% by HPLC",
+      form: "Lyophilized powder (10mL vial)",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl: "https://www.janoshik.com/tests/86060_YHB7PR8E5LK9",
+    verificationKey: "NAD50010272025-11",
+  },
+  {
+    slug: "ss-31-10mg",
+    name: "SS-31",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    comingSoon: true,
+    tagline:
+      "Mitochondria-targeting tetrapeptide (Elamipretide). Lyophilized, ≥99% purity.",
+    description:
+      "SS-31 (Elamipretide) is a mitochondria-targeting aromatic-cationic tetrapeptide studied for its interaction with cardiolipin on the inner mitochondrial membrane. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ss-31-10mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Lyophilized powder",
@@ -393,24 +388,63 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "ghk-cu-50mg",
-    name: "GHK-Cu",
-    strength: "50mg",
+    slug: "ram-3p-20mg",
+    name: "RAM-3P",
+    strength: "20mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 25,
+    priceUsd: 60,
     tagline:
-      "Copper tripeptide-1 (GHK-Cu). 50mg lyophilized, 99% purity. Reference compound for in-vitro use.",
+      "20mg lyophilized peptide preparation. ≥99% purity, third-party verified.",
     description:
-      "GHK-Cu (Copper Tripeptide-1) is a copper-binding glycyl-L-histidyl-L-lysine complex studied in extracellular matrix, skin biology, and regenerative research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at 99% purity (batch GHK5005072026-14). Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/ghk-cu-50mg.jpg",
+      "RAM-3P is a 20mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ram-3p-20mg.jpg",
     specs: {
-      purity: "99%",
+      purity: "≥99%",
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
-    verificationKey: "GHK5005072026-14",
+    coaUrl:
+      "https://verify.janoshik.com/tests/122886-3P_20mg_OrangeGreen_C53DYXJAJAX3",
+  },
+  {
+    slug: "semax-10mg",
+    name: "SEMAX",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    tagline: "Semax 10mg lyophilized. ≥99% purity, third-party verified.",
+    description:
+      "SEMAX is a synthetic peptide supplied as a 10mg lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/semax-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "dsip-5mg",
+    name: "DSIP",
+    strength: "5mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 25,
+    comingSoon: true,
+    tagline:
+      "Delta Sleep-Inducing Peptide. 5mg lyophilized, ≥99% purity.",
+    description:
+      "DSIP (Delta Sleep-Inducing Peptide) is a nonapeptide originally isolated from cerebral venous blood and studied in sleep-regulation and neuroendocrine research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/dsip-5mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
   },
   {
     slug: "melanotan-1-10mg",
@@ -447,6 +481,28 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "pt-141-10mg",
+    name: "PT-141",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    tagline:
+      "Melanocortin receptor agonist (Bremelanotide). Lyophilized reference compound, ≥99% purity.",
+    description:
+      "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide analog of α-MSH, a melanocortin receptor agonist. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity by HPLC and verified by independent third-party analysis (Janoshik Analytical, batch PT1005172026-08, reported purity 99.912–99.929%) — lot-specific certificate of analysis available via the verification link on this page. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/pt-141-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    coaUrl:
+      "https://verify.janoshik.com/tests/166067-PT141_10mg_Blue_Black_TU65SPIX1XC5",
+    verificationKey: "PT1005172026-08",
+  },
+  {
     slug: "superhuman-blend-10ml",
     name: "Super Human Blend",
     strength: "10mL",
@@ -475,63 +531,6 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "cagrilintide-5mg",
-    name: "Cagrilintide",
-    strength: "5mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 35,
-    tagline: "Amylin analog. Lyophilized reference compound, ≥99% purity.",
-    description: "Cagrilintide is a long-acting synthetic amylin analog. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/cagrilintide-5mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-  },
-  {
-    slug: "ss-31-10mg",
-    name: "SS-31",
-    strength: "10mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 30,
-    comingSoon: true,
-    tagline:
-      "Mitochondria-targeting tetrapeptide (Elamipretide). Lyophilized, ≥99% purity.",
-    description:
-      "SS-31 (Elamipretide) is a mitochondria-targeting aromatic-cationic tetrapeptide studied for its interaction with cardiolipin on the inner mitochondrial membrane. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/ss-31-10mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-  },
-  {
-    slug: "dsip-5mg",
-    name: "DSIP",
-    strength: "5mg",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 25,
-    comingSoon: true,
-    tagline:
-      "Delta Sleep-Inducing Peptide. 5mg lyophilized, ≥99% purity.",
-    description:
-      "DSIP (Delta Sleep-Inducing Peptide) is a nonapeptide originally isolated from cerebral venous blood and studied in sleep-regulation and neuroendocrine research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/dsip-5mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-  },
-  {
     slug: "ara-290-10mg",
     name: "ARA-290",
     strength: "10mg",
@@ -551,23 +550,23 @@ export const catalog: Product[] = [
       notice: NOTICE,
     },
   },
-
   {
-    slug: "rubber-caps",
-    name: "Rubber Vial Caps",
-    strength: "5-pack",
-    category: "Accessory",
-    form: "Accessory",
-    priceUsd: 3,
-    tagline: "Colorful rubber vial caps. 5-pack.",
+    slug: "reconstitution-water-30ml",
+    name: "Reconstitution Solution",
+    strength: "30mL",
+    category: "Solution",
+    form: "Bottle",
+    priceUsd: 15,
+    tagline:
+      "Deionized water with 0.9% benzyl alcohol in USP-grade borosilicate glass vials.",
     description:
-      "Assorted colorful rubber caps for peptide vials. Sold in packs of 5. Accessory only.",
-    image: "/products/rubber-caps.jpg",
+      "Reconstitution solution supplied as deionized water with 0.9% benzyl alcohol preservative in USP-grade borosilicate glass vials, 30mL per unit. Intended for use in laboratory reconstitution of lyophilized peptide reference compounds prior to in-vitro analysis. Manufactured to standard laboratory specifications and supplied for research applications only. Store at room temperature, shielded from prolonged light exposure. Not for human or animal consumption.",
+    image: "/products/reconstitution-water-30ml.jpg",
     specs: {
-      purity: "Food-grade rubber",
-      form: "Rubber caps",
-      storage: "Room temperature",
-      notice: "Accessory only.",
+      purity: "USP-grade water · 0.9% benzyl alcohol preservative",
+      form: "Liquid · borosilicate glass vial",
+      storage: "Store at room temperature, shielded from light",
+      notice: NOTICE,
     },
   },
   {
@@ -589,22 +588,21 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "reconstitution-water-30ml",
-    name: "Reconstitution Solution",
-    strength: "30mL",
-    category: "Solution",
-    form: "Bottle",
-    priceUsd: 15,
-    tagline:
-      "Deionized water with 0.9% benzyl alcohol in USP-grade borosilicate glass vials.",
+    slug: "rubber-caps",
+    name: "Rubber Vial Caps",
+    strength: "5-pack",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 3,
+    tagline: "Colorful rubber vial caps. 5-pack.",
     description:
-      "Reconstitution solution supplied as deionized water with 0.9% benzyl alcohol preservative in USP-grade borosilicate glass vials, 30mL per unit. Intended for use in laboratory reconstitution of lyophilized peptide reference compounds prior to in-vitro analysis. Manufactured to standard laboratory specifications and supplied for research applications only. Store at room temperature, shielded from prolonged light exposure. Not for human or animal consumption.",
-    image: "/products/reconstitution-water-30ml.jpg",
+      "Assorted colorful rubber caps for peptide vials. Sold in packs of 5. Accessory only.",
+    image: "/products/rubber-caps.jpg",
     specs: {
-      purity: "USP-grade water · 0.9% benzyl alcohol preservative",
-      form: "Liquid · borosilicate glass vial",
-      storage: "Store at room temperature, shielded from light",
-      notice: NOTICE,
+      purity: "Food-grade rubber",
+      form: "Rubber caps",
+      storage: "Room temperature",
+      notice: "Accessory only.",
     },
   },
   {
@@ -750,7 +748,7 @@ export const catalog: Product[] = [
       intro:
         "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
     },
-  },
+  }
 ];
 
 /** Merch / accessories shown on /extras (not main peptide catalog). */
@@ -767,6 +765,106 @@ export const EXTRAS_SLUGS = [
 
 export function isExtrasProduct(slug: string): boolean {
   return (EXTRAS_SLUGS as readonly string[]).includes(slug);
+}
+
+
+/** Research-family groupings for the main products page (order matters). */
+export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: string[] }[] = [
+  {
+    id: "metabolic",
+    title: "Metabolic Research",
+    blurb: "Appetite and metabolic pathway reference compounds. Related singles stay together as the line expands.",
+    slugs: ["cagrilintide-5mg"],
+  },
+  {
+    id: "gh-axis",
+    title: "GH Axis",
+    blurb: "Growth-hormone secretagogue singles and branded multi-vial kits (DUO-MORELIN, TRI-MORELIN).",
+    slugs: [
+      "tesamorelin-10mg",
+      "ipamorelin-10mg",
+      "cjc-ipa-10mg",
+      "duo-morelin-20mg",
+      "tri-morelin-20mg",
+    ],
+  },
+  {
+    id: "repair",
+    title: "Repair & Recovery",
+    blurb: "Tissue-research singles plus GLOW and KLOW multi-vial kits built from the same components.",
+    slugs: [
+      "bpc-tb-10mg",
+      "ghk-cu-50mg",
+      "kpv-10mg",
+      "glow-70mg",
+      "klow-80mg",
+    ],
+  },
+  {
+    id: "mito",
+    title: "Mitochondrial & Cellular",
+    blurb: "Mitochondrial and cellular-energy research compounds.",
+    slugs: ["mots-c-10mg", "nad-plus-500mg", "ss-31-10mg", "ram-3p-20mg"],
+  },
+  {
+    id: "neuro",
+    title: "Neuro Research",
+    blurb: "Cognitive and sleep-research reference compounds.",
+    slugs: ["semax-10mg", "dsip-5mg"],
+  },
+  {
+    id: "melanocortin",
+    title: "Melanocortin Research",
+    blurb: "Melanocortin pathway compounds and related research blends.",
+    slugs: [
+      "melanotan-1-10mg",
+      "melanotan-2-10mg",
+      "pt-141-10mg",
+      "superhuman-blend-10ml",
+    ],
+  },
+  {
+    id: "other",
+    title: "Additional Research",
+    blurb: "Other reference compounds in the current catalog.",
+    slugs: ["ara-290-10mg"],
+  },
+  {
+    id: "lab",
+    title: "Lab Essentials",
+    blurb: "Reconstitution supplies for laboratory handling.",
+    slugs: ["reconstitution-water-30ml"],
+  },
+  {
+    id: "topical",
+    title: "Topical",
+    blurb: "Topical research formulations.",
+    slugs: ["ghk-cu-blue-copper-serum-30ml"],
+  },
+];
+
+export function getCatalogGroups(products: Product[] = catalog) {
+  const bySlug = new Map(products.map((p) => [p.slug, p]));
+  const used = new Set<string>();
+  const groups = CATALOG_GROUPS.map((g) => {
+    const items = g.slugs
+      .map((slug) => bySlug.get(slug))
+      .filter((p): p is Product => Boolean(p));
+    items.forEach((p) => used.add(p.slug));
+    return { ...g, products: items };
+  }).filter((g) => g.products.length > 0);
+
+  const leftovers = products.filter((p) => !used.has(p.slug) && !isExtrasProduct(p.slug));
+  if (leftovers.length) {
+    groups.push({
+      id: "more",
+      title: "More",
+      blurb: "Additional catalog items.",
+      slugs: leftovers.map((p) => p.slug),
+      products: leftovers,
+    });
+  }
+  return groups;
 }
 
 export function getProduct(slug: string): Product | undefined {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { catalog, isExtrasProduct } from "@/lib/catalog";
+import { catalog, getCatalogGroups, isExtrasProduct } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
@@ -10,6 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function ProductsPage() {
+  const mainCatalog = catalog.filter((p) => !isExtrasProduct(p.slug));
+  const groups = getCatalogGroups(mainCatalog);
+
   return (
     <>
       <section className="px-6 lg:px-10">
@@ -36,13 +39,30 @@ export default function ProductsPage() {
             Products.
           </h1>
           <p className="max-w-2xl text-base md:text-lg text-[var(--muted)] leading-relaxed mb-16">
-            A small, deliberate catalog. Each item selected for relevance to
-            current research literature. All for laboratory use only.
+            A small, deliberate catalog grouped by research family. Related
+            singles and kits sit together. All for laboratory use only.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {catalog.filter((p) => !isExtrasProduct(p.slug)).map((p) => (
-              <ProductCard key={p.slug} product={p} />
+          <div className="space-y-16 md:space-y-20">
+            {groups.map((group) => (
+              <section key={group.id} id={group.id} className="scroll-mt-24">
+                <div className="mb-8 md:mb-10 max-w-2xl">
+                  <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-2">
+                    Family
+                  </p>
+                  <h2 className="font-display text-3xl md:text-4xl tracking-tight mb-3">
+                    {group.title}
+                  </h2>
+                  <p className="text-sm md:text-base text-[var(--muted)] leading-relaxed">
+                    {group.blurb}
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                  {group.products.map((p) => (
+                    <ProductCard key={p.slug} product={p} />
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
 
