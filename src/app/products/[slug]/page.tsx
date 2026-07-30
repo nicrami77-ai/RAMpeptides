@@ -77,7 +77,11 @@ export default async function ProductDetailPage({
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               priority
-              className="object-cover"
+              className={
+                product.imageFit === "contain"
+                  ? "object-contain p-4"
+                  : "object-cover"
+              }
             />
           </div>
 

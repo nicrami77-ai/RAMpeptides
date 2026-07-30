@@ -15,6 +15,8 @@ export type Product = {
     notice?: string;
   };
   image: string;
+  /** How the product photo fills the 4:5 frame. Default cover. Use contain for wide multi-vial kit shots. */
+  imageFit?: "cover" | "contain";
   specs: {
     purity: string;
     form: string;
@@ -227,6 +229,7 @@ export const catalog: Product[] = [
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
     image: "/products/tri-morelin-20mg.jpg",
+    imageFit: "contain",
     specs: {
       purity: "≥99%",
       form: "Kit — 1 Tesamorelin vial + 1 CJC/IPA vial + 1 empty 10mL recon vial",
@@ -284,6 +287,7 @@ export const catalog: Product[] = [
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
     image: "/products/glow-70mg.jpg",
+    imageFit: "contain",
     specs: {
       purity: "≥99%",
       form: "Kit — 1 GHK-Cu vial + 2 BPC/TB vials + 1 empty 10mL recon vial",
@@ -324,6 +328,7 @@ export const catalog: Product[] = [
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
     image: "/products/klow-80mg.jpg",
+    imageFit: "contain",
     specs: {
       purity: "≥99%",
       form: "Kit — 1 GHK-Cu + 2 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
