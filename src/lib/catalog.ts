@@ -265,12 +265,12 @@ export const catalog: Product[] = [
     form: "Vial",
     priceUsd: 70,
     tagline:
-      "Kit includes: 1× GHK-Cu 50mg, 2× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
+      "Kit includes: 1× GHK-Cu 50mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
     description:
-      "GLOW ships as a multi-vial research kit totaling 70mg peptide content: GHK-Cu 50mg, BPC-157 10mg, and TB-500 10mg, plus one empty 10mL reconstitution vial. BPC-157 and TB-500 are supplied as two BPC-157 & TB-500 10mg (5mg/5mg) vials so the kit totals BPC 10mg + TB 10mg. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "GLOW ships as a three-piece research kit: one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     blend: [
       { name: "GHK-Cu vial", amount: "1 × 50mg" },
-      { name: "BPC-157 & TB-500 vial", amount: "2 × 10mg (5mg/5mg)" },
+      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
       { name: "Empty reconstitution vial", amount: "1 × 10mL" },
     ],
     labProtocol: {
@@ -290,11 +290,11 @@ export const catalog: Product[] = [
     imageFit: "contain",
     specs: {
       purity: "≥99%",
-      form: "Kit — 1 GHK-Cu vial + 2 BPC/TB vials + 1 empty 10mL recon vial",
+      form: "Kit — 1 GHK-Cu vial + 1 BPC/TB vial + 1 empty 10mL recon vial",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
       intro:
-        "Each order includes one GHK-Cu 50mg vial, two BPC-157 & TB-500 10mg (5mg/5mg) vials, and one empty 10mL reconstitution vial.",
+        "Each order includes one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial.",
     },
   },
   {
@@ -305,12 +305,12 @@ export const catalog: Product[] = [
     form: "Vial",
     priceUsd: 90,
     tagline:
-      "Kit includes: 1× GHK-Cu 50mg, 2× BPC-157/TB-500 10mg (5mg/5mg), 1× KPV 10mg, 1× empty 10mL reconstitution vial.",
+      "Kit includes: 1× GHK-Cu 50mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× KPV 10mg, 1× empty 10mL reconstitution vial.",
     description:
-      "KLOW ships as a multi-vial research kit totaling 80mg peptide content: GHK-Cu 50mg, BPC-157 10mg, TB-500 10mg, and KPV 10mg, plus one empty 10mL reconstitution vial. BPC-157 and TB-500 are supplied as two BPC-157 & TB-500 10mg (5mg/5mg) vials so the kit totals BPC 10mg + TB 10mg. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "KLOW ships as a four-piece research kit: one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, one KPV 10mg vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     blend: [
       { name: "GHK-Cu vial", amount: "1 × 50mg" },
-      { name: "BPC-157 & TB-500 vial", amount: "2 × 10mg (5mg/5mg)" },
+      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
       { name: "KPV vial", amount: "1 × 10mg" },
       { name: "Empty reconstitution vial", amount: "1 × 10mL" },
     ],
@@ -331,11 +331,11 @@ export const catalog: Product[] = [
     imageFit: "contain",
     specs: {
       purity: "≥99%",
-      form: "Kit — 1 GHK-Cu + 2 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
+      form: "Kit — 1 GHK-Cu + 1 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
       intro:
-        "Each order includes one GHK-Cu 50mg vial, two BPC-157 & TB-500 10mg (5mg/5mg) vials, one KPV 10mg vial, and one empty 10mL reconstitution vial.",
+        "Each order includes one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, one KPV 10mg vial, and one empty 10mL reconstitution vial.",
     },
   },
   {
