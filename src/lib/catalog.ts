@@ -254,6 +254,87 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "glow-70mg",
+    name: "GLOW",
+    strength: "70mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 70,
+    comingSoon: true,
+    tagline:
+      "Kit includes: 1× GHK-Cu 50mg, 2× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
+    description:
+      "GLOW ships as a multi-vial research kit totaling 70mg peptide content: GHK-Cu 50mg, BPC-157 10mg, and TB-500 10mg, plus one empty 10mL reconstitution vial. BPC-157 and TB-500 are supplied as two BPC-157 & TB-500 10mg (5mg/5mg) vials so the kit totals BPC 10mg + TB 10mg. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "GHK-Cu vial", amount: "1 × 50mg" },
+      { name: "BPC-157 & TB-500 vial", amount: "2 × 10mg (5mg/5mg)" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/glow-70mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 GHK-Cu vial + 2 BPC/TB vials + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one GHK-Cu 50mg vial, two BPC-157 & TB-500 10mg (5mg/5mg) vials, and one empty 10mL reconstitution vial.",
+    },
+  },
+  {
+    slug: "klow-80mg",
+    name: "KLOW",
+    strength: "80mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 90,
+    comingSoon: true,
+    tagline:
+      "Kit includes: 1× GHK-Cu 50mg, 2× BPC-157/TB-500 10mg (5mg/5mg), 1× KPV 10mg, 1× empty 10mL reconstitution vial.",
+    description:
+      "KLOW ships as a multi-vial research kit totaling 80mg peptide content: GHK-Cu 50mg, BPC-157 10mg, TB-500 10mg, and KPV 10mg, plus one empty 10mL reconstitution vial. BPC-157 and TB-500 are supplied as two BPC-157 & TB-500 10mg (5mg/5mg) vials so the kit totals BPC 10mg + TB 10mg. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "GHK-Cu vial", amount: "1 × 50mg" },
+      { name: "BPC-157 & TB-500 vial", amount: "2 × 10mg (5mg/5mg)" },
+      { name: "KPV vial", amount: "1 × 10mg" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/klow-80mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 GHK-Cu + 2 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one GHK-Cu 50mg vial, two BPC-157 & TB-500 10mg (5mg/5mg) vials, one KPV 10mg vial, and one empty 10mL reconstitution vial.",
+    },
+  },
+  {
     slug: "kpv-10mg",
     name: "KPV",
     strength: "10mg",
