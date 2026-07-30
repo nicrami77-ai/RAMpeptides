@@ -37,6 +37,192 @@ const NOTICE =
 
 export const catalog: Product[] = [
   {
+    slug: "duo-morelin-20mg",
+    name: "DUO-MORELIN",
+    strength: "20mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 70,
+    tagline:
+      "The Dynamic Duo — kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL reconstitution vial.",
+    description:
+      "DUO-MORELIN (The Dynamic Duo) ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / Ipa 10). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "Tesamorelin vial", amount: "1 × 10mg" },
+      { name: "Ipamorelin vial", amount: "1 × 10mg" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/duo-morelin-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. The Dynamic Duo — Tesamorelin + Ipamorelin.",
+    },
+  },
+  {
+    slug: "tri-morelin-20mg",
+    name: "TRI-MORELIN",
+    strength: "20mg (10/5/5)",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 75,
+    outOfStock: true,
+    tagline:
+      "Kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL reconstitution vial.",
+    description:
+      "TRI-MORELIN ships as a three-piece research kit: one Tesamorelin 10mg vial, one CJC-1295 (No DAC)/Ipamorelin 10mg vial (CJC 5mg + Ipamorelin 5mg), and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / CJC 5 / Ipa 5). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "Tesamorelin vial", amount: "1 × 10mg" },
+      { name: "CJC/IPA vial", amount: "1 × 10mg (5mg/5mg)" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/tri-morelin-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 Tesamorelin vial + 1 CJC/IPA vial + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL reconstitution vial.",
+    },
+  },
+  {
+    slug: "glow-70mg",
+    name: "GLOW",
+    strength: "70mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 55,
+    tagline:
+      "Kit includes: 1× GHK-Cu 50mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
+    description:
+      "GLOW ships as a three-piece research kit: one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "GHK-Cu vial", amount: "1 × 50mg" },
+      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/glow-70mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 GHK-Cu vial + 1 BPC/TB vial + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial.",
+    },
+  },
+  {
+    slug: "klow-80mg",
+    name: "KLOW",
+    strength: "80mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 85,
+    tagline:
+      "Kit includes: 1× GHK-Cu 50mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× KPV 10mg, 1× empty 10mL reconstitution vial.",
+    description:
+      "KLOW ships as a four-piece research kit: one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, one KPV 10mg vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "GHK-Cu vial", amount: "1 × 50mg" },
+      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
+      { name: "KPV vial", amount: "1 × 10mg" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/klow-80mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 GHK-Cu + 1 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, one KPV 10mg vial, and one empty 10mL reconstitution vial.",
+    },
+  },
+  {
+    slug: "superhuman-blend-10ml",
+    name: "Super Human Blend",
+    strength: "10mL",
+    category: "Peptide",
+    form: "Bottle",
+    priceUsd: 25,
+    tagline: "Premixed liquid amino acid blend. 10mL research compound.",
+    description: "Super Human Blend is a premixed liquid amino acid blend sold for research purposes. Supplied in a 10mL glass bottle. Intended for laboratory research applications. Not for human or animal consumption.",
+    blend: [
+      { name: "L-Carnitine", amount: "220 mg/mL" },
+      { name: "L-Citrulline", amount: "120 mg/mL" },
+      { name: "L-Arginine", amount: "110 mg/mL" },
+      { name: "L-Ornithine", amount: "110 mg/mL" },
+      { name: "L-Lysine", amount: "70 mg/mL" },
+      { name: "N-Acetylcysteine (NAC)", amount: "75 mg/mL" },
+      { name: "L-Proline", amount: "60 mg/mL" },
+      { name: "L-Taurine", amount: "60 mg/mL" },
+      { name: "L-Glutamine", amount: "40 mg/mL" }
+    ],
+    image: "/products/superhuman-blend-10ml.jpg",
+    specs: {
+      purity: "Liquid amino acid blend",
+      form: "Liquid",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
     slug: "ram-3p-20mg",
     name: "RAM-3P",
     strength: "20mg",
@@ -152,85 +338,6 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "duo-morelin-20mg",
-    name: "DUO-MORELIN",
-    strength: "20mg kit",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 70,
-    tagline:
-      "The Dynamic Duo — kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL reconstitution vial.",
-    description:
-      "DUO-MORELIN (The Dynamic Duo) ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / Ipa 10). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    blend: [
-      { name: "Tesamorelin vial", amount: "1 × 10mg" },
-      { name: "Ipamorelin vial", amount: "1 × 10mg" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
-    ],
-    labProtocol: {
-      title: "Laboratory combination protocol (research use only)",
-      steps: [
-        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
-        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
-        "Gently swirl to combine — do not shake.",
-        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
-        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
-      ],
-      notice:
-        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
-    },
-    image: "/products/duo-morelin-20mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL recon vial",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-      intro:
-        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. The Dynamic Duo — Tesamorelin + Ipamorelin.",
-    },
-  },
-  {
-    slug: "tri-morelin-20mg",
-    name: "TRI-MORELIN",
-    strength: "20mg (10/5/5)",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 75,
-    outOfStock: true,
-    tagline:
-      "Kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL reconstitution vial.",
-    description:
-      "TRI-MORELIN ships as a three-piece research kit: one Tesamorelin 10mg vial, one CJC-1295 (No DAC)/Ipamorelin 10mg vial (CJC 5mg + Ipamorelin 5mg), and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / CJC 5 / Ipa 5). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    blend: [
-      { name: "Tesamorelin vial", amount: "1 × 10mg" },
-      { name: "CJC/IPA vial", amount: "1 × 10mg (5mg/5mg)" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
-    ],
-    labProtocol: {
-      title: "Laboratory combination protocol (research use only)",
-      steps: [
-        "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
-        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
-        "Gently swirl to combine — do not shake.",
-        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
-        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
-      ],
-      notice:
-        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
-    },
-    image: "/products/tri-morelin-20mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Kit — 1 Tesamorelin vial + 1 CJC/IPA vial + 1 empty 10mL recon vial",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-      intro:
-        "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL reconstitution vial.",
-    },
-  },
-  {
     slug: "bpc-tb-10mg",
     name: "BPC-157 & TB-500",
     strength: "10mg (5mg/5mg)",
@@ -284,85 +391,6 @@ export const catalog: Product[] = [
       form: "Lyophilized powder",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
-    },
-  },
-  {
-    slug: "glow-70mg",
-    name: "GLOW",
-    strength: "70mg kit",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 55,
-    tagline:
-      "Kit includes: 1× GHK-Cu 50mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
-    description:
-      "GLOW ships as a three-piece research kit: one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    blend: [
-      { name: "GHK-Cu vial", amount: "1 × 50mg" },
-      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
-    ],
-    labProtocol: {
-      title: "Laboratory combination protocol (research use only)",
-      steps: [
-        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
-        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
-        "Gently swirl to combine — do not shake.",
-        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
-        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
-      ],
-      notice:
-        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
-    },
-    image: "/products/glow-70mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Kit — 1 GHK-Cu vial + 1 BPC/TB vial + 1 empty 10mL recon vial",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-      intro:
-        "Each order includes one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial.",
-    },
-  },
-  {
-    slug: "klow-80mg",
-    name: "KLOW",
-    strength: "80mg kit",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 85,
-    tagline:
-      "Kit includes: 1× GHK-Cu 50mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× KPV 10mg, 1× empty 10mL reconstitution vial.",
-    description:
-      "KLOW ships as a four-piece research kit: one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, one KPV 10mg vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    blend: [
-      { name: "GHK-Cu vial", amount: "1 × 50mg" },
-      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
-      { name: "KPV vial", amount: "1 × 10mg" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
-    ],
-    labProtocol: {
-      title: "Laboratory combination protocol (research use only)",
-      steps: [
-        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
-        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
-        "Gently swirl to combine — do not shake.",
-        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
-        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
-      ],
-      notice:
-        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
-    },
-    image: "/products/klow-80mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Kit — 1 GHK-Cu + 1 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-      intro:
-        "Each order includes one GHK-Cu 50mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, one KPV 10mg vial, and one empty 10mL reconstitution vial.",
     },
   },
   {
@@ -520,34 +548,6 @@ export const catalog: Product[] = [
     coaUrl:
       "https://verify.janoshik.com/tests/166067-PT141_10mg_Blue_Black_TU65SPIX1XC5",
     verificationKey: "PT1005172026-08",
-  },
-  {
-    slug: "superhuman-blend-10ml",
-    name: "Super Human Blend",
-    strength: "10mL",
-    category: "Peptide",
-    form: "Bottle",
-    priceUsd: 25,
-    tagline: "Premixed liquid amino acid blend. 10mL research compound.",
-    description: "Super Human Blend is a premixed liquid amino acid blend sold for research purposes. Supplied in a 10mL glass bottle. Intended for laboratory research applications. Not for human or animal consumption.",
-    blend: [
-      { name: "L-Carnitine", amount: "220 mg/mL" },
-      { name: "L-Citrulline", amount: "120 mg/mL" },
-      { name: "L-Arginine", amount: "110 mg/mL" },
-      { name: "L-Ornithine", amount: "110 mg/mL" },
-      { name: "L-Lysine", amount: "70 mg/mL" },
-      { name: "N-Acetylcysteine (NAC)", amount: "75 mg/mL" },
-      { name: "L-Proline", amount: "60 mg/mL" },
-      { name: "L-Taurine", amount: "60 mg/mL" },
-      { name: "L-Glutamine", amount: "40 mg/mL" }
-    ],
-    image: "/products/superhuman-blend-10ml.jpg",
-    specs: {
-      purity: "Liquid amino acid blend",
-      form: "Liquid",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
   },
   {
     slug: "ara-290-10mg",
@@ -790,6 +790,18 @@ export function isExtrasProduct(slug: string): boolean {
 /** Research-family groupings for the main products page (order matters). */
 export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: string[] }[] = [
   {
+    id: "blends",
+    title: "Just the Blends",
+    blurb: "Branded multi-vial kits and research blends — separate components, not pre-mixed powder blends (except Super Human).",
+    slugs: [
+      "duo-morelin-20mg",
+      "tri-morelin-20mg",
+      "glow-70mg",
+      "klow-80mg",
+      "superhuman-blend-10ml",
+    ],
+  },
+  {
     id: "metabolic",
     title: "Metabolic Research",
     blurb: "Metabolic pathway reference compounds. Related singles stay together as the line expands.",
@@ -798,26 +810,14 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
   {
     id: "gh-axis",
     title: "GH Axis",
-    blurb: "Growth-hormone secretagogue singles and branded multi-vial kits (DUO-MORELIN, TRI-MORELIN).",
-    slugs: [
-      "tesamorelin-10mg",
-      "ipamorelin-10mg",
-      "cjc-ipa-10mg",
-      "duo-morelin-20mg",
-      "tri-morelin-20mg",
-    ],
+    blurb: "Growth-hormone secretagogue singles used alone or as kit components.",
+    slugs: ["tesamorelin-10mg", "ipamorelin-10mg", "cjc-ipa-10mg"],
   },
   {
     id: "repair",
     title: "Repair & Recovery",
-    blurb: "Tissue-research singles plus GLOW and KLOW multi-vial kits built from the same components.",
-    slugs: [
-      "bpc-tb-10mg",
-      "ghk-cu-50mg",
-      "kpv-10mg",
-      "glow-70mg",
-      "klow-80mg",
-    ],
+    blurb: "Tissue-research singles used alone or as GLOW/KLOW kit components.",
+    slugs: ["bpc-tb-10mg", "ghk-cu-50mg", "kpv-10mg"],
   },
   {
     id: "mito",
@@ -834,13 +834,8 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
   {
     id: "melanocortin",
     title: "Melanocortin Research",
-    blurb: "Melanocortin pathway compounds and related research blends.",
-    slugs: [
-      "melanotan-1-10mg",
-      "melanotan-2-10mg",
-      "pt-141-10mg",
-      "superhuman-blend-10ml",
-    ],
+    blurb: "Melanocortin pathway reference compounds.",
+    slugs: ["melanotan-1-10mg", "melanotan-2-10mg", "pt-141-10mg"],
   },
   {
     id: "other",
