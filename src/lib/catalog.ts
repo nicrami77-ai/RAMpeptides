@@ -84,9 +84,9 @@ export const catalog: Product[] = [
     priceUsd: 75,
     outOfStock: true,
     tagline:
-      "The Trips Blend (Three of a Kind) — kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL reconstitution vial.",
+      "The Trips Blend (Three of a Kind) — known for its triple GH-axis stack. Kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL reconstitution vial.",
     description:
-      "TRI-MORELIN (The Trips Blend — Three of a Kind) ships as a three-piece research kit: one Tesamorelin 10mg vial, one CJC-1295 (No DAC)/Ipamorelin 10mg vial (CJC 5mg + Ipamorelin 5mg), and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / CJC 5 / Ipa 5). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "TRI-MORELIN (The Trips Blend — Three of a Kind) is known for its triple GH-axis research stack. Ships as a three-piece research kit: one Tesamorelin 10mg vial, one CJC-1295 (No DAC)/Ipamorelin 10mg vial (CJC 5mg + Ipamorelin 5mg), and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / CJC 5 / Ipa 5). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     blend: [
       { name: "Tesamorelin vial", amount: "1 × 10mg" },
       { name: "CJC/IPA vial", amount: "1 × 10mg (5mg/5mg)" },
@@ -112,7 +112,7 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
       intro:
-        "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL reconstitution vial. The Trips Blend — Three of a Kind (Tesa 10 / CJC 5 / Ipa 5).",
+        "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL reconstitution vial. The Trips Blend — Three of a Kind, known for its triple GH-axis stack (Tesa 10 / CJC 5 / Ipa 5).",
     },
   },
   {
