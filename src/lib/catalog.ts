@@ -790,18 +790,6 @@ export function isExtrasProduct(slug: string): boolean {
 /** Research-family groupings for the main products page (order matters). */
 export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: string[] }[] = [
   {
-    id: "blends",
-    title: "Just the Blends",
-    blurb: "Branded multi-vial kits and research blends — separate components, not pre-mixed powder blends (except Super Human).",
-    slugs: [
-      "duo-morelin-20mg",
-      "tri-morelin-20mg",
-      "glow-70mg",
-      "klow-80mg",
-      "superhuman-blend-10ml",
-    ],
-  },
-  {
     id: "metabolic",
     title: "Metabolic Research",
     blurb: "Metabolic pathway reference compounds. Related singles stay together as the line expands.",
@@ -842,6 +830,18 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
     slugs: ["ara-290-10mg"],
+  },
+  {
+    id: "blends",
+    title: "Just the Blends",
+    blurb: "Branded multi-vial kits and research blends — separate components, not pre-mixed powder blends (except Super Human).",
+    slugs: [
+      "duo-morelin-20mg",
+      "tri-morelin-20mg",
+      "glow-70mg",
+      "klow-80mg",
+      "superhuman-blend-10ml",
+    ],
   },
   {
     id: "lab",
