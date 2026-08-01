@@ -734,15 +734,15 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 10,
     tagline:
-      "Black RAMpeptides workout tee with front chest logo + full-back DJ Frenchie print. Size 2XL. Limited stock — 3 available.",
+      "Black RAMpeptides workout tee with front chest logo + full-back DJ Frenchie print. Size 2XL. Limited stock — 2 available.",
     description:
-      "RAMpeptides workout t-shirt in black with a small front chest logo and a large full-back DJ Frenchie graphic print. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: 3 available. Merch accessory only; not a research compound.",
+      "RAMpeptides workout t-shirt in black with a small front chest logo and a large full-back DJ Frenchie graphic print. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: 2 available. Merch accessory only; not a research compound.",
     image: "/products/workout-tshirt-black-2xl.jpg",
     specs: {
       purity: "Cotton blend athletic tee",
       form: "T-shirt · size 2XL · black",
       storage: "Machine wash cold, tumble dry low",
-      notice: "Merch accessory only. Limited stock: 3 available.",
+      notice: "Merch accessory only. Limited stock: 2 available.",
       intro:
         "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
     },
