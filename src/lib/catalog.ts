@@ -479,7 +479,7 @@ export const catalog: Product[] = [
     strength: "5mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 25,
+    priceUsd: 30,
     comingSoon: true,
     tagline:
       "Delta Sleep-Inducing Peptide. 5mg lyophilized, ≥99% purity.",
