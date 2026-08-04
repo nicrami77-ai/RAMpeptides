@@ -442,7 +442,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    comingSoon: true,
     tagline:
       "Mitochondria-targeting tetrapeptide (Elamipretide). Lyophilized, ≥99% purity.",
     description:
@@ -480,7 +479,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    comingSoon: true,
     tagline:
       "Delta Sleep-Inducing Peptide. 5mg lyophilized, ≥99% purity.",
     description:
@@ -556,7 +554,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 35,
-    comingSoon: true,
     tagline:
       "EPO-derived helix-B surface peptide (Cibinetide). Lyophilized, ≥99% purity.",
     description:
