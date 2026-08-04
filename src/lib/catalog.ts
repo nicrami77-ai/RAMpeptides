@@ -400,6 +400,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
+    outOfStock: true,
     tagline:
       "16-amino-acid peptide. Lyophilized, ≥99% purity. Reference compound for in-vitro use.",
     description:
