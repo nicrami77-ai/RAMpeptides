@@ -37,27 +37,27 @@ const NOTICE =
 
 export const catalog: Product[] = [
   {
-    slug: "duo-morelin-20mg",
-    name: "DUO-MORELIN",
+    slug: "duo-blend-20mg",
+    name: "DUO-BLEND",
     strength: "20mg kit",
     category: "Peptide",
     form: "Vial",
     priceUsd: 70,
     tagline:
-      "The Dynamic Duo — kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL reconstitution vial.",
+      "Kit includes: 1× Tesamorelin 10mg vial, 1× Ipamorelin 10mg vial, 1× empty 10mL DUO-BLEND reconstitution vial.",
     description:
-      "DUO-MORELIN (The Dynamic Duo) ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / Ipa 10). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "DUO-BLEND ships as a three-piece research kit: one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL DUO-BLEND reconstitution vial. Total peptide content 20mg (Tesamorelin 10mg / Ipamorelin 10mg). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     blend: [
       { name: "Tesamorelin vial", amount: "1 × 10mg" },
       { name: "Ipamorelin vial", amount: "1 × 10mg" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+      { name: "Empty DUO-BLEND reconstitution vial", amount: "1 × 10mL" },
     ],
     labProtocol: {
       title: "Laboratory combination protocol (research use only)",
       steps: [
         "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
         "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Transfer both solutions into the included sterile empty 10mL DUO-BLEND vial (or into one of the original vials if headspace allows).",
         "Gently swirl to combine — do not shake.",
         "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
         "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
@@ -65,38 +65,39 @@ export const catalog: Product[] = [
       notice:
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
-    image: "/products/duo-morelin-20mg.jpg",
+    image: "/products/duo-blend-20mg.jpg",
+    imageFit: "contain",
     specs: {
       purity: "≥99%",
-      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL recon vial",
+      form: "Kit — 1 Tesamorelin vial + 1 Ipamorelin vial + 1 empty 10mL DUO-BLEND recon vial",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
       intro:
-        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL reconstitution vial. The Dynamic Duo — Tesamorelin + Ipamorelin.",
+        "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL DUO-BLEND reconstitution vial (Tesamorelin 10mg / Ipamorelin 10mg).",
     },
   },
   {
-    slug: "tri-morelin-20mg",
-    name: "TRI-MORELIN",
+    slug: "tri-blend-20mg",
+    name: "TRI-BLEND",
     strength: "20mg kit",
     category: "Peptide",
     form: "Vial",
     priceUsd: 75,
     tagline:
-      "The Trips Blend (Three of a Kind) — known for its triple GH-axis stack. Kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL reconstitution vial.",
+      "Kit includes: 1× Tesamorelin 10mg vial, 1× CJC/IPA 10mg vial, 1× empty 10mL TRI-BLEND reconstitution vial.",
     description:
-      "TRI-MORELIN (The Trips Blend — Three of a Kind) is known for its triple GH-axis research stack. Ships as a three-piece research kit: one Tesamorelin 10mg vial, one CJC-1295 (No DAC)/Ipamorelin 10mg vial (CJC 5mg + Ipamorelin 5mg), and one empty 10mL reconstitution vial. Total peptide content 20mg (Tesa 10 / CJC 5 / Ipa 5). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "TRI-BLEND ships as a three-piece research kit: one Tesamorelin 10mg vial, one CJC-1295 (No DAC)/Ipamorelin 10mg vial (CJC 5mg + Ipamorelin 5mg), and one empty 10mL TRI-BLEND reconstitution vial. Total peptide content 20mg (Tesa 10 / CJC 5 / Ipa 5). Each peptide component is lyophilized powder manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     blend: [
       { name: "Tesamorelin vial", amount: "1 × 10mg" },
       { name: "CJC/IPA vial", amount: "1 × 10mg (5mg/5mg)" },
-      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+      { name: "Empty TRI-BLEND reconstitution vial", amount: "1 × 10mL" },
     ],
     labProtocol: {
       title: "Laboratory combination protocol (research use only)",
       steps: [
         "Reconstitute each peptide separately with bacteriostatic water using sterile laboratory technique.",
         "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
-        "Transfer both solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Transfer both solutions into the included sterile empty 10mL TRI-BLEND vial (or into one of the original vials if headspace allows).",
         "Gently swirl to combine — do not shake.",
         "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
         "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
@@ -104,14 +105,15 @@ export const catalog: Product[] = [
       notice:
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
-    image: "/products/tri-morelin-20mg.jpg",
+    image: "/products/tri-blend-20mg.jpg",
+    imageFit: "contain",
     specs: {
       purity: "≥99%",
-      form: "Kit — 1 Tesamorelin vial + 1 CJC/IPA vial + 1 empty 10mL recon vial",
+      form: "Kit — 1 Tesamorelin vial + 1 CJC/IPA vial + 1 empty 10mL TRI-BLEND recon vial",
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
       intro:
-        "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL reconstitution vial. The Trips Blend — Three of a Kind, known for its triple GH-axis stack (Tesa 10 / CJC 5 / Ipa 5).",
+        "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL TRI-BLEND reconstitution vial (Tesa 10 / CJC 5 / Ipa 5).",
     },
   },
   {
@@ -855,8 +857,8 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     title: "Just the Blends",
     blurb: "Branded multi-vial kits and research blends — separate components, not pre-mixed powder blends (except Super Human).",
     slugs: [
-      "duo-morelin-20mg",
-      "tri-morelin-20mg",
+      "duo-blend-20mg",
+      "tri-blend-20mg",
       "glow-70mg",
       "klow-80mg",
       "superhuman-blend-10ml",
