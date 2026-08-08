@@ -682,6 +682,27 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "slim-can-cooler-crest",
+    name: "Slim Can Cooler",
+    strength: "2-in-1 · Crest",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 20,
+    tagline:
+      "Double-walled stainless steel slim can cooler with RAMpeptides crest logo. Limited stock — only 1 available.",
+    description:
+      "RAMpeptides slim can cooler / insulator in double-walled stainless steel. Fits standard slim cans and works as a 2-in-1 insulated can cooler cup. Features the RAMpeptides crest logo. Limited stock: only 1 available. Merch accessory only; not a research compound.",
+    image: "/products/slim-can-cooler-crest.jpg",
+    specs: {
+      purity: "Double-walled stainless steel",
+      form: "Slim can cooler · 2-in-1 cup",
+      storage: "Room temperature",
+      notice: "Merch accessory only. Limited stock: 1 available.",
+      intro:
+        "Manufactured solely for professional laboratory testing and research environments to keep your drinks colder longer. Don’t over think this Karen.",
+    },
+  },
+  {
     slug: "workout-tshirt-2xl",
     name: "RAMpeptides Workout T-Shirt",
     strength: "2XL · White",
@@ -794,6 +815,7 @@ export const EXTRAS_SLUGS = [
   "reconstitution-vial-10ml",
   "vault-case",
   "slim-can-cooler",
+  "slim-can-cooler-crest",
   "workout-tshirt-2xl",
   "workout-tshirt-red-2xl",
   "workout-tshirt-black-2xl",
