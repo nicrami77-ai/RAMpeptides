@@ -785,27 +785,6 @@ export const catalog: Product[] = [
       intro:
         "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
     },
-  },
-  {
-    slug: "trucker-hat-flag",
-    name: "RAMpeptides Flag Trucker Hat",
-    strength: "Snapback",
-    category: "Accessory",
-    form: "Accessory",
-    priceUsd: 8,
-    tagline:
-      "Black snapback trucker hat with RAMpeptides American flag logo. Limited stock — only 1 available.",
-    description:
-      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides distressed American flag logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
-    image: "/products/trucker-hat-flag.jpg",
-    specs: {
-      purity: "Foam front · mesh back",
-      form: "Snapback trucker hat",
-      storage: "Spot clean only",
-      notice: "Merch accessory only. Limited stock: 1 available.",
-      intro:
-        "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
-    },
   }
 ];
 
@@ -820,7 +799,6 @@ export const EXTRAS_SLUGS = [
   "workout-tshirt-black-2xl",
   "workout-tshirt-black-flag-2xl",
   "trucker-hat",
-  "trucker-hat-flag",
 ] as const;
 
 export function isExtrasProduct(slug: string): boolean {
