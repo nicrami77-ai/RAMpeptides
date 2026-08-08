@@ -714,6 +714,7 @@ export const catalog: Product[] = [
     description:
       "RAMpeptides workout t-shirt in white with the RAMpeptides American flag logo printed on the chest. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: 2 available. Merch accessory only; not a research compound.",
     image: "/products/workout-tshirt-2xl.jpg",
+    imageFit: "contain",
     specs: {
       purity: "Cotton blend athletic tee",
       form: "T-shirt · size 2XL · white",
@@ -773,7 +774,7 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 10,
     tagline:
-      "Black RAMpeptides workout tee with front chest logo + full-back distressed American flag print. Size 2XL. Limited stock — 1 available.",
+      "Black RAMpeptides workout tee with full-back distressed American flag print (front chest logo). Size 2XL. Limited stock — 1 available.",
     description:
       "RAMpeptides workout t-shirt in black with a small front chest RAM PEPTIDES logo and a large full-back distressed American flag graphic with brand mark and RAMpeptides.com. Soft athletic-style tee for training or casual wear. Currently offered in size 2XL. Limited stock: 1 available. Merch accessory only; not a research compound.",
     image: "/products/workout-tshirt-black-flag-2xl.jpg",
