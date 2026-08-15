@@ -806,6 +806,27 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "zuri-goodyear-tee-2xl",
+    name: "RAMpeptides Zuri Goodyear T-Shirt",
+    strength: "2XL",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 15,
+    tagline:
+      "RAMpeptides Zuri Goodyear tee with full front chest logo. Size 2XL. Multiple sizes and colors available.",
+    description:
+      "RAMpeptides Zuri Goodyear t-shirt featuring a large front chest Zuri logo and RAMpeptides.com. 100% Airlume cotton, classic crew neck, short sleeves. Soft athletic-style tee for training or casual wear. Merch accessory only; not a research compound.",
+    image: "/products/RAMpeptides.Zuri.chest.logo.jpg",
+    specs: {
+      purity: "100% Airlume Cotton",
+      form: "T-shirt · Adult Unisex 2XL · White, Black, Navy, Natural, Red, Grey",
+      storage: "Machine wash cold, tumble dry low. Wash with like colors. Do not iron decoration. Non-chlorine bleach when needed. Low iron. Do not dry clean.",
+      notice: "Merch accessory only. Limited availability. Multiple sizes and colors available.",
+      intro:
+        "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
+    },
+  },
+  {
     slug: "trucker-hat",
     name: "RAMpeptides Trucker Hat",
     strength: "Snapback",
@@ -839,6 +860,7 @@ export const EXTRAS_SLUGS = [
   "workout-tshirt-red-2xl",
   "workout-tshirt-black-2xl",
   "workout-tshirt-black-flag-2xl",
+  "zuri-goodyear-tee-2xl",
   "trucker-hat",
 ] as const;
 
