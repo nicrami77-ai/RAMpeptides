@@ -813,7 +813,7 @@ export const catalog: Product[] = [
     form: "Accessory",
     priceUsd: 15,
     tagline:
-      "RAMpeptides Zuri Goodyear tee with full front chest logo. Size 2XL. Multiple sizes and colors available.",
+      "RAMpeptides Zuri Goodyear tee with full front chest logo. Size Small-2XL. Multiple sizes and colors available.",
     description:
       "RAMpeptides Zuri Goodyear t-shirt featuring a large front chest Zuri logo and RAMpeptides.com. 100% Airlume cotton, classic crew neck, short sleeves. Soft athletic-style tee for training or casual wear. Merch accessory only; not a research compound.",
     image: "/products/RAMpeptides.Zuri.chest.logo.jpg",
