@@ -827,6 +827,27 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "peps-away-tee",
+    name: "RAMpeptides Peps Away T-Shirt",
+    strength: "Small-2XL",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 15,
+    tagline:
+      "RAMpeptides Peps Away tee with full front and back crest graphic. Size Small-2XL. Multiple sizes and colors available.",
+    description:
+      "RAMpeptides Peps Away t-shirt featuring the full circular crest graphic with Zuri riding the bomb. 100% Airlume cotton, classic crew neck, short sleeves. Soft athletic-style tee for training or casual wear. Merch accessory only; not a research compound.",
+    image: "/products/RAMpeptides.peps.away.crest.jpg",
+    specs: {
+      purity: "100% Airlume Cotton",
+      form: "T-shirt · Adult Unisex Small-2XL · White, Black, Navy, Natural, Red, Grey",
+      storage: "Machine wash cold, tumble dry low. Wash with like colors. Do not iron decoration. Non-chlorine bleach when needed. Low iron. Do not dry clean.",
+      notice: "Merch accessory only. Limited availability. Multiple sizes and colors available.",
+      intro:
+        "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
+    },
+  },
+  {
     slug: "trucker-hat",
     name: "RAMpeptides Trucker Hat",
     strength: "Snapback",
@@ -861,6 +882,7 @@ export const EXTRAS_SLUGS = [
   "workout-tshirt-black-2xl",
   "workout-tshirt-black-flag-2xl",
   "zuri-goodyear-tee-2xl",
+  "peps-away-tee",
   "trucker-hat",
 ] as const;
 
