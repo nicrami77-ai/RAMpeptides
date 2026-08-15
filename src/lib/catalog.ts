@@ -727,7 +727,7 @@ export const catalog: Product[] = [
     strength: "2XL · White",
     category: "Accessory",
     form: "Accessory",
-    priceUsd: 10,
+    priceUsd: 15,
     tagline:
       "White RAMpeptides workout tee with American flag logo. Size 2XL. Limited stock — 2 available.",
     description:
@@ -748,7 +748,7 @@ export const catalog: Product[] = [
     strength: "2XL · Red",
     category: "Accessory",
     form: "Accessory",
-    priceUsd: 10,
+    priceUsd: 15,
     tagline:
       "RED RAMpeptides workout tee with Frenchie logo. Size 2XL. Limited stock — only 1 available.",
     description:
@@ -769,7 +769,7 @@ export const catalog: Product[] = [
     strength: "2XL · Black",
     category: "Accessory",
     form: "Accessory",
-    priceUsd: 10,
+    priceUsd: 15,
     tagline:
       "Black RAMpeptides workout tee with front chest logo + full-back DJ Frenchie print. Size 2XL. Limited stock — 2 available.",
     description:
@@ -790,7 +790,7 @@ export const catalog: Product[] = [
     strength: "2XL · Black · Flag",
     category: "Accessory",
     form: "Accessory",
-    priceUsd: 10,
+    priceUsd: 15,
     tagline:
       "Black RAMpeptides workout tee with full-back distressed American flag print (front chest logo). Size 2XL. Limited stock — 1 available.",
     description:
