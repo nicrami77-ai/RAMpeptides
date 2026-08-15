@@ -441,6 +441,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
+    outOfStock: true,
     tagline:
       "Mitochondria-targeting tetrapeptide (Elamipretide). Lyophilized, ≥99% purity.",
     description:
