@@ -808,7 +808,7 @@ export const catalog: Product[] = [
   {
     slug: "zuri-goodyear-tee-2xl",
     name: "RAMpeptides Zuri Goodyear T-Shirt",
-    strength: "2XL",
+    strength: "Small-2XL",
     category: "Accessory",
     form: "Accessory",
     priceUsd: 15,
@@ -819,7 +819,7 @@ export const catalog: Product[] = [
     image: "/products/RAMpeptides.Zuri.chest.logo.jpg",
     specs: {
       purity: "100% Airlume Cotton",
-      form: "T-shirt · Adult Unisex 2XL · White, Black, Navy, Natural, Red, Grey",
+      form: "T-shirt · Adult Unisex Small-2XL · White, Black, Navy, Natural, Red, Grey",
       storage: "Machine wash cold, tumble dry low. Wash with like colors. Do not iron decoration. Non-chlorine bleach when needed. Low iron. Do not dry clean.",
       notice: "Merch accessory only. Limited availability. Multiple sizes and colors available.",
       intro:
