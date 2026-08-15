@@ -836,7 +836,7 @@ export const catalog: Product[] = [
     tagline:
       "RAMpeptides Peps Away tee with full front and back crest graphic. Size Small-2XL. Multiple sizes and colors available.",
     description:
-      "RAMpeptides Peps Away t-shirt featuring the full circular crest graphic with Zuri riding the bomb. 100% Airlume cotton, classic crew neck, short sleeves. Soft athletic-style tee for training or casual wear. Merch accessory only; not a research compound.",
+      "RAMpeptides Peps Away t-shirt featuring the full circular crest graphic with Zuri riding and being the bomb. 100% Airlume cotton, classic crew neck, short sleeves. Soft athletic-style tee for training or casual wear. Merch accessory only; not a research compound.",
     image: "/products/RAMpeptides.peps.away.crest.jpg",
     specs: {
       purity: "100% Airlume Cotton",
