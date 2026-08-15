@@ -228,7 +228,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 60,
-    outOfStock: true,
+    stockStatus: "Ships on August 18th",
     tagline:
       "20mg lyophilized peptide preparation. ≥99% purity, third-party verified.",
     description:
