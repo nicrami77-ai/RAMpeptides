@@ -680,6 +680,26 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "rampeptides-tin",
+    name: "RAMpeptides Tin",
+    strength: "Premium Storage",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 15,
+    comingSoon: true,
+    tagline:
+      "Premium metal aluminum alloy tin for snus / nicotine pouch storage. External thread, durable construction.",
+    description:
+      "Premium Snus / Nic Pouch Can — metal aluminum alloy external thread tin box storage. High-quality reusable container for nicotine products or research accessories. Merch accessory only; not a research compound.",
+    image: "/products/RAMpeptides-tin.jpg",
+    specs: {
+      purity: "Aluminum alloy metal tin",
+      form: "External thread tin can",
+      storage: "Room temperature",
+      notice: "Merch / storage accessory only.",
+    },
+  },
+  {
     slug: "slim-can-cooler",
     name: "Slim Can Cooler",
     strength: "2-in-1",
@@ -875,6 +895,7 @@ export const EXTRAS_SLUGS = [
   "rubber-caps",
   "reconstitution-vial-10ml",
   "vault-case",
+  "rampeptides-tin",
   "slim-can-cooler",
   "slim-can-cooler-crest",
   "workout-tshirt-2xl",
