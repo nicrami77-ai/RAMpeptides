@@ -190,7 +190,16 @@ export default async function ProductDetailPage({
               </dl>
             </div>
 
-            {product.outOfStock ? (
+            {product.comingSoon ? (
+              <div className="mt-10">
+                <span
+                  aria-disabled="true"
+                  className="inline-block bg-[var(--muted)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full cursor-not-allowed opacity-80"
+                >
+                  Coming soon
+                </span>
+              </div>
+            ) : product.outOfStock ? (
               <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
                 <span
                   aria-disabled="true"
