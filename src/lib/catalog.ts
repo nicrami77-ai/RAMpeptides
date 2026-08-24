@@ -897,9 +897,6 @@ export const EXTRAS_SLUGS = [
   "vault-case",
   "rampeptides-tin",
   "slim-can-cooler",
-  "epithalon-5mg",
-  "cartalax-20mg",
-  "slu-pp-332-5mg",
   "slim-can-cooler-crest",
   "workout-tshirt-2xl",
   "workout-tshirt-red-2xl",
@@ -957,7 +954,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg"],
+    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg"],
   },
   {
     id: "blends",
