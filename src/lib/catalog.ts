@@ -688,13 +688,13 @@ export const catalog: Product[] = [
     priceUsd: 15,
     comingSoon: true,
     tagline:
-      "Premium metal aluminum alloy tin for snus / nicotine pouch storage. External thread, durable construction.",
+      "CNC-machined aluminum alloy snus / nicotine pouch tin. External thread, black finish, RAMpeptides branded.",
     description:
-      "Premium Snus / Nic Pouch Can — metal aluminum alloy external thread tin box storage. High-quality reusable container for nicotine products or research accessories. Merch accessory only; not a research compound.",
+      "Premium CNC-machined aluminum alloy tin for snus and nicotine pouch storage. External thread design, durable construction, black finish with RAMpeptides crest. Dimensions: 7.5 × 7.5 × 4 cm. Weight: 0.1 kg. High-quality reusable storage tin. Merch accessory only; not a research compound.",
     image: "/products/RAMpeptides-tin.jpg",
     specs: {
-      purity: "Aluminum alloy metal tin",
-      form: "External thread tin can",
+      purity: "CNC-machined aluminum alloy",
+      form: "External thread tin can (7.5 × 7.5 × 4 cm, 0.1 kg)",
       storage: "Room temperature",
       notice: "Merch / storage accessory only.",
     },
