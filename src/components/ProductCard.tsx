@@ -61,14 +61,6 @@ export default function ProductCard({ product }: { product: Product }) {
     </>
   );
 
-  if (product.comingSoon) {
-    return (
-      <div className="group block cursor-default" aria-label={`${product.name} coming soon`}>
-        {inner}
-      </div>
-    );
-  }
-
   return (
     <Link href={`/products/${product.slug}`} className="group block">
       {inner}

@@ -9,7 +9,7 @@ import AddToCartButton from "@/components/AddToCartButton";
 type Params = { slug: string };
 
 export async function generateStaticParams() {
-  return catalog.filter((p) => !p.comingSoon).map((p) => ({ slug: p.slug }));
+  return catalog.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -33,7 +33,7 @@ export default async function ProductDetailPage({
 }) {
   const { slug } = await params;
   const product = getProduct(slug);
-  if (!product || product.comingSoon) notFound();
+  if (!product) notFound();
 
   const notifyMailto = `mailto:info@rampeptides.com?subject=${encodeURIComponent(
     `Notify when back in stock: ${product.name} ${product.strength}`,
@@ -96,6 +96,14 @@ export default async function ProductDetailPage({
             <p className="mt-3 text-xl text-[var(--muted)]">
               {product.strength}
             </p>
+
+            {product.comingSoon && (
+              <div className="mt-4 inline-block rounded-full bg-black px-5 py-1.5">
+                <span className="font-display text-sm tracking-[3px] text-white">
+                  COMING SOON
+                </span>
+              </div>
+            )}
 
             <div className="mt-8 flex items-baseline gap-3">
               <p className="font-display text-5xl tracking-tight tabular-nums">
