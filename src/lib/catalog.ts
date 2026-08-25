@@ -888,6 +888,63 @@ export const catalog: Product[] = [
         "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
     },
   },
+  {
+    slug: "epithalon-5mg",
+    name: "Epithalon",
+    strength: "5mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    comingSoon: true,
+    tagline: "Epithalon (Epitalon) 5mg lyophilized. ≥99% purity.",
+    description:
+      "Epithalon (Epitalon) is a synthetic tetrapeptide studied for its potential interaction with telomerase. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/epithalon-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "cartalax-20mg",
+    name: "Cartalax",
+    strength: "20mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 40,
+    comingSoon: true,
+    tagline: "Cartalax 20mg lyophilized. ≥99% purity.",
+    description:
+      "Cartalax is a synthetic peptide studied for its potential effects on cartilage and connective tissue. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/cartalax-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
+    slug: "slu-pp-332-5mg",
+    name: "SLU-PP-332",
+    strength: "5mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 40,
+    comingSoon: true,
+    tagline: "SLU-PP-332 5mg lyophilized. ≥99% purity.",
+    description:
+      "SLU-PP-332 is a synthetic compound studied for its potential interaction with estrogen-related receptor alpha (ERRα). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/slu-pp-332-5mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  }
 ];
 
 /** Merch / accessories shown on /extras (not main peptide catalog). */
