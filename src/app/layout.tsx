@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/components/CartContext";
 import ResearchBanner from "@/components/ResearchBanner";
+import ShippingBanner from "@/components/ShippingBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LegalGate from "@/components/LegalGate";
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-screen flex flex-col">
         <ResearchBanner />
+        <ShippingBanner />
         <CartProvider>
         <Header />
         <main className="flex-1">{children}</main>
