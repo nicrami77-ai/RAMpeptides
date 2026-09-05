@@ -954,7 +954,7 @@ export const catalog: Product[] = [
     priceUsd: 15,
     tagline: "Relax Karen, don’t call H.R. — it’s just a shirt! Limited edition rooster graphic tee.",
     description:
-      "Black crewneck t-shirt featuring the GLOCK-GLOCK-GLOCK rooster design with PT-141 vial and RAMpeptides branding. Relax Karen, don’t call H.R. — it’s just a shirt! Merch accessory only.",
+      "Black crewneck t-shirt featuring the GLOCK-GLOCK-GLOCK rooster design with PT-141 vial and RAMpeptides branding. Relax Karen, don’t call H.R. — it’s just a shirt! Available in Small through 2XL. Merch accessory only.",
     image: "/products/glock-glock-glock.jpg",
     specs: {
       purity: "100% cotton",
