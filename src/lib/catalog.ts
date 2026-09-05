@@ -968,20 +968,20 @@ export const catalog: Product[] = [
 
 /** Merch / accessories shown on /extras (not main peptide catalog). */
 export const EXTRAS_SLUGS = [
-  "rubber-caps",
-  "reconstitution-vial-10ml",
-  "vault-case",
-  "rampeptides-tin",
-  "slim-can-cooler",
-  "slim-can-cooler-crest",
+  "trucker-hat",
   "workout-tshirt-2xl",
   "workout-tshirt-red-2xl",
   "workout-tshirt-black-2xl",
   "workout-tshirt-black-flag-2xl",
   "zuri-goodyear-tee-2xl",
   "peps-away-tee",
-  "trucker-hat",
   "glock-glock-glock",
+  "rubber-caps",
+  "reconstitution-vial-10ml",
+  "vault-case",
+  "rampeptides-tin",
+  "slim-can-cooler",
+  "slim-can-cooler-crest",
 ] as const;
 
 export function isExtrasProduct(slug: string): boolean {
