@@ -952,9 +952,9 @@ export const catalog: Product[] = [
     category: "Accessory",
     form: "Accessory",
     priceUsd: 15,
-    tagline: "Limited edition rooster graphic tee.",
+    tagline: "Relax Karen, don’t call H.R. — it’s just a shirt! Limited edition rooster graphic tee.",
     description:
-      "Black crewneck t-shirt featuring the GLOCK-GLOCK-GLOCK rooster design with PT-141 vial and RAMpeptides branding. Merch accessory only.",
+      "Black crewneck t-shirt featuring the GLOCK-GLOCK-GLOCK rooster design with PT-141 vial and RAMpeptides branding. Relax Karen, don’t call H.R. — it’s just a shirt! Merch accessory only.",
     image: "/products/glock-glock-glock.jpg",
     specs: {
       purity: "100% cotton",
