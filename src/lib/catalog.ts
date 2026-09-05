@@ -944,6 +944,25 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
+  },
+  {
+    slug: "glock-glock-glock",
+    name: "GLOCK-GLOCK-GLOCK",
+    strength: "Edition",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 15,
+    tagline: "Limited edition rooster graphic tee.",
+    description:
+      "Black crewneck t-shirt featuring the GLOCK-GLOCK-GLOCK rooster design with PT-141 vial and RAMpeptides branding. Merch accessory only.",
+    image: "/products/glock-glock-glock.jpg",
+    specs: {
+      purity: "100% cotton",
+      form: "Black crewneck t-shirt",
+      storage: "Machine wash cold, tumble dry low",
+      notice: "Merch accessory only.",
+      intro: "GLOCK-GLOCK-GLOCK limited edition graphic tee.",
+    },
   }
 ];
 
@@ -962,6 +981,7 @@ export const EXTRAS_SLUGS = [
   "zuri-goodyear-tee-2xl",
   "peps-away-tee",
   "trucker-hat",
+  "glock-glock-glock",
 ] as const;
 
 export function isExtrasProduct(slug: string): boolean {
