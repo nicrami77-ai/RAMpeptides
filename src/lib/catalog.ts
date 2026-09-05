@@ -742,6 +742,27 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "trucker-hat",
+    name: "RAMpeptides Trucker Hat",
+    strength: "Snapback",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 8,
+    tagline:
+      "Black snapback trucker hat with RAMpeptides with Zuri logo. Limited stock — only 1 available.",
+    description:
+      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides Zuri logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
+    image: "/products/trucker-hat.jpg",
+    specs: {
+      purity: "Foam front · mesh back",
+      form: "Snapback trucker hat",
+      storage: "Spot clean only",
+      notice: "Merch accessory only. Limited stock: 1 available.",
+      intro:
+        "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
+    },
+  },
+  {
     slug: "workout-tshirt-2xl",
     name: "RAMpeptides Workout T-Shirt",
     strength: "2XL · White",
@@ -867,27 +888,7 @@ export const catalog: Product[] = [
         "Manufactured for you to sweat in, it is intended solely for professional gym bros, laboratory testing and research environments.",
     },
   },
-  {
-    slug: "trucker-hat",
-    name: "RAMpeptides Trucker Hat",
-    strength: "Snapback",
-    category: "Accessory",
-    form: "Accessory",
-    priceUsd: 8,
-    tagline:
-      "Black snapback trucker hat with RAMpeptides with Zuri logo. Limited stock — only 1 available.",
-    description:
-      "RAMpeptides snapback trucker hat in black with mesh back and adjustable snap closure. Features the RAMpeptides Zuri logo on the front panel. One-size adjustable fit. Limited stock: only 1 available. Merch accessory only; not a research compound.",
-    image: "/products/trucker-hat.jpg",
-    specs: {
-      purity: "Foam front · mesh back",
-      form: "Snapback trucker hat",
-      storage: "Spot clean only",
-      notice: "Merch accessory only. Limited stock: 1 available.",
-      intro:
-        "Manufactured for those too lazy or don’t want to comb their hair, it is intended solely for professionals in laboratory and research environments.",
-    },
-  },
+
   {
     slug: "epithalon-5mg",
     name: "Epithalon",
