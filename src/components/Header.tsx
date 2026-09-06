@@ -47,11 +47,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center ml-6">
-          <Link href="/cart" className="flex items-center gap-2 hover:text-[var(--muted)]">
-            <span className="text-sm tracking-wide">Cart ({itemCount})</span>
-          </Link>
-        </div>
+        {/* Cart hidden while ordering is closed */}
 
         <button
           aria-label="Toggle menu"
@@ -64,9 +60,7 @@ export default function Header() {
         </button>
       </div>
 
-      <div className="md:hidden flex items-center mr-4">
-          <Link href="/cart" className="text-sm tracking-wide">Cart ({itemCount})</Link>
-        </div>
+      {/* Cart hidden while ordering is closed */}
       {open && (
         <div className="md:hidden border-t border-[var(--border)] bg-[var(--background)]">
           <nav className="px-6 py-4 flex flex-col gap-3 text-sm tracking-wide">
