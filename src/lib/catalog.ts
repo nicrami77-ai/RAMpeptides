@@ -441,7 +441,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    outOfStock: true,
     tagline:
       "Mitochondria-targeting tetrapeptide (Elamipretide). Lyophilized, ≥99% purity.",
     description:
@@ -896,7 +895,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    comingSoon: true,
     tagline: "Epithalon (Epitalon) 5mg lyophilized. ≥99% purity.",
     description:
       "Epithalon (Epitalon) is a synthetic tetrapeptide studied for its potential interaction with telomerase. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
@@ -915,7 +913,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline: "Cartalax 20mg lyophilized. ≥99% purity.",
     description:
       "Cartalax is a synthetic peptide studied for its potential effects on cartilage and connective tissue. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
@@ -934,7 +931,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline: "SLU-PP-332 5mg lyophilized. ≥99% purity.",
     description:
       "SLU-PP-332 is a synthetic compound studied for its potential interaction with estrogen-related receptor alpha (ERRα). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
