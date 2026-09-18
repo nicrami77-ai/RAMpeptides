@@ -66,8 +66,12 @@ export default function CheckoutPage() {
   const [clientSecret, setClientSecret] = useState("");
   const [loadingClientSecret, setLoadingClientSecret] = useState(false);
 
+  // Discount code (whyamisogay = free shipping)
+  const [discountCode, setDiscountCode] = useState("");
+  const [discountApplied, setDiscountApplied] = useState(false);
+
   // Math
-  const shipping = 10.00;
+  const shipping = discountApplied ? 0 : 10.00;
   const taxRate = STATE_TAX_RATES[formData.state] || 0;
   const tax = subtotal * (taxRate / 100);
   const total = subtotal + shipping + tax;
@@ -151,6 +155,36 @@ export default function CheckoutPage() {
             <input required type="text" className="w-full p-3 border border-[var(--border)] bg-transparent rounded-none" value={formData.zip} onChange={e=>setFormData({...formData, zip: e.target.value})} />
           </div>
           
+          {/* Discount Code */}
+          <div className="pt-4 border-t border-[var(--border)]">
+            <label className="block text-xs uppercase tracking-widest mb-2">Discount Code</label>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={discountCode}
+                onChange={(e) => setDiscountCode(e.target.value.toLowerCase())}
+                placeholder="Enter code"
+                className="flex-1 p-3 border border-[var(--border)] bg-transparent rounded-none text-sm"
+              />
+              <button
+                type="button"
+                onClick={() => {
+                  if (discountCode.trim() === "whyamisogay") {
+                    setDiscountApplied(true);
+                  } else {
+                    alert("Invalid code");
+                  }
+                }}
+                className="px-6 border border-[var(--border)] text-sm hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-colors"
+              >
+                Apply
+              </button>
+            </div>
+            {discountApplied && (
+              <p className="text-sm mt-2 text-green-600">Free shipping applied, gay boy</p>
+            )}
+          </div>
+
           <button disabled={loadingClientSecret} type="submit" className="w-full mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50 transition-opacity">
             {loadingClientSecret ? "Securely initializing payment..." : "Continue to Payment"}
           </button>
