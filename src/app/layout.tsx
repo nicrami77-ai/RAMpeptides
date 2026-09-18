@@ -56,7 +56,6 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-screen flex flex-col">
         <ResearchBanner />
-        <ShippingBanner />
         <CartProvider>
         <Header />
         <main className="flex-1">{children}</main>
