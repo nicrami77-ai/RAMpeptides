@@ -299,6 +299,7 @@ export const catalog: Product[] = [
     },
     coaUrl:
       "https://verify.janoshik.com/tests/133614-Tesamorelin_Transparent_Purple_or_PurpleBlue_HTZ2XRW2GWUW",
+    outOfStock: true,
   },
   {
     slug: "ipamorelin-10mg",
