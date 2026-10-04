@@ -960,6 +960,24 @@ export const catalog: Product[] = [
       notice: "Merch accessory only.",
       intro: "GLOCK-GLOCK-GLOCK limited edition graphic tee.",
     },
+  },
+  {
+    slug: "fst-344-1mg",
+    name: "FST-344",
+    strength: "1mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 60,
+    tagline: "Follistatin-344 (FST-344). 1mg lyophilized, ≥99% purity.",
+    description:
+      "FST-344 (Follistatin-344) is a synthetic recombinant protein/peptide studied in myostatin-inhibition and muscle-tissue research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/fst-344-1mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
   }
 ];
 
@@ -1028,7 +1046,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg"],
+    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
   },
   {
     id: "blends",
