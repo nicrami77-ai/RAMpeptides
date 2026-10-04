@@ -74,7 +74,6 @@ export const catalog: Product[] = [
       intro:
         "Each order includes one Tesamorelin 10mg vial, one Ipamorelin 10mg vial, and one empty 10mL DUO-BLEND reconstitution vial (Tesamorelin 10mg / Ipamorelin 10mg).",
     },
-    outOfStock: true,
   },
   {
     slug: "tri-blend-20mg",
@@ -114,7 +113,6 @@ export const catalog: Product[] = [
       intro:
         "Each order includes one Tesamorelin 10mg vial, one CJC/IPA 10mg vial, and one empty 10mL TRI-BLEND reconstitution vial (Tesa 10 / CJC 5 / Ipa 5).",
     },
-    outOfStock: true,
   },
   {
     slug: "glow-70mg",
@@ -301,7 +299,6 @@ export const catalog: Product[] = [
     },
     coaUrl:
       "https://verify.janoshik.com/tests/133614-Tesamorelin_Transparent_Purple_or_PurpleBlue_HTZ2XRW2GWUW",
-    outOfStock: true,
   },
   {
     slug: "ipamorelin-10mg",
