@@ -1059,13 +1059,13 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "melanocortin",
     title: "Melanocortin Research",
     blurb: "Melanocortin pathway reference compounds.",
-    slugs: ["melanotan-1-10mg", "melanotan-2-10mg", "pt-141-10mg"],
+    slugs: ["melanotan-1-10mg", "melanotan-2-10mg", "pt-141-10mg", "oxytocin-10mg"],
   },
   {
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg", "oxytocin-10mg"],
+    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
   },
   {
     id: "blends",
