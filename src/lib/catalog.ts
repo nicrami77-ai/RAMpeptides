@@ -978,6 +978,25 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
+  },
+  {
+    slug: "oxytocin-10mg",
+    name: "Oxytocin",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 30,
+    comingSoon: true,
+    tagline: "Oxytocin 10mg lyophilized. ≥99% purity.",
+    description:
+      "Oxytocin is a mammalian neurohypophysial peptide. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/OXYTOCIN-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
   }
 ];
 
@@ -1046,7 +1065,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
+    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg", "oxytocin-10mg"],
   },
   {
     id: "blends",
