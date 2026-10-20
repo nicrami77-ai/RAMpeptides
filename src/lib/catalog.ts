@@ -357,12 +357,12 @@ export const catalog: Product[] = [
   {
     slug: "ghk-cu-50mg",
     name: "GHK-Cu",
-    strength: "50mg",
+    strength: "10mg",
     category: "Peptide",
     form: "Vial",
     priceUsd: 25,
     tagline:
-      "Copper tripeptide-1 (GHK-Cu). 50mg lyophilized, 99% purity. Reference compound for in-vitro use.",
+      "Copper tripeptide-1 (GHK-Cu). 10mg lyophilized, 99% purity. Reference compound for in-vitro use.",
     description:
       "GHK-Cu (Copper Tripeptide-1) is a copper-binding glycyl-L-histidyl-L-lysine complex studied in extracellular matrix, skin biology, and regenerative research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at 99% purity (batch GHK5005072026-14). Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/ghk-cu-50mg-v5.jpg",
@@ -1065,7 +1065,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg", "5-amino-1mq-50mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
+    slugs: ["ara-290-10mg", "5-amino-1mq-10mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
   },
   {
     id: "blends",
