@@ -685,7 +685,6 @@ export const catalog: Product[] = [
     category: "Accessory",
     form: "Accessory",
     priceUsd: 15,
-    comingSoon: true,
     tagline:
       "CNC-machined aluminum alloy snus / nicotine pouch tin. External thread, black finish, laser-engraved RAMpeptides crest.",
     description:
@@ -889,16 +888,17 @@ export const catalog: Product[] = [
   },
 
   {
-    slug: "epithalon-5mg",
-    name: "Epithalon",
-    strength: "5mg",
+    slug: "5-amino-1mq-10mg",
+    name: "5-AMINO-1MQ",
+    strength: "10mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 30,
-    tagline: "Epithalon (Epitalon) 5mg lyophilized. ≥99% purity.",
+    priceUsd: 40,
+    comingSoon: true,
+    tagline: "NNMT inhibitor. 10mg lyophilized, ≥99% purity.",
     description:
-      "Epithalon (Epitalon) is a synthetic tetrapeptide studied for its potential interaction with telomerase. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/epithalon-10mg.jpg",
+      "5-AMINO-1MQ is a small, membrane-permeable molecule studied as an inhibitor of nicotinamide N-methyltransferase (NNMT). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/5-amino-1mq-10mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Lyophilized powder",
@@ -986,7 +986,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    comingSoon: true,
     tagline: "Oxytocin 10mg lyophilized. ≥99% purity.",
     description:
       "Oxytocin is a mammalian neurohypophysial peptide. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
