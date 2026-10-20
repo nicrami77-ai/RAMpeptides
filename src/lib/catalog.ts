@@ -986,6 +986,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
+    comingSoon: true,
     tagline: "Oxytocin 10mg lyophilized. ≥99% purity.",
     description:
       "Oxytocin is a mammalian neurohypophysial peptide. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
