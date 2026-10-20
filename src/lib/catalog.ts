@@ -115,9 +115,9 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "glow-70mg",
+    slug: "glow-60mg",
     name: "GLOW",
-    strength: "70mg kit",
+    strength: "60mg kit",
     category: "Peptide",
     form: "Vial",
     priceUsd: 55,
@@ -143,7 +143,7 @@ export const catalog: Product[] = [
       notice:
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
-    image: "/products/glow-70mg.jpg",
+    image: "/products/glow-60mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Kit — 1 GHK-Cu vial + 1 BPC/TB vial + 1 empty 10mL recon vial",
@@ -154,9 +154,9 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "klow-80mg",
+    slug: "klow-70mg",
     name: "KLOW",
-    strength: "80mg kit",
+    strength: "70mg kit",
     category: "Peptide",
     form: "Vial",
     priceUsd: 85,
@@ -183,7 +183,7 @@ export const catalog: Product[] = [
       notice:
         "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
     },
-    image: "/products/klow-80mg.jpg",
+    image: "/products/klow-70mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Kit — 1 GHK-Cu + 1 BPC/TB + 1 KPV + 1 empty 10mL recon vial",
@@ -1094,8 +1094,8 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     slugs: [
       "duo-blend-20mg",
       "tri-blend-20mg",
-      "glow-70mg",
-      "klow-80mg",
+      "glow-60mg",
+      "klow-70mg",
       "superhuman-blend-10ml",
     ],
   },
