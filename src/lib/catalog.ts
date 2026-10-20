@@ -477,7 +477,8 @@ export const catalog: Product[] = [
     strength: "5mg",
     category: "Peptide",
     form: "Vial",
-    priceUsd: 30,
+    priceUsd: 50,
+    comingSoon: true,
     tagline: "Orexin A/B. 5mg lyophilized, ≥99% purity.",
     description:
       "Orexin A/B is a neuropeptide studied in arousal, wakefulness, and appetite regulation models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
