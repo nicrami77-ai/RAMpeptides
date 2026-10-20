@@ -472,17 +472,16 @@ export const catalog: Product[] = [
     },
   },
   {
-    slug: "dsip-5mg",
-    name: "DSIP",
+    slug: "orexin-ab-5mg",
+    name: "OREXIN A/B",
     strength: "5mg",
     category: "Peptide",
     form: "Vial",
     priceUsd: 30,
-    tagline:
-      "Delta Sleep-Inducing Peptide. 5mg lyophilized, ≥99% purity.",
+    tagline: "Orexin A/B. 5mg lyophilized, ≥99% purity.",
     description:
-      "DSIP (Delta Sleep-Inducing Peptide) is a nonapeptide originally isolated from cerebral venous blood and studied in sleep-regulation and neuroendocrine research models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/dsip-5mg.jpg",
+      "Orexin A/B is a neuropeptide studied in arousal, wakefulness, and appetite regulation models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/orexin-ab-5mg.jpg",
     specs: {
       purity: "≥99%",
       form: "Lyophilized powder",
@@ -1053,7 +1052,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "neuro",
     title: "Neuro Research",
     blurb: "Cognitive and sleep-research reference compounds.",
-    slugs: ["semax-10mg", "dsip-5mg"],
+    slugs: ["semax-10mg", "orexin-ab-5mg"],
   },
   {
     id: "melanocortin",
