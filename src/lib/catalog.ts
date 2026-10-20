@@ -1065,7 +1065,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg", "epithalon-5mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
+    slugs: ["ara-290-10mg", "5-amino-1mq-50mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
   },
   {
     id: "blends",
