@@ -441,6 +441,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 75,
+    comingSoon: true,
     tagline:
       "Nicotinamide Adenine Dinucleotide, 1000mg lyophilized in a 10mL vial. 99% purity.",
     description:
