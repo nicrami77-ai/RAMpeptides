@@ -286,7 +286,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline:
       "Growth hormone releasing hormone (GHRH) analog. 10mg lyophilized, ≥99% purity. Reference compound for in-vitro use.",
     description:
@@ -421,7 +420,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline:
       "Nicotinamide Adenine Dinucleotide, 500mg lyophilized in a 10mL vial. 99% purity, third-party verified.",
     description:
@@ -915,7 +913,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline: "Cartalax 20mg lyophilized. ≥99% purity.",
     description:
       "Cartalax is a synthetic peptide studied for its potential effects on cartilage and connective tissue. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
@@ -934,7 +931,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline: "SLU-PP-332 5mg lyophilized. ≥99% purity.",
     description:
       "SLU-PP-332 is a synthetic compound studied for its potential interaction with estrogen-related receptor alpha (ERRα). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
