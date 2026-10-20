@@ -435,6 +435,25 @@ export const catalog: Product[] = [
     verificationKey: "NAD50010272025-11",
   },
   {
+    slug: "nad-plus-1000mg",
+    name: "NAD+",
+    strength: "1000mg (10mL)",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 75,
+    tagline:
+      "Nicotinamide Adenine Dinucleotide, 1000mg lyophilized in a 10mL vial. 99% purity.",
+    description:
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed 10mL glass vial under inert conditions. Manufactured at 99% purity. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/nad-plus-1000mg.jpg",
+    specs: {
+      purity: "99% by HPLC",
+      form: "Lyophilized powder (10mL vial)",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
     slug: "ss-31-10mg",
     name: "SS-31",
     strength: "10mg",
@@ -1047,7 +1066,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "mito",
     title: "Mitochondrial & Cellular",
     blurb: "Mitochondrial and cellular-energy research compounds.",
-    slugs: ["mots-c-10mg", "nad-plus-500mg", "ss-31-10mg"],
+    slugs: ["mots-c-10mg", "nad-plus-500mg", "nad-plus-1000mg", "ss-31-10mg"],
   },
   {
     id: "neuro",
