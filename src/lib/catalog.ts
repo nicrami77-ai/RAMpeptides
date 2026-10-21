@@ -194,6 +194,45 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "deadpool-blend-30mg",
+    name: "DEADPOOL BLEND",
+    strength: "30mg kit",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 70,
+    tagline:
+      "Kit includes: 1× Cartalax 20mg, 1× BPC-157/TB-500 10mg (5mg/5mg), 1× empty 10mL reconstitution vial.",
+    description:
+      "DEADPOOL BLEND ships as a three-piece research kit: one Cartalax 20mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial. Each peptide component is lyophilized powder manufactured at ≥99% purity. Reference compounds supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    blend: [
+      { name: "Cartalax vial", amount: "1 × 20mg" },
+      { name: "BPC-157 & TB-500 vial", amount: "1 × 10mg (5mg/5mg)" },
+      { name: "Empty reconstitution vial", amount: "1 × 10mL" },
+    ],
+    labProtocol: {
+      title: "Laboratory combination protocol (research use only)",
+      steps: [
+        "Reconstitute each peptide vial separately with bacteriostatic water using sterile laboratory technique.",
+        "Draw the desired volume of each reconstituted solution into separate sterile syringes.",
+        "Transfer the solutions into the included sterile empty 10mL vial (or into one of the original vials if headspace allows).",
+        "Gently swirl to combine — do not shake.",
+        "Label the combined vial with component identity, exact ratio, total peptide content, reconstitution date, and final concentration.",
+        "Store refrigerated at 2–8 °C. Use within the typical stability window for reconstituted research peptides (commonly cited as approximately 28–45 days, depending on handling and storage conditions).",
+      ],
+      notice:
+        "For in-vitro and laboratory research applications only. Not a drug, not a dietary supplement, and not for human or animal use, injection, or consumption. No medical, therapeutic, or dosing claims are made.",
+    },
+    image: "/products/deadpool-blend-30mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Kit — 1 Cartalax vial + 1 BPC/TB vial + 1 empty 10mL recon vial",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+      intro:
+        "Each order includes one Cartalax 20mg vial, one BPC-157 & TB-500 10mg (5mg/5mg) vial, and one empty 10mL reconstitution vial.",
+    },
+  },
+  {
     slug: "superhuman-blend-10ml",
     name: "Super Human Blend",
     strength: "10mL",
@@ -686,9 +725,9 @@ export const catalog: Product[] = [
     form: "Case",
     priceUsd: 1,
     tagline:
-      "Clear pharmaceutical-grade 4-vial storage case. Snap lid. Free gift with any order of 2 or more peptide vials.",
+      "Clear pharmaceutical-grade 4-vial storage case. Snap lid.",
     description:
-      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Automatically included free with the purchase of 2 or more peptide vials. Storage accessory only; not a research compound.",
+      "Compact 4-cavity vial storage case in clear pharmaceutical-grade plastic with a snap lid. Holds four standard 3-10mL peptide vials securely upright — ideal for travel, fridge organization, and protecting glass vials in transit. Storage accessory only; not a research compound.",
     image: "/products/vault-case.jpg",
     specs: {
       purity: "Pharmaceutical-grade clear plastic",
@@ -1096,6 +1135,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
       "tri-blend-20mg",
       "glow-60mg",
       "klow-70mg",
+      "deadpool-blend-30mg",
       "superhuman-blend-10ml",
     ],
   },
