@@ -31,7 +31,7 @@ export async function POST(req: Request) {
       apiVersion: "2026-06-24.dahlia" as const,
     });
 
-    const { items, shippingAddress } = await req.json();
+    const { items, shippingAddress, appliedDiscount } = await req.json();
 
     let subtotal = 0;
     let description = "";
@@ -48,10 +48,11 @@ export async function POST(req: Request) {
       throw new Error("Cart is empty or invalid.");
     }
 
-    const shipping = 10.00;
+    const shipping = appliedDiscount === "free_shipping" ? 0 : 10.00;
+    const discountAmount = appliedDiscount === "five_off" ? 5.00 : 0;
     const taxRate = STATE_TAX_RATES[shippingAddress.state] || 0;
     const tax = subtotal * (taxRate / 100);
-    const total = subtotal + shipping + tax;
+    const total = Math.max(0, subtotal + shipping + tax - discountAmount);
 
     // Card + Link only. Amazon Pay / Klarna redirects were causing incomplete
     // "checkout started" noise and abandoned requires_action intents.

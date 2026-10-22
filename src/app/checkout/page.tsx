@@ -66,15 +66,16 @@ export default function CheckoutPage() {
   const [clientSecret, setClientSecret] = useState("");
   const [loadingClientSecret, setLoadingClientSecret] = useState(false);
 
-  // Discount code (whyamisogay = free shipping)
+  // Discount code (whyamisogay = free shipping, imnotgaybut5bucksis5bucks = $5 off)
   const [discountCode, setDiscountCode] = useState("");
-  const [discountApplied, setDiscountApplied] = useState(false);
+  const [appliedDiscount, setAppliedDiscount] = useState<"free_shipping" | "five_off" | null>(null);
 
   // Math
-  const shipping = discountApplied ? 0 : 10.00;
+  const shipping = appliedDiscount === "free_shipping" ? 0 : 10.00;
+  const discountAmount = appliedDiscount === "five_off" ? 5.00 : 0;
   const taxRate = STATE_TAX_RATES[formData.state] || 0;
   const tax = subtotal * (taxRate / 100);
-  const total = subtotal + shipping + tax;
+  const total = Math.max(0, subtotal + shipping + tax - discountAmount);
 
   useEffect(() => {
     if (cart.length === 0) router.push('/cart');
@@ -90,7 +91,8 @@ export default function CheckoutPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           items: cart,
-          shippingAddress: formData
+          shippingAddress: formData,
+          appliedDiscount
         })
       });
       const data = await res.json();
@@ -118,6 +120,9 @@ export default function CheckoutPage() {
           <div className="flex justify-between"><span>Subtotal</span><span>${subtotal.toFixed(2)}</span></div>
           <div className="flex justify-between"><span>Shipping</span><span>${shipping.toFixed(2)}</span></div>
           <div className="flex justify-between"><span>Tax ({taxRate}%)</span><span>${tax.toFixed(2)}</span></div>
+          {discountAmount > 0 && (
+            <div className="flex justify-between text-green-600"><span>Discount</span><span>-${discountAmount.toFixed(2)}</span></div>
+          )}
           <div className="flex justify-between font-bold text-lg mt-4 pt-4 border-t border-[var(--background)]/20">
             <span>Total</span><span>${total.toFixed(2)}</span>
           </div>
@@ -169,9 +174,13 @@ export default function CheckoutPage() {
               <button
                 type="button"
                 onClick={() => {
-                  if (discountCode.trim() === "whyamisogay") {
-                    setDiscountApplied(true);
+                  const code = discountCode.trim().toLowerCase();
+                  if (code === "whyamisogay") {
+                    setAppliedDiscount("free_shipping");
+                  } else if (code === "imnotgaybut5bucksis5bucks") {
+                    setAppliedDiscount("five_off");
                   } else {
+                    setAppliedDiscount(null);
                     alert("Invalid code");
                   }
                 }}
@@ -180,8 +189,11 @@ export default function CheckoutPage() {
                 Apply
               </button>
             </div>
-            {discountApplied && (
+            {appliedDiscount === "free_shipping" && (
               <p className="text-sm mt-2 text-green-600">Free shipping applied, gay boy</p>
+            )}
+            {appliedDiscount === "five_off" && (
+              <p className="text-sm mt-2 text-green-600">$5 off applied. A buck is a buck.</p>
             )}
           </div>
 
