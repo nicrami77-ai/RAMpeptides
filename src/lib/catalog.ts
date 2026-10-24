@@ -261,6 +261,26 @@ export const catalog: Product[] = [
     },
   },
   {
+    slug: "ram-2p-20mg",
+    name: "RAM-2P",
+    strength: "20mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 50,
+    comingSoon: true,
+    tagline:
+      "20mg lyophilized peptide preparation. ≥99% purity, research reference compound.",
+    description:
+      "RAM-2P is a 20mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/ram-2p-20mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
     slug: "ram-3p-20mg",
     name: "RAM-3P",
     strength: "20mg",
@@ -1086,7 +1106,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "metabolic",
     title: "Metabolic Research",
     blurb: "Metabolic pathway reference compounds. Related singles stay together as the line expands.",
-    slugs: ["ram-3p-20mg", "ram-1p-15mg", "cagrilintide-5mg"],
+    slugs: ["ram-3p-20mg", "ram-2p-20mg", "ram-1p-15mg", "cagrilintide-5mg"],
   },
   {
     id: "gh-axis",
