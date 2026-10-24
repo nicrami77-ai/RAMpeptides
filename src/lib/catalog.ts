@@ -311,7 +311,7 @@ export const catalog: Product[] = [
     tagline:
       "15mg lyophilized peptide preparation. ≥99% purity, research reference compound.",
     description:
-      "RAM-1P is a 15mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity. Label lot exp. June 23, 2028. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+      "RAM-1P is a 15mg lyophilized peptide preparation supplied in a sealed glass vial. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Store as a lyophilized powder in a dry, cool environment; reconstituted material should follow standard cold-chain handling. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
     image: "/products/ram-1p-15mg.jpg",
     specs: {
       purity: "≥99%",
