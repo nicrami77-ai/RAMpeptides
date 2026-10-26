@@ -556,7 +556,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 50,
-    comingSoon: true,
     tagline: "Orexin A/B. 5mg lyophilized, ≥99% purity.",
     description:
       "Orexin A/B is a neuropeptide studied in arousal, wakefulness, and appetite regulation models. Supplied as a lyophilized powder in a sealed glass vial under inert conditions. Manufactured at ≥99% purity. Reconstitute with bacteriostatic or sterile water per standard peptide laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
@@ -972,7 +971,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 40,
-    comingSoon: true,
     tagline: "NNMT inhibitor. 10mg lyophilized, ≥99% purity.",
     description:
       "5-AMINO-1MQ is a small, membrane-permeable molecule studied as an inhibitor of nicotinamide N-methyltransferase (NNMT). Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
