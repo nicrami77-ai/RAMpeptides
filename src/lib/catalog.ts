@@ -48,8 +48,8 @@ export const catalog: Product[] = [
       "Official RAMpeptides challenge coin. Relax Karen, it’s just a challenge coin and not for human consumption. Merch accessory only.",
     image: "/products/challenge-coin.jpg",
     specs: {
-      purity: "Metal alloy",
-      form: "Challenge Coin",
+      purity: "Zinc Alloy (Anti-brass plating)",
+      form: "Die Cast Coin (50.8mm × 3mm)",
       storage: "Room temperature",
       notice: "Merch accessory only.",
       intro: "Relax Karen, it’s just a challenge coin and not for human consumption.",
