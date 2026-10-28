@@ -37,6 +37,26 @@ const NOTICE =
 
 export const catalog: Product[] = [
   {
+    slug: "challenge-coin",
+    name: "RAMpeptides Challenge Coin",
+    strength: "Limited Edition",
+    category: "Accessory",
+    form: "Accessory",
+    priceUsd: 15,
+    tagline: "RAMpeptides Challenge Coin.",
+    description:
+      "Official RAMpeptides challenge coin. Relax Karen, it’s just a challenge coin and not for human consumption. Merch accessory only.",
+    image: "/products/challenge-coin.jpg",
+    specs: {
+      purity: "Metal alloy",
+      form: "Challenge Coin",
+      storage: "Room temperature",
+      notice: "Merch accessory only.",
+      intro: "Relax Karen, it’s just a challenge coin and not for human consumption.",
+    },
+  },
+
+  {
     slug: "duo-blend-20mg",
     name: "DUO-BLEND",
     strength: "20mg kit",
@@ -1091,6 +1111,7 @@ export const EXTRAS_SLUGS = [
   "rampeptides-tin",
   "slim-can-cooler",
   "slim-can-cooler-crest",
+  "challenge-coin",
 ] as const;
 
 export function isExtrasProduct(slug: string): boolean {
