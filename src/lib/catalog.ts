@@ -49,7 +49,7 @@ export const catalog: Product[] = [
     image: "/products/challenge-coin.jpg",
     specs: {
       purity: "Zinc Alloy (Anti-brass plating)",
-      form: "Die Cast Coin (50.8mm × 3mm)",
+      form: "Die Cast Coin (8mm × 3mm)",
       storage: "Room temperature",
       notice: "Merch accessory only.",
       intro: "Relax Karen, it’s just a challenge coin and not for human consumption.",
