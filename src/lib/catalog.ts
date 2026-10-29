@@ -1092,6 +1092,44 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
+  },
+  {
+    slug: "thymosin-alpha-1-10mg",
+    name: "Thymosin-Alpha-1",
+    strength: "10mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 60,
+    tagline: "Cellular & Immune Research",
+    description:
+      "Thymosin-Alpha-1 is a peptide fragment consisting of 28 amino acids. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/thymosin-alpha-1-10mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    comingSoon: true,
+  },
+  {
+    slug: "igf-1-lr3-100mcg",
+    name: "IGF-1 LR3",
+    strength: "100mcg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 20,
+    tagline: "Growth Factor Analog",
+    description:
+      "IGF-1 LR3 (Insulin-like Growth Factor-1 Long Arg3) is a synthetic protein and lengthened analogue of human IGF-1. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/igf-1-lr3-100mcg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+    comingSoon: true,
   }
 ];
 
