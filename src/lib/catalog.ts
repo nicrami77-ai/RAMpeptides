@@ -1169,7 +1169,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "gh-axis",
     title: "GH Axis",
     blurb: "Growth-hormone secretagogue singles used alone or as kit components.",
-    slugs: ["tesamorelin-10mg", "ipamorelin-10mg", "cjc-ipa-10mg"],
+    slugs: ["tesamorelin-10mg", "ipamorelin-10mg", "cjc-ipa-10mg", "igf-1-lr3-100mcg"],
   },
   {
     id: "repair",
@@ -1181,7 +1181,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "mito",
     title: "Mitochondrial & Cellular",
     blurb: "Mitochondrial and cellular-energy research compounds.",
-    slugs: ["mots-c-10mg", "nad-plus-500mg", "nad-plus-1000mg", "ss-31-10mg"],
+    slugs: ["mots-c-10mg", "nad-plus-500mg", "nad-plus-1000mg", "ss-31-10mg", "thymosin-alpha-1-10mg"],
   },
   {
     id: "neuro",
