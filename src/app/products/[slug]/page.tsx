@@ -190,6 +190,28 @@ export default async function ProductDetailPage({
               </dl>
             </div>
 
+            {product.options && (
+              <div className="mt-10">
+                <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-3">
+                  Select Size
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {product.options.map((opt) => {
+                    const isSelected = opt.slug === product.slug;
+                    return (
+                      <Link
+                        key={opt.slug}
+                        href={`/products/${opt.slug}`}
+                        className={`inline-block border px-6 py-3 rounded-full text-xs font-semibold tracking-wide transition-colors ${isSelected ? "border-[var(--foreground)] bg-[var(--foreground)] text-[var(--background)]" : "border-[var(--border)] text-[var(--foreground)] hover:border-[var(--foreground)]"}`}
+                      >
+                        {opt.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
             {product.comingSoon ? (
               <div className="mt-10">
                 <span
