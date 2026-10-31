@@ -445,6 +445,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 50,
+    comingSoon: true,
     tagline: "BPC-157 10mg + TB-500 10mg blend. ≥99% purity.",
     description:
       "BPC-157 and TB-500 blend supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
@@ -552,6 +553,7 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 75,
+    comingSoon: true,
     tagline:
       "Nicotinamide Adenine Dinucleotide, 1000mg lyophilized in a 10mL vial. 99% purity.",
     description:
