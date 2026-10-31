@@ -1218,7 +1218,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "mito",
     title: "Mitochondrial & Cellular",
     blurb: "Mitochondrial and cellular-energy research compounds.",
-    slugs: ["mots-c-10mg", "nad-plus-500mg", "nad-plus-1000mg", "ss-31-10mg", "thymosin-alpha-1-10mg"],
+    slugs: ["mots-c-10mg", "nad-plus-500mg", "ss-31-10mg", "thymosin-alpha-1-10mg"],
   },
   {
     id: "neuro",
