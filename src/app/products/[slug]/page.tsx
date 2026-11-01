@@ -125,10 +125,6 @@ export default async function ProductDetailPage({
               {product.tagline}
             </p>
 
-            <p className="mt-6 text-sm text-[var(--muted)] leading-relaxed">
-              {product.description}
-            </p>
-
             {product.blend && (
               <div className="mt-8 border border-[var(--border)] rounded-xl p-6">
                 <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-4">
