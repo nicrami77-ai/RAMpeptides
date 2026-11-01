@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { catalog, getProduct, isExtrasProduct } from "@/lib/catalog";
+import { catalog, getProduct, isExtrasProduct, FULL_RESEARCH_DISCLAIMER } from "@/lib/catalog";
 import CoaQrCode from "@/components/CoaQrCode";
 import AddToCartButton from "@/components/AddToCartButton";
 
@@ -67,6 +67,13 @@ export default async function ProductDetailPage({
           >
             {isExtra ? "← Back to Merch-Extras" : "← Back to catalog"}
           </Link>
+
+          <div className="mt-6">
+            <h2 className="font-display text-2xl tracking-tight mb-3">Description</h2>
+            <p className="text-sm leading-relaxed text-[var(--muted)]">
+              {FULL_RESEARCH_DISCLAIMER}
+            </p>
+          </div>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
           {/* Image */}

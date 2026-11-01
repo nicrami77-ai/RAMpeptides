@@ -37,6 +37,9 @@ export type Product = {
 const NOTICE =
   "This compound is intended for research use only. Not for human or animal consumption.";
 
+export const FULL_RESEARCH_DISCLAIMER =
+  "This product is intended as a research chemical only. This designation allows the use of research chemicals strictly for in vitro testing and laboratory experimentation only. All product information available on this website is for educational purposes only. Bodily introduction of any kind into humans or animals is strictly forbidden by law. This product should only be handled by licensed, qualified professionals. This product is not a drug, food, or cosmetic and may not be misbranded, misused, or mislabeled as a drug, food, or cosmetic.";
+
 export const catalog: Product[] = [
   {
     slug: "challenge-coin",
