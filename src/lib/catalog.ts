@@ -441,30 +441,7 @@ export const catalog: Product[] = [
       { label: "20mg (10mg/10mg) - $50", slug: "bpc-tb-20mg" }
     ],
   },
-  {
-    slug: "bpc-tb-20mg",
-    name: "BPC-157 & TB-500",
-    strength: "20mg (10mg/10mg)",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 50,
-    comingSoon: true,
-    tagline: "BPC-157 10mg + TB-500 10mg blend. ≥99% purity.",
-    description:
-      "BPC-157 and TB-500 blend supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity and verified by independent third-party analysis. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/bpc-tb-20mg.jpg",
-    specs: {
-      purity: "≥99%",
-      form: "Lyophilized powder",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-    hideFromCatalog: true,
-    options: [
-      { label: "10mg (5mg/5mg) - $30", slug: "bpc-tb-10mg" },
-      { label: "20mg (10mg/10mg) - $50", slug: "bpc-tb-20mg" }
-    ],
-  },
+
   {
     slug: "ghk-cu-50mg",
     name: "GHK-Cu",
@@ -549,31 +526,7 @@ export const catalog: Product[] = [
       { label: "1000mg - $75", slug: "nad-plus-1000mg" }
     ],
   },
-  {
-    slug: "nad-plus-1000mg",
-    name: "NAD+",
-    strength: "1000mg (10mL)",
-    category: "Peptide",
-    form: "Vial",
-    priceUsd: 75,
-    comingSoon: true,
-    tagline:
-      "Nicotinamide Adenine Dinucleotide, 1000mg lyophilized in a 10mL vial. 99% purity.",
-    description:
-      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, redox reactions, and sirtuin-mediated signaling. Supplied as a lyophilized powder in a sealed 10mL glass vial under inert conditions. Manufactured at 99% purity. Reconstitute with bacteriostatic or sterile water per standard laboratory protocol. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
-    image: "/products/nad-plus-500mg.jpg",
-    specs: {
-      purity: "99% by HPLC",
-      form: "Lyophilized powder (10mL vial)",
-      storage: "Store in a dry, cool environment",
-      notice: NOTICE,
-    },
-    hideFromCatalog: true,
-    options: [
-      { label: "500mg - $40", slug: "nad-plus-500mg" },
-      { label: "1000mg - $75", slug: "nad-plus-1000mg" }
-    ],
-  },
+
   {
     slug: "ss-31-10mg",
     name: "SS-31",
