@@ -68,12 +68,7 @@ export default async function ProductDetailPage({
             {isExtra ? "← Back to Merch-Extras" : "← Back to catalog"}
           </Link>
 
-          <div className="mt-6">
-            <h2 className="font-display text-2xl tracking-tight mb-3">Description</h2>
-            <p className="text-sm leading-relaxed text-[var(--muted)]">
-              {FULL_RESEARCH_DISCLAIMER}
-            </p>
-          </div>
+
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
           {/* Image */}
@@ -121,9 +116,11 @@ export default async function ProductDetailPage({
               </p>
             </div>
 
-            <p className="mt-8 text-base md:text-lg leading-relaxed">
-              {product.tagline}
-            </p>
+            <div className="mt-6">
+              <p className="text-sm leading-relaxed text-[var(--muted)]">
+                {FULL_RESEARCH_DISCLAIMER}
+              </p>
+            </div>
 
             {product.blend && (
               <div className="mt-8 border border-[var(--border)] rounded-xl p-6">
