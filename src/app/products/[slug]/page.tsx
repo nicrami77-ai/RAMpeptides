@@ -224,6 +224,19 @@ export default async function ProductDetailPage({
               <AddToCartButton product={{ slug: product.slug, name: product.name, price: product.priceUsd, strength: product.strength }} />
             )}
 
+            {/* Strong Legal / Research Notice (Riptide-style) */}
+            <div className="mt-16 border-t border-[var(--border)] pt-10">
+              <div className="max-w-3xl text-xs text-[var(--muted)] leading-relaxed space-y-4">
+                <p>
+                  <strong>Notice</strong><br />
+                  All products offered by RAMpeptides LLC are sold strictly for laboratory research purposes. They are not intended for human or animal consumption, injection, diagnosis, treatment, cure, or prevention of disease. They must not be used in foods, drugs, cosmetics, medical devices, or any clinical applications.
+                </p>
+                <p>
+                  Statements and materials provided by RAMpeptides LLC have not been evaluated by the U.S. Food and Drug Administration. All information is for educational and research purposes only and is not a substitute for professional medical advice. RAMpeptides LLC is a chemical supplier. RAMpeptides LLC is not a compounding pharmacy or chemical compounding facility as defined under 503A of the Federal Food, Drug, and Cosmetic Act. RAMpeptides LLC is not an outsourcing facility as defined under 503B of the Federal Food, Drug, and Cosmetic Act.
+                </p>
+              </div>
+            </div>
+
             {/* COA */}
             {product.coaUrl && (
               <div className="mt-12 border border-[var(--border)] rounded-xl p-6 md:p-8">
