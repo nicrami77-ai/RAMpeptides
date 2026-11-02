@@ -388,6 +388,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "ipamorelin-10mg",
+    comingSoon: true,
     name: "Ipamorelin",
     strength: "10mg",
     category: "Peptide",
@@ -449,6 +450,7 @@ export const catalog: Product[] = [
 
   {
     slug: "ghk-cu-50mg",
+    coaUrl: "https://verify.janoshik.com/tests/229600-ghk_cu_50mg_light_blue_yellow_8KUNED82SVQV",
     name: "GHK-Cu",
     strength: "10mg",
     category: "Peptide",
@@ -469,6 +471,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "kpv-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/224853-kpv_10mg_green_black_NJJJKZ6LKD18",
     name: "KPV",
     strength: "10mg",
     category: "Peptide",
@@ -487,6 +490,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "mots-c-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/226973-mots_c_10mg_white_gold_G8CZUEL7D7V6",
     name: "MOTS-c",
     strength: "10mg",
     category: "Peptide",
@@ -508,6 +512,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "nad-plus-500mg",
+    comingSoon: true,
     name: "NAD+",
     strength: "500mg (10mL)",
     category: "Peptide",
@@ -534,6 +539,7 @@ export const catalog: Product[] = [
 
   {
     slug: "ss-31-10mg",
+    comingSoon: true,
     name: "SS-31",
     strength: "10mg",
     category: "Peptide",
@@ -553,6 +559,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "semax-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/166070-n_acetyl_semax_amidate_10mg_transparent_blue_red_QE5ILIU29U6R",
     name: "SEMAX",
     strength: "10mg",
     category: "Peptide",
@@ -571,6 +578,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "orexin-ab-5mg",
+    comingSoon: true,
     name: "OREXIN A/B",
     strength: "5mg",
     category: "Peptide",
@@ -589,6 +597,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "melanotan-1-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/155936-melanotan_1_10mg_yellow_green_E1ZBGBGM7L7E",
     name: "Melanotan-1",
     strength: "10mg",
     category: "Peptide",
@@ -647,6 +656,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "ara-290-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/166076-ara_290_10mg_yellow_silver_PB6HQ5RHM9IG",
     name: "ARA-290",
     strength: "10mg",
     category: "Peptide",
@@ -666,6 +676,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "reconstitution-water-30ml",
+    comingSoon: true,
     name: "Reconstitution Solution",
     strength: "30mL",
     category: "Solution",
@@ -685,6 +696,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "reconstitution-vial-10ml",
+    comingSoon: true,
     name: "Reconstitution Vial",
     strength: "10mL",
     category: "Solution",
