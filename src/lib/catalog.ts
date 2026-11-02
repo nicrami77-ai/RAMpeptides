@@ -287,6 +287,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "ram-2p-20mg",
+    coaUrl: "https://verify.janoshik.com/tests/220399-2p_20mg_blue_light_yellow_7XHQGTYE9FRT",
     name: "RAM-2P",
     strength: "20mg",
     category: "Peptide",
@@ -347,6 +348,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "cagrilintide-5mg",
+    coaUrl: "https://verify.janoshik.com/tests/198983-cagrilitide_10_transparent_red_autumn_gold_DLITFTLHCI3U",
     name: "Cagrilintide",
     strength: "5mg",
     category: "Peptide",
@@ -364,6 +366,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "tesamorelin-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/237560-tesamorelin_10mg_white_black_HHZPF1K226WX",
     name: "Tesamorelin",
     strength: "10mg",
     category: "Peptide",
@@ -403,6 +406,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "cjc-ipa-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/207890-cjc_ipa_5mg_5mg_transparent_orange_or_orange_red_Y4S4Z7IDTCFX",
     name: "CJC-1295 (No DAC)/Ipamorelin",
     strength: "10mg",
     category: "Peptide",
@@ -421,6 +425,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "bpc-tb-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/226997-bpc_tb4_blend_10mg_10mg_black_green_ZF7LIZZDHZ2S",
     name: "BPC-157 & TB-500",
     strength: "10mg (5mg/5mg)",
     category: "Peptide",
@@ -601,6 +606,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "melanotan-2-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/155933-melanotan_2_10mg_white_blue_YFTFA313P3M3",
     name: "Melanotan-2",
     strength: "10mg",
     category: "Peptide",
@@ -618,6 +624,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "pt-141-10mg",
+    coaUrl: "https://verify.janoshik.com/tests/219635-pt_141_10mg_transparent_orange_blue_8TKW1GQGVXW7",
     name: "PT-141",
     strength: "10mg",
     category: "Peptide",
@@ -999,6 +1006,7 @@ export const catalog: Product[] = [
   },
   {
     slug: "cartalax-20mg",
+    coaUrl: "https://verify.janoshik.com/tests/207878-cartalax_10mg_pink_or_purple_red_RTRTZYJXJZAH",
     name: "Cartalax",
     strength: "20mg",
     category: "Peptide",
