@@ -62,10 +62,10 @@ export default async function ProductDetailPage({
       <section className="px-6 lg:px-10">
         <div className="max-w-7xl mx-auto py-12 md:py-16">
           <Link
-            href={isExtra ? "/extras" : "/products"}
+            href="/products"
             className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] tracking-wide"
           >
-            {isExtra ? "← Back to Merch-Extras" : "← Back to catalog"}
+            ← Back to catalog
           </Link>
 
 
@@ -287,25 +287,6 @@ export default async function ProductDetailPage({
             </div>
           </div>
         </div>
-
-        {!isExtra && (
-          <div className="mt-16 md:mt-20 pt-10 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-            <div>
-              <p className="uppercase tracking-[0.22em] text-[10px] text-[var(--muted)] mb-2">
-                Still want more?
-              </p>
-              <p className="font-display text-2xl md:text-3xl tracking-tight">
-                Check out Merch-Extras.
-              </p>
-            </div>
-            <Link
-              href="/extras"
-              className="inline-block self-start sm:self-auto bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-xs font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
-            >
-              Merch-Extras →
-            </Link>
-          </div>
-        )}
       </div>
     </section>
     </>
