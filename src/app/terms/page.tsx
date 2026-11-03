@@ -94,9 +94,6 @@ export default function TermsPage() {
           <h3>14. Contact</h3>
           <p>
             RAMpeptides LLC<br />
-            2551 N 137th Ave<br />
-            Goodyear, AZ 85395<br />
-            Phone: +1 (928) 247-5518<br />
             Email: info@rampeptides.com
           </p>
         </div>

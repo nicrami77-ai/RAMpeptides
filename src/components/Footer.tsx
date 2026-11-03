@@ -41,10 +41,7 @@ export default function Footer() {
               </a>
             </p>
             <p className="text-sm text-[var(--muted)] leading-relaxed mt-4">
-              RAMpeptides LLC<br />
-              2551 N 137th Ave<br />
-              Goodyear, AZ 85395<br />
-              +1 (928) 247-5518
+              RAMpeptides LLC
             </p>
           </div>
 
