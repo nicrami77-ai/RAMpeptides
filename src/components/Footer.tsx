@@ -40,6 +40,12 @@ export default function Footer() {
                 info@rampeptides.com
               </a>
             </p>
+            <p className="text-sm text-[var(--muted)] leading-relaxed mt-4">
+              RAMpeptides LLC<br />
+              2551 N 137th Ave<br />
+              Goodyear, AZ 85395<br />
+              +1 (928) 247-5518
+            </p>
           </div>
 
           <div>
@@ -78,6 +84,26 @@ export default function Footer() {
               <li>
                 <Link href="/disclaimer" className="hover:text-[var(--muted)]">
                   Disclaimer
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-[var(--muted)]">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="hover:text-[var(--muted)]">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/refund" className="hover:text-[var(--muted)]">
+                  Refund & Returns
+                </Link>
+              </li>
+              <li>
+                <Link href="/shipping" className="hover:text-[var(--muted)]">
+                  Shipping Policy
                 </Link>
               </li>
               <li>
@@ -122,7 +148,7 @@ export default function Footer() {
             evaluated by the FDA. Must be 21 or older to purchase.
           </p>
           <p className="whitespace-nowrap">
-            © 2026 RAMpeptides. All rights reserved.
+            © 2026 RAMpeptides LLC. All rights reserved.
           </p>
         </div>
       </div>

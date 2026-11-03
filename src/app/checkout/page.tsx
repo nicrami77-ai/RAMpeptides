@@ -65,6 +65,7 @@ export default function CheckoutPage() {
   });
   const [clientSecret, setClientSecret] = useState("");
   const [loadingClientSecret, setLoadingClientSecret] = useState(false);
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
 
   // Discount code (whyamisogay = free shipping, imnotgaybut5bucksis5bucks = $5 off)
   const [discountCode, setDiscountCode] = useState("");
@@ -197,7 +198,22 @@ export default function CheckoutPage() {
             )}
           </div>
 
-          <button disabled={loadingClientSecret} type="submit" className="w-full mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50 transition-opacity">
+          <div className="pt-4 mt-6">
+            <label className="flex items-start gap-3 cursor-pointer text-sm">
+              <input
+                type="checkbox"
+                required
+                checked={agreedToTerms}
+                onChange={(e) => setAgreedToTerms(e.target.checked)}
+                className="mt-1 h-4 w-4 rounded border-[var(--border)] text-[var(--foreground)] focus:ring-[var(--foreground)] bg-transparent"
+              />
+              <span className="leading-snug">
+                I confirm I am 21 or older and am purchasing for research use only, not for human consumption, and agree to the Terms of Service.
+              </span>
+            </label>
+          </div>
+
+          <button disabled={loadingClientSecret || !agreedToTerms} type="submit" className="w-full mt-10 bg-[var(--foreground)] text-[var(--background)] uppercase tracking-[0.18em] text-sm font-semibold px-7 py-4 hover:opacity-90 disabled:opacity-50 transition-opacity">
             {loadingClientSecret ? "Securely initializing payment..." : "Continue to Payment"}
           </button>
         </form>
