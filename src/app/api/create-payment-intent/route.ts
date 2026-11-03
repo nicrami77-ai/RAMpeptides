@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
 import Stripe from "stripe";
 import { catalog } from "@/lib/catalog";
 
@@ -32,6 +33,10 @@ export async function POST(req: Request) {
     });
 
     const { items, shippingAddress, appliedDiscount } = await req.json();
+
+    // Grab attestation ID if present
+    const cookieStore = await cookies();
+    const attestationId = cookieStore.get("research_attestation_id")?.value || "legacy_or_bypassed";
 
     let subtotal = 0;
     let description = "";
@@ -80,6 +85,7 @@ export async function POST(req: Request) {
           })),
         ),
         customer_name: shippingAddress.name || "",
+        attestation_id: attestationId,
       },
     });
 
