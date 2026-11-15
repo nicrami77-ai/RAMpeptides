@@ -967,6 +967,23 @@ export const catalog: Product[] = [
     comingSoon: true,
   },
   {
+    slug: "glutathione-1500mg",
+    name: "Glutathione",
+    strength: "1500mg",
+    category: "Peptide",
+    form: "Vial",
+    priceUsd: 45,
+    tagline: "Glutathione 1500mg lyophilized. ≥99% purity.",
+    description: "Glutathione is a tripeptide comprising glutamate, cysteine, and glycine, known for its role as a major cellular antioxidant. Supplied as a lyophilized powder in a sealed glass vial. Manufactured at ≥99% purity. Reference compound supplied for in-vitro and laboratory research applications only — not for human or animal consumption.",
+    image: "/products/glutathione-1500mg.jpg",
+    specs: {
+      purity: "≥99%",
+      form: "Lyophilized powder",
+      storage: "Store in a dry, cool environment",
+      notice: NOTICE,
+    },
+  },
+  {
     slug: "igf-1-lr3-100mcg",
     name: "IGF-1 LR3",
     strength: "100mcg",
@@ -1053,7 +1070,7 @@ export const CATALOG_GROUPS: { id: string; title: string; blurb: string; slugs: 
     id: "other",
     title: "Additional Research",
     blurb: "Other reference compounds in the current catalog.",
-    slugs: ["ara-290-10mg", "5-amino-1mq-10mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg"],
+    slugs: ["ara-290-10mg", "5-amino-1mq-10mg", "cartalax-20mg", "slu-pp-332-5mg", "fst-344-1mg", "glutathione-1500mg"],
   },
   {
     id: "blends",
