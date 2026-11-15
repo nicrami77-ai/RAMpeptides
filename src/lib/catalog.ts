@@ -231,7 +231,6 @@ export const catalog: Product[] = [
     category: "Peptide",
     form: "Vial",
     priceUsd: 50,
-    comingSoon: true,
     tagline:
       "20mg lyophilized peptide preparation. ≥99% purity, research reference compound.",
     description:
@@ -428,7 +427,6 @@ export const catalog: Product[] = [
   },
   {
     slug: "nad-plus-500mg",
-    comingSoon: true,
     name: "NAD+",
     strength: "500mg (10mL)",
     category: "Peptide",
@@ -475,7 +473,6 @@ export const catalog: Product[] = [
   },
   {
     slug: "orexin-ab-5mg",
-    comingSoon: true,
     name: "OREXIN A/B",
     strength: "5mg",
     category: "Peptide",
@@ -964,7 +961,6 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
-    comingSoon: true,
   },
   {
     slug: "glutathione-1500mg",
@@ -1000,7 +996,6 @@ export const catalog: Product[] = [
       storage: "Store in a dry, cool environment",
       notice: NOTICE,
     },
-    comingSoon: true,
   }
 ];
 
